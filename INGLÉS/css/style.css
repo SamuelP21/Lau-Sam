@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 11%;
 }
 
 
@@ -9,7 +10,9 @@ body {
     color: #333;
     margin: 0;
 }
-
+.activo{
+    background: #000;
+}
 h1 {
     font-family: 'Noto Serif', serif;
     font-size: 39px;
@@ -151,6 +154,59 @@ a:hover {
 .sidepanel a.sub-section:hover {
     text-decoration: underline;
 }
+
+/* barra lateral derecha */
+.sidepanelD {
+    width: 200px;
+    margin-top: 120px;
+    background-color: #fff;
+    overflow-x: hidden;
+    position: fixed;
+    right: 15%;
+    height: 80%;
+
+
+}
+
+.sidepanelD a.title {
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding-bottom: 12px;
+}
+
+.sidepanelD a.section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidepanelD a.sub-section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 25px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding-left: 20px;
+
+}
+
+.sidepanelD a.title:hover,
+.sidepanelD a.section:hover,
+.sidepanelD a.sub-section:hover {
+    text-decoration: underline;
+}
+/* fin barra lateral derecha */
 
 .main-col {
     width: 70%;
