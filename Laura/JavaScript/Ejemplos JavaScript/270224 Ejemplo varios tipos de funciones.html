@@ -1,0 +1,48 @@
+<!-- Prueba de código HTML-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conversion de una función estándar a flecha y anónima</title>
+		<meta charset="UTF-8">
+		
+				
+		<script>
+			let a= prompt("Número 1: ");
+			let b= prompt("Número 2: ");
+			let c= prompt("Número 3: ");
+			let multi;
+				
+				function calculos(n1,n2,n3){//Estándar
+					let producto = n1*n2*n3;
+					return producto;
+					//return n1*n2*n3;
+				}
+				multi = calculos(4,8,6);
+				//multi = calculos(a,b,c);
+			//-------------------------------
+			let multiplicar = function (n1,n2,n3){ //Anónima.
+					let producto = n1*n2*n3;
+					return producto;
+					//return n1*n2*n3;
+				}
+			multi = multiplicar(4,8,6);
+			//-------------------------------
+			let multip = (n1,n2,n3)=>{  //Flecha 1
+				let producto = n1*n2*n3;
+				return producto;
+			}
+			multi = multip(4,8,6);
+			//--------------------------------
+			let mul = (n1,n2,n3)=> n1*n2*n3; // Flecha 2
+			multi = mul(4,8,6);
+		</script>
+		
+		
+	</head>
+	<body>
+
+		
+	</body>
+	
+</html>

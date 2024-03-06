@@ -1,0 +1,106 @@
+
+<!-- Ejercicio Listas 1.-->
+
+<!doctype html>
+
+<html lang="es">
+
+	<head>
+		
+		<title>Listas ordenadas, no ordenadas y de definición</title>
+		<meta charset="utf-8">
+		
+	</head>
+
+
+	<body>
+		
+		<!-- Ejercicio 1. Lista ordenada.-->	
+
+		<h1>Internet</h1>
+		<h2>Contenido</h2>
+		<ol>
+			<li>Principales protocolos</li>
+			<li>Formas de conectarse</li>
+		</ol>
+	
+	<!-- Ejercicio 2. Listas ordenadas y no ordenadas combinadas.-->	
+	
+	<!-- Opción 1. Primer nivel con título de nivel 2.-->	
+	
+		<h2 style = "margin-left:20px">1. Principales protocolos</h2>		
+		
+		<ul>
+			<li >Transmisión de ficheros:
+				<ul>
+					<li>FTP</li>
+				</ul>
+			</li>
+			<li >Correo electrónico:</li>
+			<ul>
+				<li>IMAP</li>
+				<li>POP</li>
+				<li>SMTP</li>
+			</ul>
+		</ul>
+		
+		<h2 style = "margin-left:20px">2. Formas de conectarse</h2>
+		
+	<!-- Opción 2. Primer nivel con lista ordenada. -->
+	
+	<ol>
+		<li style = "font-size:24px; font-weight:bold">Principales protocolos</li>	
+		
+		<ul>
+			<li type= "disc">Transmisión de ficheros:</li>
+			<ul type= "circle">
+				<li>FTP</li>
+			</ul>
+			<li type= "disc">Correo electrónico:</li>
+			<ul type= "circle">
+				<li>IMAP</li>
+				<li>POP</li>
+				<li>SMTP</li>
+			</ul>
+		</ul>
+		
+		<li style = "font-size:24px;font-weight:bold">Formas de conectarse</li>
+	</ol>
+	<!-- Ejercicio 3. Lista de definición.-->
+		<dl>
+			 <dt style = "font-weight:bold">
+				
+					Red telefónica conmutada (RTC)
+				
+			</dt>
+			<dd>
+				La línea telefónica de toda la vida. Para acceder a Internet es necesario un módem.
+			</dd>
+			 <dt>
+				<strong>
+					Red Digital de Servicios Integrados (RDSI)
+				</strong>
+			</dt>
+			<dd>
+					Una línea telefónica especial. Para acceder a Internet es necesario un módem RDSI.
+			</dd>
+			 <dt>
+			 <b>
+				Línea de Abonado Digital Asimétrica (ADSL)
+			 </b>
+			 </dt>
+			  <dd>
+				Se basa en la conversión de una <em>línea RTC</em> en una línea de alta velocidad. Para acceder a Internet es necesario un módem (ADSL).</dd>
+			 <dt>
+			 <strong>
+				Fibra Óptica
+			 </strong>
+			 </dt>
+			  <dd>
+					Una línea de fibra óptica. Normalmente la fibra óptica no llega hasta el usuario final, por lo que le termino más apropiado es fibra híbrida coaxial.
+			  </dd>
+		</dl>
+
+	</body>
+ </html>
+

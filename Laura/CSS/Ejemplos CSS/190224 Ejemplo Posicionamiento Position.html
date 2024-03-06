@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tipos de Posicionamiento</title>
+		<meta charset="utf-8">
+
+			<style>
+			
+			/*Posicionamiento flujo normal.*/
+				
+				-div{ width:100px;
+					 height:100px;
+					 background:orange;
+					 font-size:30px;
+					}	
+				
+			/*Posicionamiento estático - static, por defecto igual que flujo normal.*/	
+			
+				-div{ width:100px;
+					 height:100px;
+					 background:orange;
+					 font-size:30px;
+					 position:static;
+					}	
+			/*Posicionamiento relativo - relative.*/
+
+				-div{ width:100px;
+					 height:100px;
+					 background:orange;
+					 font-size:30px;
+					
+					}
+				-.c2{
+					 position:relative;
+					 top:300px;
+					 left:300px;
+					 }
+
+			/*Posicionamiento absoluto - absolute.*/
+
+				-div{ width:100px;
+					 height:100px;
+					 background:orange;
+					 font-size:30px;
+					 
+					}
+				-.c2{
+					 position:absolute;
+					 top:300px;
+					 left:300px;
+					 }
+			/*Posicionamiento fijo - fixed.*/
+
+				-div{ width:100px;
+					 height:100px;
+					 background:orange;
+					 font-size:30px;
+					 
+					}
+				-.c2{
+					 position:fixed;
+					 top:300px;
+					 left:300px;
+					 }
+			/*Posicionamiento pegajoso - sticky.*/
+
+				-div{ width:100px;
+					 height:100px;
+					 background:orange;
+					 font-size:30px;
+					 
+					}
+				-.c2{
+					 position:sticky;
+					 top:20px;
+					 left:0px;
+					 }
+			/*Posicionamiento en contenedores anidados*/
+			
+				-.padre{ width:500px;
+					 height:600px;
+					 background:green;
+					 font-size:30px;
+					 position:relative;
+					 top:200px;
+					 left:300px;
+					 
+					}
+				-.hijo{
+					 width:100px;
+					 height:100px;
+					 background:orange;
+					 position:absolute;
+					 top:50px;
+					 left:50px;
+					 }	
+			/* Ocultar elementos */	
+				-.c2 {-display:none; visibility:hidden; -visibility:visible;}	
+			</style>
+	</head>
+
+	<body>
+		<div class="padre">
+			<h2>C1</h2>
+			<!--<div class="hijo">
+				->
+			</div>-->
+
+		</div>
+		<div class="c2">
+			<h2>C2</h2>
+		</div>
+		
+		<div >
+			<h2>C3</h2>
+		</div>
+		<div>
+			<h2>C4</h2>
+		</div>
+		<div>
+			<h2>C5</h2>
+		</div>
+		<div>
+			<h2>C6</h2>
+		</div>
+		<div>
+			<h2>C7</h2>
+		</div>
+		<div>
+			<h2>C8</h2>
+		</div>
+		<div class ="c9">
+			<h2>C9</h2>
+		</div>
+		<div>
+			<h2>C10</h2>
+		</div>
+		
+	</body>
+</html>

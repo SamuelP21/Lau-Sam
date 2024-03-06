@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays 3</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+		// Ejercicio 1.
+		/*
+			  var meses = new Array("enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre");
+			  
+			  var dias = ["lunes","martes","miercoles","jueves","viernes","sábado","domingo"]; 
+			
+			// Todos los meses usando un bucle for.
+			
+			  var i;
+			  document.write("----Meses----<br>");
+			  for(i = 0; i < meses.length; i++)
+			  {
+				
+				document.write(meses[i] + "<br>");
+			  } 
+						 
+			// Todos los días usando un bucle for...in.
+
+			 document.write("----Días de la Semana-----<br>");
+			 for(i in dias)
+			  {
+				document.write(dias[i] + "<br>");
+			  } 
+			  
+			  document.write("<br>El mes de enero ocupa el número " + (meses.indexOf("enero")+1) +  " en el calendario y la posición "+ meses.indexOf("enero")+ " en el array.<br>");
+			  document.write("El mes de abril ocupa el número " + (meses.indexOf("abril")+1) + " en el calendario y la posición "+ meses.indexOf("abril")+ " en el array. <br>");
+			  document.write("El mes de agosto ocupa el número " + (meses.indexOf("agosto")+1) + " en el calendario y la posición "+ meses.indexOf("agosto")+ " en el array. <br>");
+			  document.write("El mes de noviembre ocupa el número " + (meses.indexOf("noviembre")+1) + " en el calendario y la posición "+ meses.indexOf("noviembre")+ " en el array.<br>");
+			  
+			  // Variante:
+			  
+			  var enero = meses.indexOf("enero")+1;
+			  var abril = meses.indexOf("abril")+1;
+			  var agosto = meses.indexOf("agosto")+1;
+			  var noviembre = meses.indexOf("noviembre")+1;
+			  
+			  document.write("<br>El mes de enero ocupa el número " + enero +  " en el calendario y la posición "+ (enero-1)+ " en el array.<br>");
+			  document.write("El mes de abril ocupa el número " + abril + " en el calendario y la posición "+ (abril-1)+ " en el array. <br>");
+			  document.write("El mes de agosto ocupa el número " + agosto + " en el calendario y la posición "+ (agosto-1)+ " en el array. <br>");
+			  document.write("El mes de noviembre ocupa el número " + noviembre + " en el calendario y la posición "+ (noviembre-1)+ " en el array.<br>");
+	*/		
+		// Ejercicio 2.	
+
+			var num = new Array(5);
+			var i;
+			var	suma=0;			
+			
+			for(i = 0;i < num.length; i++)
+			{
+				    num[i] = parseInt(prompt("Introduce un número"));
+					suma = suma + num[i];
+				  	
+			}
+			for(i = 0;i < num.length; i++)
+			{
+				  document.write("El número introducido en la posición " + i + " es " + num[i] + "<br>");
+				  				
+			}
+			
+			//suma = num[0]+num[1]+num[2]+num[3]+num[4]; // Otra alternativa a la suma de los 5 números.
+			document.write("El resultado de la suma es " + suma + "<br>" );
+			
+					
+			var nuevo = num.slice();
+			
+			for(i = 0;i < nuevo.length; i++)
+			{
+				  document.write("El valor del nuevo array en la posición " + i + " un " + nuevo[i] + "<br>");
+				  				
+			}
+			//document.write("Los valores del nuevo array son " + nuevo.join("<br>") + "<br>"); // Otra forma de mostrar el contenido
+		
+		</script>  
+		
+	</head>	
+	
+	<body>
+	
+	</body>
+</html> 

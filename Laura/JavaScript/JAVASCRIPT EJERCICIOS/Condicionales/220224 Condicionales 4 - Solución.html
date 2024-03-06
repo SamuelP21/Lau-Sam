@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condicionales 4</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+		// Ejercicio 1A.
+		/*
+		  var color;
+		  color = prompt("¿Cúal es el color de la luz del semáforo","");
+		  switch (color)
+		  {
+				case "rojo":
+				case "Rojo":
+				case "ROJO":
+							document.write("Alto");
+							break;
+				case "ámbar":
+				case "Ámbar":
+				case "ÁMBAR":
+				case "ambar":
+				case "Ambar":
+				case "AMBAR":			
+							document.write("Precaución");
+							break;
+							
+				case "verde":
+				case "VERDE":
+				case "Verde":
+							document.write("Adelante");
+							break;			
+				default:
+							document.write("Color Incorrecto");
+							break;
+			}*/
+		document.write("<br><br>");
+		
+		// Ejercicio 1B
+		/*	
+			var color;
+		    color = prompt("¿Cúal es el color de la luz del semáforo","");
+		  
+		    switch(true)
+			{
+				case(color == "rojo" || color == "ROJO" || color == "Rojo"):
+			   
+					document.write("Alto");
+					break;
+			  
+				case (color == "ámbar" ||color == "Ámbar" ||color == "ÁMBAR"
+				||color == "ambar" ||color == "Ambar" ||color == "AMBAR"):	
+				
+					document.write("Precaución");
+					break;
+					
+				case (color == "verde" ||color == "VERDE" ||color == "Verde"):
+				
+					document.write("Adelante");
+					break;
+									
+				default:
+			  
+					document.write("Color Incorrecto");
+					break;
+			}*/
+		document.write("<br><br>");
+		// Ejercicio 2.
+		/*
+		  var palabra;
+		  palabra = prompt("Escriba alguna de estas palabras: Casa, Coche, Sol, Luna o Amigo; para traducirlas al ingles","");
+		  switch (palabra)
+		  {
+			case "Casa":
+			case "casa":
+			case "CASA":
+						document.write("La traducción es House");
+						break;
+			case "Coche":
+			case "coche":
+			case "COCHE":
+						document.write("La traducción es Car");
+						break;
+			case "Sol":
+			case "sol":
+			case "SOL":
+						document.write("La traducción es Sun");
+						break;
+			case "Luna":
+			case "luna":
+			case "LUNA":
+						document.write("La traducción es Moon");
+						break;
+			case "Amigo":
+			case "amigo":
+			case "AMIGO":
+						document.write("La traducción es Friend");
+						break;
+			default:
+						document.write("No hay traducción disponible para la palabra " + palabra);
+						break;		
+		  }
+		*/
+		document.write("<br><br>");	
+		
+		// Ejercicio 3.
+		/*
+		  var mes;
+		  mes = prompt("¿Si quieres saber cuantos días tiene un mes, escribe su nombre","").toLowerCase();
+		  switch (mes)
+		  {
+			case "enero":
+			case "marzo":
+			case "mayo":
+			case "julio":
+			case "agosto":
+			case "octubre":
+			case "diciembre":
+						document.write(mes + " tiene 31 días.");
+						break;
+						
+			case "abril":
+			case "junio":
+			case "septiembre":
+			case "noviembre":
+						document.write(mes + " tiene 30 días.");
+						break;		
+			case "febrero":
+						document.write(mes + " tiene 28 o 29 días.");
+						break;
+			default:
+						document.write("Mes incorrecto o no existente.");
+						break;			
+			}
+		*/	
+		// Ejercicio 3. Variante.
+		/*
+			let = mes;
+			mes = prompt("Introduzca el nombre de un mes para saber cuantos días tiene");
+			switch (true) {
+		
+			case (mes == "enero" || mes == "Enero" || mes == "marzo" 
+			|| mes == "Marzo" || mes == "mayo" || mes == "Mayo" ||
+			mes == "julio" || mes == "Julio" || mes == "agosto" ||
+			mes == "Agosto" || mes == "octubre" || mes == "Octubre"
+			|| mes == "diciembre" || mes == "Diciembre"):
+				document.write (mes + "tiene 31 días <br>");
+				break;
+				
+			case (mes == "abril" || mes == "Abril" || mes == "junio" || mes == "Junio" || mes == "septiembre" || mes == "Septiembre" || mes == "noviembre" || mes == "Noviembre"):
+				document.write (mes + "tiene 30 días <br>");
+				break;
+			
+			case (mes == "febrero" || mes == "Febrero"):
+				document.write (mes + "tiene 28 ó 29 días <br>");
+				break;
+			
+			default:
+				document.write ("El nombre del mes no existe o es incorrecto <br> <br>");
+				break;
+		}
+		*/
+		</script>
+
+		
+
+	</head>
+	<body>
+	
+		
+		
+	</body>
+	
+</html>

@@ -1,0 +1,135 @@
+<!-- Prueba de código HTML-->
+
+
+<!DOCTYPE html>
+<html>	
+	<head>
+		<title>
+			Plantilla
+		</title>
+		<meta charset="UTF-8"/>
+		
+		<link rel="shortcut icon" href="emoji.png"type="image/ico">
+
+	<style>
+		h1,a,b{border:2px solid red;}
+		.formato-textos{font-family: comic sans ms;}
+
+		/* * {margin: 0px; padding: 0px;} */
+		#division1 {background-color: rgb(245, 176, 85);}
+		#division1::selection{color: #bd16d3;text-shadow: 5px 1px 3px green;}
+		#t3 {box-shadow: 10px 3px 5px #741818;}
+		#t3::before, #t3::after {content: url(Ejemplos/Ejemplos\ CSS/guitarra.png);}
+		#t2::before {content: "t2";}
+
+		p.espacio{letter-spacing: 13px;}
+		a {font-size: 50px;}
+		a:link {text-decoration: none;color: aquamarine;}
+		a:visited {color: yellowgreen}
+		a:hover {color:#bd16d3; font-size: 20px; font-family: comic sans ms;}
+		a:active {color: #741818;}
+		-#medida {width: 600px; height: 500px; border: 1px solid firebrick;}
+		#medida {width: 30%;height: 500px; border: 1px solid firebrick;}
+	</style>
+	<link rel="stylesheet"type="text/css" href="hoja de estilos.css">
+	</head>
+
+	<body>
+		<h1>Títulos</h1>
+		<h1 align="center" style = "color:aqua"> H<sub>2</sub>O</h1>
+			<a>Enlace 1</a>
+			<b>Enlace 2</b>
+		<h2 style="font-family: comic sans ms; font-size: e;" align="center">Holis</h2> 
+
+		<h1>Colores, negritas</h1>
+			<p style="background-color: aquamarine;">
+				qwertyuiop <strong>godfgfioghi</strong>
+				<em>dkefjilwe</em>asdfghj<br>klñ
+				<strong>kliusrgesjghlo</strong>zxcvbnm <br>
+			</p>
+
+		<h1>Citas</h1>
+			él dice: <blockquote> Hola</blockquote><br>
+			<q>citas</q><br>
+			<cite>cómo estas</cite><br>			
+		
+		<h1>Listas</h1>
+			<ol>
+				<li>Listas
+				</li>
+				<li>2</li>
+					<ol type="A">
+						<li>ordenadas</li>
+						<li>b</li>
+					</ol>
+				<li>3</li>
+			</ol>
+			<ul>
+				<li>no ordenadas</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		
+		<h1>Listas de definición</h1>
+			<dl>
+				<dt>
+					Casa:
+				</dt>
+				<dd>
+					Lugar donde resides
+				</dd>
+			</dl>
+
+		<h1>Contenedores genéricos</h1>
+
+			<div id="division1" style="margin:50px; width:50vw; border:1px dotted#2d2d2d;">
+				<h2 class=" formato-textos">División</h2>
+				<div style="margin:100px; width:50%; border:3px double#0d09c5; background-color: rgb(166, 188, 194);height:40px;">
+					<h3 class=" formato-textos">División anidada</h3>
+				</div>
+			</div>
+			<div id="división 2" style="margin:100px; width:100vw; border:4px double#bd16d3; background-color: rgb(151, 216, 191); height:60px;">
+				<h2 class="formato-textos">División 2</h2>
+			</div>
+
+		<h1>Enlaces</h1>
+			<body link="green" vlink="green" alink="pink">
+			<a href="https://www.elcorteingles.es/" target="_blank" title="Abrir pág. web de El Corte Inglés">El Corte Inglés</a>
+
+		<h1>Imágenes</h1>
+			<figure>
+				<img src="imagen emoji.jpg" alt="Emoji" title="Emoji cara" width="200px" height="200px">
+				<figcaption>Emoji cara feliz</figcaption>
+			</figure>
+
+		<h1>Tablas</h1>
+			<table width="500px"; border="1"; align=center>
+				<tr align="center" style="font-weight: bold;">
+					<td width="50px">1</td>
+					<td height="100px">2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td align="right">4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+			</table>
+		
+		
+			<h1 style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif; color: #bd16d3; text-align:center">CSS</h1>
+
+			<p id="p1" class="textos parrafos fuente espacio">Parrafo selectores</p>
+		
+		<h1 id="division1">Selectores universales</h1>
+		<h1 id="t2">Selectores de negación</h1>
+		<h1 id="t3">Selectores jerárquicos</h1>
+
+		<h1>Unidades de medida</h1>
+
+		<div id="medida">
+			<p>pareltmnklwrrrrrmhnjsyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyoñlissssssssssssñlkjlthirwhjiwllllllllllllllllllllllllllllllllllllllllk</p>
+		</div>
+	</body>
+	
+</html>

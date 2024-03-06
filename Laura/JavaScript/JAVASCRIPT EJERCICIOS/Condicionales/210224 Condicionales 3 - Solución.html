@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condicionales 3</title>
+		<meta charset="UTF-8">
+	</head>
+<body>
+
+		<script>
+		
+		// Ejercicio 1.
+		
+			/*  let sueldo, antiguedad, nuevoSueldo;
+			  sueldo = prompt("Introduzca el sueldo del empleado","");
+			  sueldo = parseFloat(sueldo);
+			  //sueldo = parseFloat(prompt("Introduzca el sueldo del empleado",""));
+			  antiguedad = prompt("Introduzca la antigüedad del empleado","");
+			  antiguedad = parseInt(antiguedad);
+			  //antiguedad = parseInt(prompt("Introduzca la antigüedad del empleado",""));
+
+			  if (sueldo < 1200.00 && antiguedad >= 10)
+			  {
+					nuevoSueldo = sueldo * 1.10; 
+					//nuevoSueldo = (sueldo * 10)/100 + sueldo; //Alternativa al cálculo e incremento de porcentajes.
+					document.write("Aumento de sueldo de un 10%" + "<br>");
+					document.write("El sueldo total asciende: " + nuevoSueldo + " euros");
+					//document.write("El sueldo total asciende: " + sueldo * 1.10 + " euros");
+			  }
+			  else if (sueldo < 1200.00 && antiguedad < 10)
+				{
+					nuevoSueldo = sueldo * 1.05; 
+					document.write("Aumento de sueldo de un 5%" + "<br>");
+					document.write("El sueldo total asciende a: " + nuevoSueldo + " euros");
+					//document.write("El sueldo total asciende: " + sueldo * 1.05 + " euros");
+				}
+				else if(sueldo >= 1200.00)
+				//else // Alternativa.
+				{
+				  document.write("El sueldo queda sin cambios, siendo el total de " + sueldo + " euros");      
+				}
+			*/  
+				  
+		// Ejercicio 2.
+	 
+			  let dia,mes,año;
+			  dia=parseInt(prompt("Introduce el día de la semana en número", ""));
+			  mes=parseInt(prompt("Introduce el mes en número", ""));
+			  año=parseInt(prompt("Introduce el año", ""));
+			  			  
+			  if ((dia>=26 && mes==12) && (dia<=31 && mes==12))
+			  //if((dia>=26 && dia<=31) && mes==12)
+			  {
+				document.write("La Navidad ya pasó");
+			  }
+			  
+			  else if (dia==25 && mes==12)
+			  {
+				document.write("Es Navidad");
+			  }
+			  else
+			  //if (dia>=01 && mes>=1) && (dia<=24 && mes==12))
+			  //if (((dia>=1 && dia<=31) && (mes>=1 && mes<=11)) || ((dia>=1 && dia<=24) && mes==12))
+			  {
+				document.write("Todavía no es navidad");
+			  }
+			
+			/*
+			 else // Este else se puede incluir si se añade uno de los else..if anteriores que están comentados, si no, no.
+			 {
+				document.write("Error")
+			 }
+			*/
+		  
+		</script>
+
+	</body>
+</html>

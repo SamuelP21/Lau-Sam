@@ -1,0 +1,14 @@
+
+		/* Ejercicio Pseudoclases 1. */
+
+			h1:hover{border:1px solid ; background-color:plum;}
+			
+			a:link {color: #F00;text-decoration: none;}
+
+			a:visited {color: #090;}
+			
+			a:hover {color: #FFF; background-color: #F00; text-decoration: underline;}
+			
+			a:focus { color: #00F; text-decoration: underline;}
+			
+			a:active { color: #F60;  text-decoration: none;}

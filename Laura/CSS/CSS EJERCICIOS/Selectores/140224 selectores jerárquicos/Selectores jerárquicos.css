@@ -1,0 +1,12 @@
+
+#d1 ul{color:red; color: blue}
+#d1>ul{color: brown}
+ul .azul {color: blue;}
+h1~ul li{color:green}
+div ul h1 {color: orange;}
+div>h1 {color: yellow;}
+#d2>h1 {color: magenta}
+h1+p{color: pink}
+#d1 h1+p {color: violet}
+ul h1~li, ul h1~p {color: maroon}
+/* ul h1~* {color: maroon;} */

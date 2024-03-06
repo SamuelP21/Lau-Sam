@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condicionales 7</title>
+		<meta charset="UTF-8">
+	</head>
+<body>
+
+		<script>
+		
+		// Ejercicio 1.
+
+			let cont= prompt("Introduce tu contraseña: ");
+			let cont2= prompt("Introduce tus contraseña de nuevo: ");
+			
+			  if (cont == cont2)
+			  {
+				document.write("Contraseña correcta.<br>");
+			  }
+			  else
+			  {
+			    document.write("Contraseña incorrecta.<br>");
+			  }
+
+ 
+		// Ejercicio 2.
+
+			let v= prompt("¿Qué vehículo tienes? ").toLowerCase();
+
+			  if ((v=="moto")|| (v=="coche"))
+			  {
+				document.write("El vehículo que conduces consume combustibles fósiles o es eléctrico. <br>");
+			  }
+			  else if (v=="bicicleta")
+			  {
+			    document.write("Montar en bicicleta es saludable y no contamina. <br>");
+			  }
+			  else
+			  {
+			    document.write("Desconocido. <br>");
+			  }
+	
+		// Ejercicio 3.
+
+			let N1= parseInt(prompt("Introduce un número"));
+
+			if ((N1%2)==0)
+			  {
+				document.write("El número es par. <br>");
+			  }
+			else
+			 {
+				document.write("El número es impar. <br>")
+			 }
+			
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,33 @@
+p::first-letter {font-size: 25pt;}
+#div1 p::first-line {color:blue}
+h1::before {content: url(../../../Ejemplos/Ejemplos\ CSS/guitarra.png);}
+h1::after {content: url(../../../Ejemplos/Ejemplos\ CSS/mas.ico);}
+#div1>p::before {content: "El científico";}
+#lista1 :first-child {font-weight: bold; text-decoration: underline;}
+ul :first-child {color: blue;}
+#lista2> li:first-of-type {color: #5ba0e2; font-style: italic;}
+#lista1 :last-child {color: orange;}
+#lista1> li:last-of-type {color: orange}
+#lista1> li:nth-of-type(5) {color: lime;}
+#lista1> li:nth-child(even) {color: lime;}
+#lista1> li:nth-child(odd) {color: lime;}
+#lista2> :nth-of-type(2) {color: green;}
+#lista2> :nth-child(even) {font-size: 18pt;}
+#lista2> :nth-child(odd) {text-decoration: underline;}
+#div1 p:nth-of-type(2) {color: #864cda;}
+#div1 p{color: lime; background-color: black; padding: 5px;}
+#div1 p:last-of-type{color: lime; background-color: black; padding: 5px;}
+#div1 :first-child {background-color: black; color: white;}
+ul> :nth-last-child(4) {background-color:#da4cd8 ;}
+ul> :nth-last-of-type(2) {background-color:orange;}
+ul[title]{background-color:orange}
+ul[title^="lis"]{text-decoration: overline;}
+div[title*"contenedor1"]{font-size: 20pt;}
+div[title^="cont"]{text-decoration: overline;}
+div[title$="2"]{font-family: verdana; font-size: 8pt;}
+*[title$="1"]{font-style: italic;}
+*[title*="do"]{color: antiquewhite;}
+*[title*="te"]{border: 2px dotted black;}
+div :not(#div1){color: pink;}
+p::selection{background-color: yellow;}
+*[title~="primero"]{text-decoration: underline;}

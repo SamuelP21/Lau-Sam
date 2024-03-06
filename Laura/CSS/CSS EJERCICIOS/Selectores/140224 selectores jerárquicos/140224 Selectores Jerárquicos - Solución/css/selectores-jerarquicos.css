@@ -1,0 +1,28 @@
+
+			/*Selectores jerárquicos*/
+			
+			-#d1 ul{color:red;color:blue;} /* Todos los elementos de las listas */
+			-#d1>ul{color:brown;}/* Todos los elementos de la lista */
+			
+			-#d1 ul li {color:red;}/* Sólo los elementos li de las listas */
+			-#d1>ul li{color:brown;}/* Sólo los elementos li de la lista */
+			
+			-ul .azul{color:blue;}
+			
+			-h1~ul li{color:green;}	/* Sólo los elementos li de las listas */
+			-h1~ul{color:green;}/* Todos los elementos de las listas */
+			
+			
+			-div ul h1{color:orange;}
+			
+			-div>h1{color:yellow;}
+			-#d1>h1,#d2>h1{color:yellow;}/* Alternativa al anterior.*/
+			
+			-#d2>h1{color:magenta;}	
+			-#d2 h1{color:magenta;}/* Alternativa al anterior.*/
+			
+			-h1+p{color:pink;}
+			
+			-#d1 h1+p{color:violet;}
+			-ul h1~li, -ul h1~p{color:maroon;}
+			-ul h1~*{color:maroon;}

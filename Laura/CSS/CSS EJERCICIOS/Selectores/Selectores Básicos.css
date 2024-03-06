@@ -1,0 +1,24 @@
+div {width: 600px;
+    margin:auto;
+    text-align: justify;}
+h1 {color:rgb(2, 158, 106);
+    font-family: comic sans ms;
+    font-size: 14pt;
+    text-align:center}
+#parrafo1 {font-family: Arial;
+            font-size: 12pt;}
+#negrita {font-weight: bold;}
+#sub {text-decoration: underline;}
+#curs {font-style: italic;}
+#azul {color:blue}
+#backgray {background-color:lightgray}
+#parrafo2 {font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;}
+#rojo {color: red;}
+#backyellow {background-color: yellow;}
+#parrafo3 {font-family: comic sans ms;
+            font-size: 12pt;
+            color:rgb(125, 191, 218)}
+#parrafo4 {font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;
+            background-color: blanchedalmond;}

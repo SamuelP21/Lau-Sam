@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condicionales 3</title>
+		<meta charset="UTF-8">
+	</head>
+<body>
+
+		<script>
+		
+		// Ejercicio 1.
+
+			let sueldo= parseFloat(prompt("Introduce tu sueldo"));
+			let ant= parseInt(prompt("Introduce tus años de antigüedad"));
+			
+			let sueldo10= (sueldo+ sueldo*0.10);
+			let sueldo5 = (sueldo+ sueldo*0.05);
+			  
+			  if ((sueldo < 1200.00) && (ant >= 10))
+			  {
+				document.write("Cobrarás " + sueldo10  + "<br>");
+			  }
+			  else if ((sueldo < 1200.00) && (ant < 10))
+			  {
+			    document.write("Cobrarás " + sueldo5  + "<br>");
+			  }
+			  else if (sueldo >= 1200.00)
+			  {
+			    document.write("Cobrarás " + sueldo + "<br>");
+			  }
+ 
+		// Ejercicio 2.
+
+			let dia= parseInt(prompt("Introduce día"));
+			let mes= parseInt(prompt("Introduce mes"));
+			let ano= parseInt(prompt("Introduce año"));
+			
+			
+			  if ((dia>=26) && (dia<=31) && (mes == 12))
+			  {
+				document.write("La Navidad ya pasó. <br>");
+			  }
+			  else if ((dia==25) && (mes == 12))
+			  {
+			    document.write("Es Navidad. <br>");
+			  }
+			  else
+			  {
+			    document.write("Todavía no es navidad. <br>");
+			  }
+	
+		
+		</script>
+
+	</body>
+</html>

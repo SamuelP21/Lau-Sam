@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	
+		<meta charset="utf-8" />
+		<title>Document 4</title>
+		
+	
+	</head>
+	
+	<body>
+	
+		<div id = “d”>
+			<h2>Lista de socios. </h2>
+			<p id = “p1”>
+				Solo se muestran los socios que han pagado la cuota del año actual. 
+			</p>
+			<ul id = “lista-uno”>
+				<li id = “l1” class = “hombre”>Juan</li>
+				<li id = “l2” class = “hombre”>José</li>
+				<li id = “l3” class = “mujer”>Eva</li>
+				<li id = “l4” class = “hombre”>Pepe</li>
+				<li id = “l5” class = “mujer”>Cristina</li>
+				<li id = “l6” class = “mujer”>Rosa</li>
+				<li id = “l7” class = “hombre”>Luis</li>
+				<li id = “l8” class = “hombre”>Antonio</li>
+				<li id = “l9” class = “mujer”>Eugenia</li>
+			</ul>
+		</div>
+			
+		
+		<script>
+			//let soc = new Array ();
+			let soci = new Array();
+			let socios = document.getElementsByTagName (li)
+
+				document.write ("Número de socios: " + socios.lenght + "<br>");
+
+			for (let i = 0; i < socios.length; i++) 
+			{
+				document.write = "Nombres de los socios: " + socios[i].innerHTML + "<br>";
+				soci= socios[i].innerHTML;
+			}
+				document.write ("Nombre de los socios en orden inverso: " + socios.reverse() + "<br>")
+				document.write ("Nombre de los socios ordenados: " + socios.sort() + "<br>")
+
+
+			//Ejercicio 2
+
+			let h= new Array ();
+			let hombres = document.getElementsByClassName (hombres);
+			for (let i2 = 0; i2 < hombres.length; i2++) 
+			{
+				document.write ("Nombre de los socios masculinos: " + h.sort() + "<br>")
+			}
+			let m;
+			let mujeres = document.getElementsByClassName (mujeres);
+			for (let i3 = 0; i3 < mujeres.length; i3++) 
+			{
+				document.write ("Nombre de los socios femeninos: " + m.sort() + "<br>")
+			}
+			//Ejercicio 3
+
+			let uno = document.querySelectorAll ("[id $= '1'");
+			//let uno = document.querySelectorAll ("#li1, #p1");
+				document.write ("Número de elementos cuyo identificadoer termina en 1: " + uno.sort + "<br>")
+				document.write ("Elementos cuyo identificadoer termina en 1: " + uno + "<br>")
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funciones 1</title>
+		<meta charset="UTF-8">
+		
+		<script>
+	 
+		//Ejercicio 1.	Sin parámetros y sin retorno de datos.
+		/*
+			document.write("Ejercicio 1.<br><br>");
+				function sumar5a()
+				{
+					let n1 = 4;
+					let n2 = 7;
+					let n3 = 8;
+					let n4 = 2;
+					let n5 = 7;
+					let suma5 = n1+n2+n3+n4+n5;
+					document.write("la suma es: " +suma5 + "<br>");
+					//document.write("la suma es: " +(n1+n2+n3+n4+n5) + "<br>");
+					//document.write("la suma es: " +(4+7+8+2+7) + "<br>");
+				}
+				
+				sumar5a();
+				document.write("<br><br>");
+		*/		
+		//Ejercicio 2a. Valores por defecto en parámetros.
+		/*
+				document.write("Ejercicio 2a.<br><br>");
+				let suma5;
+				function sumar5b(n1,n2,n3,n4=5,n5=10){
+				
+					let suma5= n1+n2+n3+n4+n5;
+					document.write("La suma de los 5 números es " + suma5 + "<br><br>");
+					
+				}
+				sumar5b(6,3,2);
+				sumar5b(3,2,3,7,6);
+										
+				
+		//Ejercicio 2b. Valores por defecto dentro del código.
+		
+				document.write("Ejercicio 2b.<br><br>");
+				function sumar5c(a,b,c,d,e)
+				{
+					
+					if( typeof d == "undefined" ||  typeof e == "undefined") 
+					{
+						d=5;
+						e=10;
+					}
+				
+					let suma6 = a+b+c+d+e;
+					document.write("La suma de los 5 números es " + suma6 + "<br><br>");
+				}
+				
+				sumar5c(6,3,2);
+				sumar5c(3,2,3,7,6);
+		*/			
+		//Ejercicio 3.
+	
+			
+			function cubo()
+			{
+				let numero = 5;
+				let exponente=3;
+				let cubo = numero**exponente;
+				//let cubo = numero * numero * numero;
+				//let cubo = 5*5*5;
+				//let cubo = Math.pow(numero,exponente);
+				document.write("El número elevado al cubo es " + cubo);
+			}
+			cubo();
+					
+		</script>
+		
+	</head>
+	<body>
+
+	</body>
+</html>

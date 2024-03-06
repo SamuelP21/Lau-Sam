@@ -1,0 +1,79 @@
+<!-- Prueba de código HTML-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo Variables 2.</title>
+		<meta charset="UTF-8">
+		<script>
+
+		/* Variables tipo texto*/
+		
+			var a,b,c,d,e,f;
+			
+			
+			a="45.6363";
+			//a= parseInt(a);
+			b=20;
+			c = a+b;
+			c=parseInt(a)+b;
+			d=parseFloat(a)+b;
+			//document.write("La suma es: " + a+b + "<br>");
+			//document.write("La suma es: " + (parseInt(a)+b) + "<br>");
+			document.write("La suma es: " + c + "<br>");//Conversión explícita a entero.
+			document.write("La suma es: " + d + "<br>");//Conversión explícita a número real.
+			document.write("La división es: " + a/b + "<br>");//Conversión implícita.
+		
+		
+		/* Variables numéricas.*/
+		
+		/*
+			a=prompt("Introduce un número","");
+			a=parseInt(a);
+			b=parseInt(prompt("Introduce otro número",""));
+			c = a+b;
+			d=prompt("Introduce un número","");
+			d=parseFloat(d);
+			e=parseFloat(prompt("Introduce otro número",""));
+			f = d+e;
+			document.write("La suma es: " + c + " Un número entero <br>");
+			document.write("La suma es: " + f + " Un número real <br>");
+		*/
+		
+		/* Variables y HTML.*/
+		
+		/*
+			var texto = "Hola a todos";
+			var nombre = prompt("Introduzca su nombre","");
+			var apellido1 = "Pérez";
+			var edad1 = 20;
+			var edad2;
+			//edad2 = prompt("Introduzca su edad","");
+			edad2 = prompt("Introduzca su edad","La edad debe escribirse con un número");
+			num1 = 2;
+			num2 = 5;
+			var num3 = "8";
+			//alert("Hola Mundo");
+			//alert(texto);
+			document.write("<h1>"+texto+"</h1>");
+			document.write("<h1>"+"texto"+"</h1>");
+			document.write("Hola Mundo");
+			document.write("<h1>"+"Hola Mundo"+"</h1>");
+			document.write("<ul>"+"<li>"+"Uno"+"</li>"+"<li>"+"Dos"+"</li>"+"</ul>");
+			document.write("<ul>"+"<li>"+nombre+"</li>"+"<li>"+apellido1+"</li>"+"</ul>");
+			document.write("<ul>"+"<li>"+nombre+"</li>"+"<li>"+apellido1+"</li>"+"</ul>");
+			document.write("Te llamas "+nombre+ " " +apellido1+" y tienes " + edad1 + " años" + "<br>");
+			document.write("Te llamas "+nombre+ " " +apellido1+" y tienes " + edad2 + " años" + "<br>");
+			document.write("Estos 2 números están concatenados: "+ num1 + num2 + "<br>");
+			document.write("Estos 2 números están sumados: "+ (num1 + num2)+ "<br>");
+			document.write("Estos 2 números están concatenados: "+ (num1 + num3));
+			*/
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+	
+</html>

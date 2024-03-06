@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	
+		<meta charset="utf-8" />
+		<title>Document 4 Acceso a DOM</title>
+		<style>
+		
+			[id $= '1']{color:orange;}<!-- No tiene porque haber reglas CSS para poder usar los
+			métodos querySelector() y querySelectorAll().-->
+			
+		</style>
+	</head>
+	
+	<body>
+		<div id = "d" >
+			<h2>Lista de socios.</h2>
+			<p id = "p1">
+				Sólo se muestran los socios que han pagado la cuota del año actual.
+			</p>
+			<ul id = "lista-uno">
+				<li id = "l1" class = "hombre">Juan</li>
+				<li id = "l2" class = "hombre">José</li>
+				<li id = "l3" class = "mujer">Eva</li>
+				<li id = "l4" class = "hombre">Pepe</li>
+				<li id = "l5" class = "mujer">Cristina</li>
+				<li id = "l6" class = "mujer">Rosa</li>
+				<li id = "l7" class = "hombre">Luis</li>
+				<li id = "l8" class = "hombre">Antonio</li>
+				<li id = "l9" class = "mujer">Eugenia</li>
+			</ul>
+		</div>
+
+		<script>	
+		//Ejercicio 1.
+	/*	
+			let soc = new Array();
+			//let soci; // Hay que crear un array nuevo, no sirve una variable para mostrar los socios ordenados.
+			let socios = document.getElementsByTagName("li");
+			document.write("Número de socios: " + socios.length + "<br>");
+			for(let i = 0; i < socios.length; i++)
+			{
+				document.write("Nombres de los socios: " + socios[i].innerHTML+ "<br>"); // Muestra cada un socio en cada vuelta.
+				soc[i] = socios[i].innerHTML; // Carga un socio en cada vuelta en un nuevo array.
+				//soci = socios[i].innerHTML; // Carga un socio en cada vuelta, sobrescribe el anterior y por eso luego no se muestran ordenados.
+				
+			}
+			document.write("Nombres de los socios en orden inverso: " + soc.reverse() + "<br>");	
+			document.write("Nombres de los socios ordenados: " + soc.sort() + "<br>"); 
+			//document.write("Nombres de los socios ordenados: " + soci.sort() + "<br>");// No funciona, muestra solo el último socio.
+			document.write("Nombres de los socios ordenados: " + socios.sort() + "<br>");// No funciona ya dentro de socios está el nodo.
+*/
+		
+		//Ejercicio 2.
+/*	
+			let socH = new Array();
+			let socM = new Array();
+			let sociosHombres = document.getElementsByClassName("hombre");
+			let sociosMujeres = document.getElementsByClassName("mujer");
+			document.write("Número de socios masculinos: " + sociosHombres.length + "<br>");
+			document.write("Número de socios femeninos: " + sociosMujeres.length + "<br>");
+			for(let i = 0; i < sociosHombres.length; i++)
+			{
+		
+				socH[i] = sociosHombres[i].innerHTML;
+				
+			}
+			
+			for(let i = 0; i < sociosMujeres.length; i++)
+			{
+		
+				socM[i] = sociosMujeres[i].innerHTML;
+				
+			}
+			document.write("Nombres de los socios masculinos: " + socH.sort() + "<br>");	
+			document.write("Nombres de los socios femeninos: " + socM.sort() + "<br>");
+			
+	*/	
+		//Ejercicio 3A.
+/*
+			let uno = document.querySelectorAll("[id $= '1']");
+			//let uno = document.querySelectorAll("#l1, #p1");
+			
+			document.write("Total de elementos cuyo identificador termina en un 1: " + uno.length + "<br>");
+			for(let i = 0; i < uno.length; i++)
+			{
+		
+				document.write("Los elementos cuyo identificador termina en un 1 son: " + uno[i].innerHTML + "<br>");
+								
+			}
+	*/				
+		//Ejercicio 3B.
+		/*
+			let a = document.getElementById("p1").innerHTML;
+			let b= document.getElementById("l1").innerHTML;
+			let c = new Array();
+			c[0]=a;
+			c[1]=b;
+			document.write("Total de elementos cuyo identificador termina en un 1: " + c.length + "<br>");
+			document.write("Los elementos cuyo identificador termina en un 1 son: " + c[0] + "<br>");
+			document.write("Los elementos cuyo identificador termina en un 1 son: " + c[1] + "<br>");
+		*/
+		</script>
+		
+		
+		
+	</body>
+</html>

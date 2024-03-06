@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	
+		<meta charset="utf-8" />
+		<title>Pseudoestilos</title>
+		
+		<style type="text/css">
+		
+		/* Pseudoestilos de párrafo */
+			-p::first-letter{margin-right: 10px; font-size: 40px; color:blue;}
+			-div .parr::first-letter{margin-right: 20px; font-size: 40px; color:blue;}
+			-#d2 .parr::first-letter{margin-right: 20px; font-size: 40px; color:blue;}
+			-#d1 #p1::first-line{color:maroon; font-size: 40px;}
+			
+		/* Pseudoestilos de inserción */
+		
+			-h1::before{content:url(guitarra.png);}
+			-h1::before{content:"La ";}
+			-h1::after{content:url(guitarra.png);}
+			-h1::after{content:" de Madrid";}
+			-h1::before{content:url(mas.ico);}
+				
+		</style>
+	
+	</head>
+	
+	<body>
+	<ul>
+	
+		<li id ="ele-uno">uno</li> 
+		<li id ="ele-dos">dos</li>
+		<li id ="elemento-3">tres</li>
+		<li>cuatro</li> 
+		<li>cinco</li>
+		<li>seis</li>
+		
+	</ul>
+	
+	
+	
+	
+		<h1>Universidad Complutense</h1>
+		<div id="d1">
+			<p id="p1" class ="colores">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			<p class = "parr">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+			<p class = "parr">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+		
+		</div>
+		<div id="d2">
+		<p class = "parr">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+		<p id = "p2">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,5 @@
+
+*[class]{font-weight: bold;}
+a [title]{text-decoration:solid;}
+*[class ="ptexto"]{color: red;}
+p [class ^="t"]{text-decoration: line-through;}

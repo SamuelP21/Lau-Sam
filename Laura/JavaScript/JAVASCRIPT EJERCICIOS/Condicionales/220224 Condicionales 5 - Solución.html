@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condicionales 5</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+		// Ejercicio con If Anidados.
+		/*
+			  var nota1, nota2, nota3, notaMedia;
+			  nota1 = parseInt(prompt("Nota de la primera asignatura:",""));
+			  nota2 = parseInt(prompt("Nota de la segunda asignatura:",""));
+			  nota3 = parseInt(prompt("Nota de la tercera asignatura:",""));
+			  notaMedia = Math.round((nota1 + nota2 + nota3)/3);
+			  
+			  if (notaMedia >= 9)
+			  //if (notaMedia==10 || notaMedia == 9) //Acotar el limite superior y preguntar por 2 valores exactos.
+			  //if (notaMedia<=10 && notaMedia >= 9) //Acotar el limite superior y evaluar múltiples valores.
+			  {
+				document.write("Sobresaliente");
+			  }
+				else if(notaMedia >= 7)
+			  {
+				document.write("Notable");
+			  }
+				else if (notaMedia == 6)
+			  {
+				document.write("Bien");
+			  }
+				else if(notaMedia == 5)
+			  {
+				document.write("Suficiente");
+			  }
+				else if(notaMedia < 5)
+				//else if(notaMedia < 5 && notaMedia >=0)//Acotar el limite inferior y evaluar múltiples valores.
+				
+			  {
+				document.write("Suspenso");
+			  }
+				else
+			  {
+				document.write("El alumno no ha realizado los exámenes o hay un error en las notas");
+			  }
+		*/	
+		// Ejercicio con Switch...Case Valores Exactos.
+		/*
+				var nota1, nota2, nota3, notaMedia;
+				nota1 = parseInt(prompt("Nota de la primera asignatura:",""));
+				nota2 = parseInt(prompt("Nota de la segunda asignatura:",""));
+				nota3 = parseInt(prompt("Nota de la tercera asignatura:",""));
+				notaMedia = Math.round((nota1 + nota2 + nota3)/3);
+				
+				switch(notaMedia)
+				{
+					case 10:
+					case 9:
+						document.write("Sobresaliente");
+						break;
+					case 8:
+					case 7:
+						document.write("Notable");
+						break;
+					case 6:
+						document.write ("Bien");
+						break;
+					case 5:
+						document.write ("Suficiente");
+						break;
+					case 4:
+					case 3:
+					case 2:
+					case 1:
+					case 0:
+						document.write("Suspenso");
+						break;
+					default:
+						document.write("El alumno no ha realizado los exámenes o ha habido un error");
+						break;
+				}
+		*/				
+		// Ejercicio con Switch...Case Expresiones Condicionales.
+		/*	
+				var nota1, nota2, nota3, notaMedia;
+				nota1 = parseInt(prompt("Nota de la primera asignatura:",""));
+				nota2 = parseInt(prompt("Nota de la segunda asignatura:",""));
+				nota3 = parseInt(prompt("Nota de la tercera asignatura:",""));
+				notaMedia = Math.round(nota1 + nota2 + nota3)/3);
+				//notaMedia = ((nota1 + nota2 + nota3)/3).toFixed(3); // Cálculo de la media con mayor precisión.
+				switch(true)
+				{
+					case (notaMedia >= 9):
+					//case (notaMedia==10 || notaMedia == 9): //Acotar el limite superior y preguntar por 2 valores exactos.
+			        //case (notaMedia<=10 && notaMedia >= 9): //Acotar el limite superior y evaluar múltiples valores.
+					//case (notaMedia<=10.000 && notaMedia >= 8.850): //Acotar el limite superior y evaluar múltiples valores con 3 decimales.
+						document.write("Sobresaliente");
+						break;
+					case (notaMedia >= 7):
+						document.write("Notable");
+						break;
+					case (notaMedia == 6):
+						document.write ("Bien");
+						break;
+					case (notaMedia == 5):
+						document.write ("Suficiente");
+						break;
+					case (notaMedia < 5):
+					//case(notaMedia < 5 && notaMedia >=0): //Acotar el limite inferior y evaluar múltiples valores.
+						document.write("Suspenso");
+						break;
+					default:
+						document.write("El alumno no ha realizado los exámenes");
+						break;
+				}
+		*/
+		</script>
+
+	</head>
+	<body>
+			
+		
+	</body>
+	
+</html>

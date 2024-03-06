@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bucles While y Do..While</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+		//Ejercicio 1.
+		/*
+			 
+			  let clave = prompt("Introduzca su clave","");
+			  let password="1234";
+			  //while (clave != "1234")
+			  while (clave != password)
+			  {
+			  
+				clave = prompt("Introduzca su clave","");
+								
+			  }
+			  document.write("Clave Correcta - Acceso Permitido");
+		*/	  
+		//Ejercicio 2.	  
+		/*
+			  let clave;
+			  let password="1234";
+			  do
+			  {
+				clave = prompt("Introduzca su clave","");
+			  } //while (clave != "1234")
+			  while (clave != password)
+			  document.write("Clave Correcta - Acceso Permitido");
+	*/
+		//Ejercicio 3. Variante A.
+		 /*     let clave;
+			  let intentos = 0;
+			 
+			  while (clave != "1234")
+			  { 
+				clave = prompt("Introduzca su clave","");
+				intentos++;
+				if (intentos > 2)
+					{
+						break;
+					}
+					
+			  }
+			  if (clave =="1234")
+				{
+					document.write("Clave Correcta - Acceso Permitido");
+				}
+			  else
+				{
+					document.write("Clave Incorrecta - Acceso Denegado - 3 Intentos fallidos");
+				}
+			*/
+			/*	
+			  //Ejercicio 3. Variante B.
+			 
+			  let clave;
+			  let intentos = 0;
+			  
+			  while (clave != "1234" && intentos <= 2)
+			  { 
+				clave = prompt("Introduzca su clave","");
+				intentos++;
+				
+			  }
+			  if (clave =="1234")
+				{
+					document.write("Clave Correcta - Acceso Permitido");
+				}
+			  else
+				{
+					document.write("Clave Incorrecta - Acceso Denegado - 3 Intentos fallidos");
+				}
+			*/
+		//Ejercicio 4. Variante A.
+		
+		
+			  let clave;
+			  let intentos = 1;
+			  			  
+			  do
+			  { 
+				clave = prompt("Introduzca su clave","");
+				intentos++;
+				if (intentos > 3)
+					{
+					break;
+					}
+			  }while (clave != "1234")
+			  
+				  if (clave =="1234")
+				  {
+					document.write("Clave Correcta - Acceso Permitido");
+				  }
+				  else
+				  {
+					document.write("Clave Incorrecta - Acceso Denegado");
+				  }		  
+			
+
+			//Ejercicio 4. Variante B.
+			/*  
+			  let clave;
+			  let intentos = 0;
+			  
+			 do
+			  { 
+				clave = prompt("Introduzca su clave","");
+				intentos++;
+				
+			  } while (clave != "1234" && intentos <= 2)
+			  if (clave =="1234")
+				{
+					document.write("Clave Correcta - Acceso Permitido");
+				}
+			  else
+				{
+					document.write("Clave Incorrecta - Acceso Denegado - 3 Intentos fallidos");
+				}*/
+				
+		</script>
+		
+	</head>
+	<body>
+
+	</body>
+</html>

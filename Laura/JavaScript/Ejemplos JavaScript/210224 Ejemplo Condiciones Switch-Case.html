@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condiciones con Switch...Case</title>
+		<meta charset="UTF-8">
+		
+	</head>
+<body>
+
+		<script>
+
+		//Condicional o Alternativa Múltiple.
+
+		
+		//Con variable y valores textuales.
+	
+			let color;
+			color = prompt("¿Cual e tu color favorito?","").toLowerCase();
+			switch (color)
+			{
+				
+				case "verde":
+				document.write("El " + color + " es muy bonito");
+				break;
+				
+				case "negro":
+				document.write("El " + color + " no me gusta");
+				break;
+				
+				default:
+				document.write("Prefiero otro color");
+				break;
+				
+			}
+		// Con valor booleano y condición.
+		
+			let n1 = 67;
+			let n2 = 56;
+			switch(true)
+			{ 
+				case (n1 > n2):
+				document.write("El primer número es mayor que el segundo");
+				break;
+				case (n1 == n2):
+				document.write("Ambos números son iguales");
+				break;
+				case (n1<n2):
+				document.write("El segundo número es mayor que el primero");
+				break;
+			}
+
+		
+		// Con valores agrupados.
+/* 			let color;
+			color = prompt("¿Cuál es tu color favorito?","");
+			switch (color)
+			{
+						
+				case "verde":
+				case "azul":
+				case "rojo":
+
+					document.write("El color"+" \" "+ color +" \" " + " es muy bonito.");
+					break;
+							
+				case "negro":
+				case "marrón":
+
+					document.write("El color " + color + " no me gusta.");
+					break;
+							
+				default:
+					document.write("Prefiero otro color.");
+					break;
+			}
+			 */
+			
+	</script>
+
+		
+	</head>
+	<body>
+		
+	</body>
+	
+</html>		
+			

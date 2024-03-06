@@ -1,0 +1,62 @@
+<!-- Prueba de código HTML-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Selector Jerárquicos.
+		</title>
+		<meta charset="UTF-8">
+		<style>
+		
+			
+		/* Selectores jerárquicos */
+		
+		/* Descendientes.*/
+		
+			-div h1{color:red;}
+			-ul h1{color:orange;}
+			-body div ul h1{color:orange;}
+				
+		/* Descendientes directos. */
+		
+			-div>h1{color:green}
+			
+		/* Hermanos adyacentes.*/
+		
+			-h1+p{color:pink}
+			
+		/* Hermanos. */
+		
+			h1~ul{color:blue}
+			h1~li{color:red}
+	
+		</style>
+		
+	
+	</head>
+	<body>
+		<div>
+			<h1>Título1</h1>
+			<p>Párrafo 1 </p>
+			<p>Párrafo 2 </p>
+			<ul>
+				<h1>Título2</h1>
+				<p>Párrafo 3 </p>
+				<li>uno</li>
+				<li>dos</li>
+				<ul>
+					<li>dos A</li>
+					<li>dos B</li>
+				</ul>
+				<li>tres</li>
+			</ul>	
+			<h1>Título3</h1>
+		</div>
+		<p>Párrafo 4 </p>
+		<h1>Título4</h1>
+		
+	</body>
+	
+</html>

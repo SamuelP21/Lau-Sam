@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays 6</title>
+		<meta charset="UTF-8">
+
+		<script>
+		
+
+		// Ejercicio con bucles for.
+		
+				let productos = new Array(8);
+				let contador;
+				
+				for (contador = 0; contador <= 7; contador++)
+				
+				{
+					productos[contador] = prompt("Introduce un producto");
+					document.write("En la posicion " + contador + " del array de productos está el producto " + productos[contador] + "<br>");
+				}
+
+		// Ejercicio con bucles for in.
+
+				for (contador in productos) {
+					{
+					document.write("En la posicion " + contador + " del FOR IN está el producto " + productos[contador] + "<br>");
+					}
+				}
+
+		// Ejercicio con bucles for of.
+
+				for (contador of productos) 
+				{
+
+					document.write("En la posición " + productos.indexOf(contador) + " del FOR OF está el productos con FOR OF: " + contador + "<br>");
+				}
+
+
+		// Ejercicio con bucles forEach.
+
+				productos.forEach(funcionArray);
+						
+						function funcionArray(a,b)
+						{
+							document.write("En el array " + b + "del FOR EACH está el producto " + a + "<br>");
+						}
+
+				
+			</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>

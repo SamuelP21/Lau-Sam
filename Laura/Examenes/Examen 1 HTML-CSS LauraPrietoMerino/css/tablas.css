@@ -1,0 +1,10 @@
+table {margin: auto;
+    text-align: center;
+    font-family:calibri, verdana, sans-serif;}
+
+thead, tfoot {background-color:black; 
+            color:white; 
+            font-weight: bold;
+            font-size: 20px;}
+
+tbody {background-color: orange;}

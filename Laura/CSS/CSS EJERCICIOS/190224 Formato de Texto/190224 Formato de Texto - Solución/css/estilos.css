@@ -1,0 +1,31 @@
+	
+	/* Ejercicio Formato de Texto. */
+	
+			p{text-indent: 5%;} 						
+			#p1{letter-spacing: 5px;} 			
+			#p2{word-spacing:30px}			
+			#p1{line-height: 1.5}			
+			#p2{line-height: 200%}			
+			p{text-align:justify}
+			#mayus{text-transform: uppercase;} 			
+			#minus{text-transform: lowercase;} 			
+			#letra1{text-transform: capitalize;}
+			
+			#d-i{direction:rtl}
+			
+			/*#d-i{direction:rtl;
+			unicode-bidi:bidi-override;} Opción para invertir los caracteres.*/
+			
+			#i-d{direction:ltr}
+			
+			.div2{font-family:georgia;}
+			#p0{font-family:impact; font-size-adjust: 0.481;}
+			
+			#blanco1{white-space:none}
+			#blanco2{white-space:pre}
+			#blanco3{white-space:nowrap}
+			#relatividad{vertical-align:super}
+			#agua{vertical-align:sub}
+			#up{vertical-align:1.2em}
+			#down{vertical-align:-1.2em}
+			#sombra{text-shadow: 4px 4px 2px #000

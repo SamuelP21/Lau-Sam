@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bucles For</title>
+		<meta charset="UTF-8">
+		<script>
+		
+		//Variable contadora definida antes del bucle.
+		document.write("<br><br>Ejercicio 1 <br><br>");
+			var x;
+			for(x = 1; x <=10; x++)
+			{
+				document.write("La variable x vale: " + x +"<br>");
+			}
+		
+		//Variable contadora definida antes del bucle con valor inicial introducido por teclado.
+		/*	document.write("<br><br>Ejercicio 2 <br><br>");
+			
+			var a = parseInt(prompt("Introduce el valor inicial.",""));
+		    var x;
+			for(x = a; x <=10; x++)
+			{
+				document.write("la variable x vale: " + x +"<br>");
+			}*/
+		//Variable contadora definida antes del bucle con valor inicial introducido por teclado y nuevas preguntas si se mete mal el valor..
+		/*	document.write("<br><br>Ejercicio 3 <br><br>");
+			
+			var a = parseInt(prompt("Introduce el valor inicial.",""));
+		    var x;
+			while(a > 10)
+				
+			{
+				a = parseInt(prompt("Incorrecto. El numero debe ser menor o igual a 10. Introduce nuevo número",""));
+			}
+			
+			for(x = a; x <=10; x++)
+			{
+				document.write("la variable x vale: " + x +"<br>");
+			}
+		*/				
+		//Variable contadora definida dentro de la instrucción for.
+		/*	document.write("<br><br>Ejercicio 4 <br><br>");
+			
+			document.write("<br><br><br>");
+			for(var x = 1; x <=10;x++)
+			{
+					document.write("la variable x vale: " + x +"<br>");
+			}*/
+		// 2 bucles anidados.
+		/*	document.write("<br><br>Ejercicio 5 <br><br>");
+			var x;
+			var y;
+			for(x = 1; x <=10;x++)
+			{
+				for(y = 1; y <=3;y++)
+				{
+					//document.write("valor de x: " + x + " valor de y: "+ y +"<br>");
+					document.write("Esta es la vuelta " + x + " del primer for, para la vuelta " + y + " del segundo for <br>");
+				}
+			}
+*/
+	
+		// continue.
+		/*	document.write("<br><br>Ejercicio 6: Instrucción continue <br><br>");	
+			var x;
+			for(x=1;x<=10;x++)
+			{
+				if(x==7)
+				{
+					continue;
+				}
+				document.write("Contador: " + x +"<br>");
+			
+			}
+		
+		// break.
+			document.write("<br><br>Ejercicio 7: Instrucción break <br><br>");
+			var x;
+			for(x = 1; x <=10;x++)
+			{
+				if (x==5)
+				{
+					break;
+				}
+				document.write("la variable x vale: " + x +"<br>" );
+			}
+
+		*/
+		
+		// Mismo ejercicio con bucle while.
+			document.write("<br><br>Ejercicio 8: Equivalencia con bucle while <br><br>");
+			var x;
+			x=1;
+			while(x<=10)
+			{
+				document.write("La variable x vale: " + x +"<br>");
+				x++;
+			}
+		// Mismo ejercicio con bucle do...while.
+			document.write("<br><br>Ejercicio 9: Equivalencia con bucle do...while <br><br>");
+			var x;
+			x=1;
+			do
+			{
+				document.write("La variable x vale: " + x +"<br>");
+				x++;
+			}while(x<=10)
+		</script>
+		
+	</head>
+	<body>
+
+	</body>
+</html>

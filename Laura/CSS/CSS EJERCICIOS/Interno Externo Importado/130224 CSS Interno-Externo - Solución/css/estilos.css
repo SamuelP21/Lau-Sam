@@ -1,0 +1,17 @@
+			
+			
+			/* Archivo Estilos Internos-Externos*/
+						
+			div{border: 5px double red; width:500px; margin-left: 50px;background-color:gray}
+			body{color:navy;}
+			h1,h2{font-family:arial;padding: 20px;}
+			h1{font-size:18pt}
+			h2{font-size:16pt}
+			span{font-weight:bold}
+			p{padding: 20px;font-family:arial,cambria,sans-serif;text-align:justify}
+			p::first-line{text-decoration:line-through}
+			a:link{color:green; text-decoration:none}			
+			a:visited{color:yellow;}			
+			a:hover{color:red; font-size:20px}
+			a:active{color:black;}
+			

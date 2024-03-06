@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo Funciones con varios return</title>
+		<meta charset="UTF-8">
+
+		<script>
+		
+			//Función Clásica. Varios Return alternativos.
+			
+			let numero1, numero2, mensaje;
+			numero1 = parseInt(prompt("Introduce un número",""));
+			numero2 = parseInt(prompt("Introduce un número",""));
+						
+			function numeroMayor(n1,n2)
+			{
+			
+				if(n1 > n2)
+				{
+					return "El primer número es mayor que el segundo";
+				} 
+				else
+				{
+					return "El segundo número es mayor o igual que el primero";
+				}
+				
+			}
+			
+			mensaje = numeroMayor(numero1,numero2);
+			document.write(mensaje);
+		
+			//Función Flecha. Varios Return usando un Array.
+			/*
+			let numero1, numero2, resultado;
+			
+			numero1 = parseInt(prompt("Introduce un número",""));
+			numero2 = parseInt(prompt("Introduce un número",""));
+						
+			let calcular = (n1,n2)=>
+			{
+			
+				let suma = n1 + n2;
+				let producto = n1 * n2;
+				let resta = n1 - n2;
+				let division = n1/n2;
+				
+				//Opciones con return incorrectas para devolver varios resultados.
+				
+				//return suma;
+				//return producto;
+				//return resta;
+				//return division;
+				
+				//return suma, producto, resta, division;
+				
+				//Opciones con return correctas para devolver varios resultados.
+				
+				let calculos = [suma, producto, resta, division];
+				return calculos;
+				
+				//return [suma, producto, resta, division];
+				
+			}
+			
+			// Variante de ejecución de la función usando una variable que recoge el resultado retornado.
+			
+				resultado = calcular(numero1,numero2);
+				document.write("Suma: " + resultado[0] + "<br>");
+				document.write("Multiplicación: " + resultado[1] + "<br>");
+				document.write("Resta: " + resultado[2] + "<br>");
+				document.write("División: " + resultado[3] + "<br>");
+			
+			// Variante de ejecución de la función sin crear una variable cargue el resultado retornado.
+			
+				// Mostrar cada resultado por separado.
+			/*	
+				document.write("Suma: " + numeroMayor(numero1,numero2)[0] + "<br>");
+				document.write("Multiplicación: " + numeroMayor(numero1,numero2)[1] + "<br>");
+				document.write("Resta: " + numeroMayor(numero1,numero2)[2] + "<br>");
+				document.write("División: " + numeroMayor(numero1,numero2)[3] + "<br>");
+				
+				// Mostrar todos los resultados juntos.
+				
+				document.write("Cálculos: " + numeroMayor(numero1,numero2) + "<br>");
+			*/
+		</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>	

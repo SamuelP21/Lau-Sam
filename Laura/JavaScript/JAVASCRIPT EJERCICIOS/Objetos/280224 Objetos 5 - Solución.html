@@ -1,0 +1,61 @@
+--<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos 5</title>
+		<meta charset="UTF-8">
+
+		<script>
+	
+			function Trabajador(nom, ape, nh, sb)
+			{
+				this.nombre = nom;
+				this.apellidos = ape;
+				this.nhijos = nh;	
+				this.sueldoBruto = sb;	
+				this.calcularSueldoNeto = function() // Cálculos realizados 2 dos formas distintas.
+				{
+					if (this.nhijos >= 3) //Alternativa. Uso de la propiedad con el número de hijos.
+					{
+						let irpf = (this.sueldoBruto*6)/100;
+						let ss = (this.sueldoBruto*5)/100;
+						//let neto = this.sueldoBruto - irpf - ss;
+						//return neto;
+						return this.sueldoBruto - irpf - ss;
+					}
+						else if (nh >= 1) //Alternativa. Uso del parámetro con el número de hijos.
+					{
+						return this.sueldoBruto - (this.sueldoBruto*12)/100 - (this.sueldoBruto*5)/100;
+					}
+						else if (nh == 0) //Alternativa. Uso del parámetro con el número de hijos.
+					{
+						return this.sueldoBruto - (this.sueldoBruto*18)/100 - (this.sueldoBruto*5)/100;
+					}
+				}
+			}
+				let juan = new Trabajador("Juan", "López Ruiz", 2 , 1200.00);
+				let pepe = new Trabajador("José", "Ruiz Álvarez Ruiz", 0 , 960.00);
+				let ana = new Trabajador("Ana", "Sánchez Martín", 4 , 1340.00);
+				
+				// Alternativa sin variables que cargan los sueldos netos retornados por la función calcularSueldoNeto().
+				
+				document.write("El trabajador "+ juan.nombre + " " + juan.apellidos + " cobra " + juan.calcularSueldoNeto() + " euros <br>");
+				document.write("El trabajador "+ pepe.nombre + " " + pepe.apellidos + " cobra " + pepe.calcularSueldoNeto() + " euros <br>");
+				document.write("El trabajador "+ ana.nombre + " " + ana.apellidos + " cobra " + ana.calcularSueldoNeto() + " euros <br>");
+				
+				// Alternativa con variables que cargan los sueldos netos retornados por la función calcularSueldoNeto().
+				
+				let netoJuan = juan.calcularSueldoNeto();
+				let netoPepe = pepe.calcularSueldoNeto();
+				let netoAna = ana.calcularSueldoNeto();
+				
+				document.write("El trabajador "+ juan.nombre + " " + juan.apellidos + " cobra " + netoJuan + " euros <br>");
+				document.write("El trabajador "+ pepe.nombre + " " + pepe.apellidos + " cobra " + netoPepe + " euros <br>");
+				document.write("El trabajador "+ ana.nombre + " " + ana.apellidos + " cobra " + netoAna + " euros <br>");
+				
+		</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>

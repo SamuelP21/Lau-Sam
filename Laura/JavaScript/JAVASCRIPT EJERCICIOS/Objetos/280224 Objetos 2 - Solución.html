@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos 2</title>
+		<meta charset="UTF-8">
+
+		<script>
+		
+			
+		//Ejercicio 1A. Sin métodos dentro de la clase y sin párametros en el constructor.
+		
+		//Creación de la clase u objeto prototípico.
+		/*	
+			function Amigos ()
+			{
+				this.nombre;
+				this.apellidos;
+				this.direccion;
+				this.telefono;
+			}
+	
+		//Creación de las instancias u objetos.
+			
+			let amigo1 = new Amigos();
+			let amigo2 = new Amigos();
+			let amigo3 = new Amigos();
+			
+		//Introducción de datos accediendo a las propiedades de cada instancia.
+			
+			amigo1.nombre= "Freddy";
+			amigo1.apellidos = "Krueger Cuchillas";
+			amigo1.direccion = "C/ Felices Sueños 1";
+			amigo1.telefono = "123456789";
+			
+			amigo2.nombre= "Alien";
+			amigo2.apellidos = "Terminator Depredador";
+			amigo2.direccion = "C/ Nostromo 4";
+			amigo2.telefono = "987654321";
+			
+			amigo3.nombre= "Drácula";
+			amigo3.apellidos = "Vampiro Zombie";
+			amigo3.direccion = "C/ Transilvania 9";
+			amigo3.telefono = "987654321";
+		
+		//Mostrar el contenido de las propiedades accediendo a éstas para cada instancia.
+		
+			document.write("Te llamas "+ amigo1.nombre + " " + amigo1.apellidos+ ", vives en " + amigo1.direccion + " y tu número de teléfono es el " + amigo1.telefono + "<br>");
+			document.write("Te llamas "+ amigo2.nombre + " " + amigo2.apellidos+ ", vives en " + amigo2.direccion + " y tu número de teléfono es el " + amigo2.telefono + "<br>");
+			document.write("Te llamas "+ amigo3.nombre + " " + amigo3.apellidos+ ", vives en " + amigo3.direccion + " y tu número de teléfono es el " + amigo3.telefono + "<br>");	
+		*/
+		//Ejercicio 1B. Sin métodos dentro de la clase y con parámetros en el constructor.
+			
+		// Creación de la clase u objeto prototípico.
+		/*	
+			function Amigos(nombre, apellidos, dir, tel)
+			{
+				this.nombre = nombre;  
+				this.apellidos = apellidos;
+				this.direccion = dir;
+				this.telefono = tel;
+			}
+			
+		//Creación de las instancias u objetos y carga de datos vía parámetros.
+			
+			let amigo1 = new Amigos ("Freddy", "Krueger Cuchillas", "C/ Felices Sueños 1", "123456789");
+			let amigo2 = new Amigos ("Alien", "Terminator Depredador", "C/ Nostromo 4", "987654321");
+			let amigo3 = new Amigos ("Drácula", "Vampiro Zombie", "C/ Transilvania 9", "987654321");
+			
+		//Mostrar el contenido de las propiedades accediendo a éstas para cada instancia.
+			
+			document.write("Te llamas "+ amigo1.nombre + " " + amigo1.apellidos+ ", vives en " + amigo1.direccion + " y tu número de teléfono es el " + amigo1.telefono + "<br>");
+			document.write("Te llamas "+ amigo2.nombre + " " + amigo2.apellidos+ ", vives en " + amigo2.direccion + " y tu número de teléfono es el " + amigo2.telefono + "<br>");
+			document.write("Te llamas "+ amigo3.nombre + " " + amigo3.apellidos+ ", vives en " + amigo3.direccion + " y tu número de teléfono es el " + amigo3.telefono + "<br>");
+		*/	
+		//Ejercicio 1C. NO PEDIDO EN EL EJERCICIO. - Con método interior para mostrar los datos de los objetos y con parámetros en el constructor.
+			
+		// Creación de la clase u objeto prototípico.
+		/*	
+			function Amigos (nombre, apellidos, direccion, telefono)
+			{
+				this.nombre = nombre;
+				this.apellidos = apellidos;
+				this.direccion = direccion;
+				this.telefono = telefono;
+				
+				this.imprimir = function ()
+				{
+					document.write("Te llamas "+ this.nombre + " " + this.apellidos+ ", vives en " + this.direccion + " y tu número de teléfono es el " + this.telefono + "<br>");
+				};
+			}
+			
+		//Creación de las instancias u objetos y carga de datos vía parámetros.
+			
+			let amigo1 = new Amigos ("Freddy", "Krueger Cuchillas", "C/ Morfeo 1", "123456789");
+			let amigo2 = new Amigos ("Alien", "Terminator Depredador", "C/ Nostromo 4", "987654321");
+			let amigo3 = new Amigos ("Drácula", "Vampiro Zombie", "C/ Transilvania 9", "987654321");
+		
+		//Mostrar el contenido de las propiedades accediendo a la función miembro imprimir().
+		
+			amigo1.imprimir();
+			amigo2.imprimir();
+			amigo3.imprimir();
+		*/	
+		
+		//Ejercicio 2.
+		/*
+			function Viajes (origen, destino, precio, transporte){
+				this.origen = origen;
+				this.destino = destino;
+				this.precio = precio;
+				this.transporte = transporte;
+				
+				this.datosViaje = function ()
+				{
+					document.write("Viaje: " + this.origen + "-" + this.destino + "<br>");
+					document.write("Precio: " + this.precio + "<br>");
+					document.write("Transporte: " + this.transporte + "<br><br>");
+				};
+				}
+				let viaje1 = new Viajes("Madrid", "Gijon", "50.00", "Tren");
+				viaje2 = new Viajes("Madrid", "Ibiza", "250.00", "Avión"); // Declaración ímplícita de la instancia.
+				viaje1.datosViaje();
+				viaje2.datosViaje();
+		*/	
+		//Ejercicio 3.
+
+			function Coches(marca, modelo, cilindrada, color, precio)
+			{
+				this.marca = marca;
+				this.modelo = modelo;
+				this.cilindrada = cilindrada;
+				this.color = color;
+				this.precio = precio;
+				
+								
+				this.arrancar = function()
+				{
+					document.write("Contacto y arranque <br>");
+				}
+				this.acelerar = function(velocidad)
+				{
+					document.write("Aumentando velocidad hasta " + velocidad + " Km/h <br>");
+				}
+				this.cambiarMarcha = function(marcha)
+				{
+					document.write("Se ha introducido la " + marcha + " marcha <br>");
+				}
+				
+			}
+	
+			let coche1 = new Coches("Ford", "Focus", "1800 c.c", "Azul Metalizado", 18000.50);
+			    coche2 = new Coches("Seat", "Alhambra", "2100 c.c.", "Blanco", 25000.00 ); // Declaración ímplícita de la instancia.
+			let coche3 = new Coches("Kia", "Carnival", "2000 c.c.", "Plateado", 30000.00);
+			let coche7 = new Array(7);
+			document.write("El primer coche es un " + coche1.modelo + " de la marca " + coche1.marca + ", y su precio " + coche1.precio + " \€ <br>");
+			document.write("El primer coche es un " + coche2.modelo + " de la marca " + coche2.marca + ", y su precio " + coche2.precio + " es en euros <br>");
+			document.write("El primer coche es un " + coche3.modelo + " de la marca " + coche3.marca + ", y su precio " + coche3.precio + " es en euros <br><br>");
+			document.write("----MÉTODOS--- <br>")
+			coche1.arrancar();
+			coche2.acelerar(120);
+			coche3.cambiarMarcha("5ª");
+		
+			// Contenido adicional no pedido en el ejercicio.
+			
+			
+				coche1.precio = 19000.00;
+				document.write("El coche 1 es un " + coche1.modelo + " de la marca " + coche1.marca + ", y su precio " + coche1.precio + " es de euros <br>");
+				coche1.combustible = "Gasoil";
+				document.write("El coche 1 es un " + coche1.modelo + " de la marca " + coche1.marca + ", y funciona con " + coche1.combustible + " <br>");
+				let coche4 = new Coches ("Ford", "Focus", "1800 c.c", "Azul Metalizado", 18000.50);
+				let coche5 = new Coches ("Ford", "Focus", "1800 c.c", "Azul Metalizado", 18000.50 );
+				coche5.combustible = "Gasolina";
+				document.write("El coche 4 es un " + coche4.modelo + " de la marca " + coche4.marca + ", y su precio " + coche4.precio + " es de euros <br>");
+				document.write("El coche 5 es un " + coche5.modelo + " de la marca " + coche5.marca + ", y funciona con " + coche5.combustible + " <br>");
+				delete coche1.modelo; // Elimina el valor de una propiedad para un objeto concreto.
+				document.write("El primer coche es un " + coche1.modelo + " de la marca " + coche1.marca + ", y funciona con " + coche1.combustible + " <br>");
+				document.write(coche1 instanceof Coches); 
+				document.write(" <br>");
+				document.write("coche7 es una instancia del objeto Coches " + (coche7 instanceof Coches)+ " <br>"); 
+				document.write(" <br>");
+				document.write("marca" in coche1);
+				document.write(" <br>");
+				document.write("combustible" in coche1);
+				document.write("combustible" in coche2);
+			
+		</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>

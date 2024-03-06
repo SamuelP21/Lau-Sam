@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	
+		<meta charset="utf-8" />
+		<title>Document 3 Acceso a DOM</title>
+		
+		<style type="text/css">
+		
+		
+			h1,p{color:blue}
+			.parr{font-weight:bold;}
+			ul~p{font-style:italic;}
+			#d1 #p1:first-line{color:maroon; font-size: 40px;}
+			ul{font-family:cambria; font-size:24px;}
+			ul :first-child{color:orange;}
+			[id^="ele"]{font-style:italic;}
+		
+		
+		</style>
+		<script>
+
+		</script>
+	
+	</head>
+	
+	<body>
+	
+	
+		<h1>Biblioteca Digital</h1>
+		<div id="d1">
+			<p id="p1" class ="colores">
+				1. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			<p id = "p2" class = "parr">
+				2. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+			<p id = "p3" class = "parr">
+				3. Localice el <span style = "font-style: italic">libro de su interés</span>; cree, modifique y almacene
+				sus propios exámenes.           Podrá exportar los exámenes en formato <em>PDF</em>,
+				imprimirlos y llevarlos al <span style = "color: green">aula</span>.
+			</p>
+		
+		</div>
+		<div id="d2">
+		
+			<ul>
+			
+				<li id ="ele-uno">uno</li> 
+				<li id ="ele-dos">dos</li>
+				<li id ="elemento-3">tres</li>
+				<li id ="4-elemento">cuatro</li> 
+				<li id ="quinto">cinco</li>
+				<li id ="sexto">seis</li>
+			
+			</ul>
+			<p class = "parr">
+				4. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+			<p class = "p1">
+				5. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+		</div>	
+		
+		
+		<script>
+			let par31 = document.getElementsById("p3").innerHTML;
+			let par32 = document.getElementsById("p3").innerText;
+			let par33 = document.getElementsById("p3").textContent;
+
+			document.write("Contenido del párrafo 3 : " + par31 + "<br>");
+			document.write("Contenido del párrafo 3 : " + par32 + "<br>");
+			document.write("Contenido del párrafo 3 : " + par33 + "<br>");
+
+			alert("El contenido del p3 es: " + p31);
+			alert("El contenido del p3 es: " + p32);
+			alert("El contenido del p3 es: " + p33);
+
+			let division2 = document.getElementsById("d2").innerHTML;
+			
+			let parrafos1 = document.getElementsByTagName("p")			
+			document.write("Planetas: " + parrafos1 + "<br>");
+	
+			let i;
+			for (i=0; i<dparrafos1.length; i++)
+			{
+			let par = parrafos1[i].innerHTML;
+			document.write("Contenido del párrafo "+ i + ": " + parrafos1 +"<br>");
+			document.write("Hay un total de " + par.length + " caracteres en cada párrafo.")
+			}
+
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+/*Hoja de estilos de prueba. */
+
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: brown;
+        background-color: antiquewhite;
+    }
+    body, h1 {  
+        background-color: antiquewhite;}
+

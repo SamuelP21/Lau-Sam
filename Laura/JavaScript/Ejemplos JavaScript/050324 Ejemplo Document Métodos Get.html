@@ -1,0 +1,224 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo Métodos Get</title>
+		<meta charset="UTF-8">
+		<style>
+		
+			p,h1{color:blue;}
+			.titulos{font-style:italic}
+			.animal{color:maroon;}
+			#e3{color: yellow;}
+			ul #e1{color:green;}
+			h4 + p{color:red;}
+			[name ^= "co"]{color:orange;}
+			-#div1 :nth-child(2){color:blue}
+		
+		</style>
+		
+		
+		<script>
+		
+		// Método getElementById() y propiedad innerHTML.
+		/*
+			//var a = document.getElementById("st"); //Introduce el valor null en a al ejecutarse antes el script que generarse la página.
+			var a = document.getElementById("st").innerHTML; // No funciona al ejecutarse antes el script que generarse la página y no haber contenido HTML aún.
+  			document.write("Contenido de la variable a : " + a + "<br>");
+		
+		// Método getElementsByName() y propiedad length.	
+			
+			var coches = document.getElementsByName("coche");
+			document.write("Contenido del array coches : " + coches.length + "<br>"); // No muestra número de elementos
+			//porque se ejecuta antes de crearse la página.
+		*/	
+		</script>
+	</head>
+
+	<body >
+	<div id = "div0">
+	
+		<h1 id ="t1">Objeto document</h1>
+		<p id ="st" class = "vehiculo" name = "coche"><strong>Seat</strong></p>
+		<p class = "vehiculo" name = "coche">Opel</p>
+		<p id ="can" class ="animal" name = "pajaro">Canario</p>
+		<p id ="f" style ="color:green" class = "vehiculo" name = "coche"><em>Ford</em></p>
+		<p class = "vehiculo" name = "avion"><strong>Boeing</strong></p>
+		<p id ="abus"class = "vehiculo" name = "avion">Airbus</p>
+		<p id ="av" class ="animal" name = "pajaro">Avestruz</p>
+		<p id ="es" class ="vehiculo" name = "cohete">Titán</p>
+		<h1 id ="t2">Fin Objeto document</h1>
+		
+	</div>	
+	<div id = "div1">
+			<h4>Lista de números</h4>
+			<p>Los números se muestran de forma textual</p>
+			<ul id = "lista">
+				<p>Párrafo dentro de una lista</p>
+				<li id = "e1">Uno</li>
+				<li id = "e2">Dos</li>
+				<li id = "e3">Tres</li>
+			</ul>
+			<img id ="ma" src = "mariposa.png" alt ="lepidoptero">
+		</div>
+	<script>
+		document.write("<br> A PARTIR DE AQUÍ------- MÉTODOS GET <br><br><br>");
+	// Método getElementById() y propiedades textContent, innerText e innerHTML.		
+	/*	var a = document.getElementById("st"); //Introduce el párrafo como elemento/nodo en la variable a.
+		document.write("Contenido de la variable a : " + a + "<br>");
+		var a1 = document.getElementById("st").innerHTML; //Introduce el contenido del párrafo <p> com elemento en la variable a.
+		document.write("Contenido de la variable a : " + a1 + "<br>");
+		var a2 = document.getElementById("st").getAttribute("class");
+		document.write("Contenido de la variable a : " + a2 + "<br>");
+		var z = document.getElementById("t1");
+		document.write("Contenido de la variable a : " + t1 + "<br>");
+		var b = document.getElementById("abus").innerHTML; 
+		var c = document.getElementById("av").textContent; //Introduce el contenido del párrafo <p> com elemento en la variable c.
+		var d = document.getElementById("st").textContent; 
+		var e = document.getElementById("ma").getAttribute("src");
+		var f = document.getElementById("ma").getAttribute("alt");
+		var g = document.getElementById("st").innerText; //Introduce el contenido del párrafo <p> com elemento en la variable g.
+		var h = document.getElementById("can").innerText;
+		document.write("Contenido de la variable a : " + a + "<br>");
+		document.write("Contenido de la variable b : " + b + "<br>");
+		document.write("Contenido de la variable c : " + c + "<br>");
+		document.write("Contenido de la variable d : " + d + "<br>");
+		document.write("Contenido de la variable e : " + e + "<br>");
+		document.write("Contenido de la variable f : " + f + "<br>");
+		document.write("Contenido de la variable g : " + g + "<br>");
+		document.write("Contenido de la variable h : " + h + "<br>");
+		document.write("<br>");
+		var i = document.getElementById("div0").innerText;
+		document.write("Contenido de la variable i : " + i + "<br>");
+	*/	
+		
+	// Método getElementsByName() y propiedades length, textContent e innerHTML.
+	
+	/*
+		var coches1 = document.getElementsByName("coche");
+		document.write("Contenido del array coches : " + coches1.length + "<br>");// Muestra que el número de elementos
+		//es 3, ya que son los elementos identificados con el atributo name = "coche".
+		
+		document.write("<br>");
+		
+		var aviones = document.getElementsByName("avion");
+		document.write("Contenido del array aviones : " + aviones.length + "<br>");
+		document.write("Contenido de una posición del array aviones usando la propiedad textContent: : " + aviones[0].textContent + "<br>");
+		document.write("Contenido de una posición del array aviones usando la propiedad textContent: " + aviones[1].innerHTML + "<br>");
+		document.write("Contenido de una posición del array aviones usando la propiedad innerHTML: " + aviones[0].innerHTML + "<br>");
+		document.write("Contenido de una posición del array aviones usando la propiedad innerHTML: " + aviones[1].innerHTML + "<br>");
+		
+		for(var i = 0; i < coches1.length; i++)
+		{
+			//var todosLosCoches = coches1[i].innerHTML;
+			//document.write("Contenido del array todosLosCoches : " + todosLosCoches + "<br>");
+			document.write("Contenido del array todosLosCoches : " + coches1[i].innerHTML + "<br>");
+			document.write("Contenido del array todosLosCoches : " + coches1[i].getAttribute("class") + "<br>");
+		}
+	*/	
+	// Método getElementsByTagName() y propiedades length, textContent e innerHTML.	
+	/*
+	
+		var parrafos = document.getElementsByTagName("p");
+		var parrafo0 = parrafos[0];
+		var parrafo3 = parrafos[3];
+		document.write("<br>");
+		document.write("Número de elementos del array parrafos : " + parrafos.length + "<br>");
+		document.write("Contenido de una posición del array vehiculos : " + parrafo3.textContent + "<br>");
+		document.write("Contenido de una posición del array vehiculos : " + parrafos[0].innerHTML + "<br>");
+		console.log("Contenido de una posición del array vehiculos : " + parrafos[0].getAttribute("class")+ "<br>");
+		document.write("Contenido de una posición del array vehiculos : " + parrafo0.textContent + "<br>");
+
+		
+		for(var i = 0; i < parrafos.length; i++)
+		{
+			var todosLosParrafos = parrafos[i].innerHTML;
+			document.write("Contenido del array todosLosParrafos : " + todosLosParrafos + "<br>");
+			//document.write("Contenido del array todosLosParrafos : " + parrafos[i].innerHTML + "<br>");
+		}
+		
+		var divisiones = document.getElementsByTagName("div");
+		
+		document.write("<br>");
+		document.write("Número de elementos del array divisiones : " + divisiones.length + "<br>");
+		document.write("Contenido de una posición del array divisiones : " + divisiones[0].innerHTML + "<br>");
+		document.write("Contenido de una posición del array divisiones : " + divisiones[1].innerHTML + "<br>");
+	*/
+	// Método getElementsByClassName() y propiedades length, textContent e innerHTML.			
+
+	/*
+		var vehiculos = document.getElementsByClassName("vehiculo");
+		var vehiculos1 = vehiculos[1];
+		document.write("<br>");
+		document.write("Número de elementos del array vehiculos : " + vehiculos.length + "<br>");
+		document.write("Contenido de una posición del array vehiculos : " + vehiculos1.textContent + "<br>");
+		document.write("Contenido de una posición del array vehiculos : " + vehiculos[2].innerHTML + "<br>");
+
+		
+		for(var i = 0; i < vehiculos.length; i++)
+		{
+			var todosLosVehiculos = vehiculos[i].innerHTML;
+			document.write("Contenido del array todosLosVehiculos : " + todosLosVehiculos + "<br>");
+			//document.write("Contenido del array todosLosVehiculos : " + vehiculos[i].innerHTML + "<br>");
+		}
+*/
+	// Método querySelector() con propiedades innerHTML y textContent.
+/*
+		var selector1 = document.querySelector("h1").innerHTML;
+		var selector2 = document.querySelector("p").innerHTML;
+		var selector3 = document.querySelector(".animal").innerHTML;
+		var selector4 = document.querySelector("#av").innerHTML;
+		var selector5 = document.querySelector("#av").textContent;
+		var selector6 = document.querySelector("[name ^= 'co']").textContent;
+		var selector7 = document.querySelector("h4 + p").innerHTML;
+		var selector8 = document.querySelector("#div1 :nth-child(2)").innerHTML;
+		var selector9 = document.querySelector("#div1 p:nth-of-type(1)").innerHTML;
+		//document.querySelector("[name ^= 'co']").style.fontSize = "30px"; //font-size:30px
+		document.write("Contenido del primer título: " + selector1 + "<br>");
+		document.write("Contenido del primer párrafo: " + selector2 + "<br>");
+		document.write("Contenido del primer párrafo con nombre de clase animal: " + selector3 + "<br>");
+		document.write("Contenido del primer párrafo con identificador av y propiedad innerHTML: " + selector4 + "<br>");
+		document.write("Contenido del primer párrafo con identificador av y propiedad textContent: " + selector5 + "<br>");
+		document.write("Contenido del primer párrafo con identificador av y propiedad textContent: " + selector6 + "<br>");
+		document.write("Contenido del primer párrafo con identificador av y propiedad textContent: " + selector7 + "<br>");
+		document.write("Contenido del primer párrafo con identificador av y propiedad textContent: " + selector8 + "<br>");
+		document.write("Contenido del primer párrafo con identificador av y propiedad textContent: " + selector9 + "<br>");
+*/
+	// Método querySelectorAll() con propiedades innerHTML, textContent, y bucles for.
+
+		document.write("<br>");
+		var losParrafos = document.querySelectorAll("p");
+		document.write("Número de elementos en el array losParrafos: " + losParrafos.length + "<br>");
+		
+		for(var i = 0; i < losParrafos.length; i++)
+		{
+			//var todosLosParrafos2 = losParrafos[i].innerHTML;
+			//document.write("Contenido del array todosLosParrafos : " + todosLosParrafos2 + "<br>");
+			document.write("Contenido del array todosLosParrafos : " + losParrafos[i].innerHTML + "<br>");
+		}
+		
+		document.write("<br>");
+		var casiTodo = document.querySelectorAll("h1, .vehiculo, .animal,ul li");
+		document.write("Número de elementos en el array casiTodo: " + casiTodo.length + "<br>")
+		for(var i = 0; i < casiTodo.length; i++)
+		{
+			var todito = casiTodo[i].textContent;
+			document.write("Contenido del array todosLosParrafos : " + todito + "<br>");
+		}
+		
+		document.write("<br>");
+		var co = document.querySelectorAll("[name ^= 'co']");
+		document.write("Número de elementos en el array co: " + co.length + "<br>");
+		for(var i = 0; i < co.length; i++)
+		{
+			var empiezaCo = co[i].innerHTML;
+			document.write("Contenido del array todosLosParrafos : " + empiezaCo + "<br>");
+		}
+
+	</script>
+	</body>
+
+</html>   
+	
+	
+	
+	

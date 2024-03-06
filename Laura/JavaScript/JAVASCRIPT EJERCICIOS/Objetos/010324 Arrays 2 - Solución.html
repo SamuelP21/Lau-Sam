@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays 1</title>
+		<meta charset="UTF-8">
+
+		<script>
+					 
+		// Ejercicio 1.
+	/*
+				let socios = new Array(6);
+				let i;
+				//let nombre;
+				for (i=0; i<socios.length; i++)
+				{
+					//nombre = prompt("Introduce el nombre del socio","");
+					//socios[i] = nombre;
+					socios[i] = prompt("Introduce el nombre del socio","");
+				}				
+				
+				document.write ("Todos los socios del club: " + socios.join("<br>") + "<BR>");
+				document.write ("El número de socios del club es : " + socios.length + " <BR> ");
+				document.write ("Nombre de los socios en orden inverso " + socios.reverse() + "<BR>");//Muestra en orden inverso los datos introducidos.
+				document.write ("Nombre de los socios en orden alfabético " + socios.sort()+ "<BR>");
+				document.write ("Nombre de los socios en orden inverso " + socios.reverse() + "<BR> "); //Muestra en orden inverso los datos ordenados.
+		*/	
+		
+		// Ejercicio 2.
+	
+		//Creación del array y asignacion de valores.
+				 // Variable auxiliar para intercambio.
+				let clasificacion = ["Rosa", "Luis Miguel", "Cristina", "Eugenia", "Carmen","José"];
+				//let clasificacion = new Array ("Rosa", "Luis Miguel", "Cristina", "Eugenia", "Carmen","José");			
+				let aux = clasificacion[3];
+				document.write("Clasificación actual" + "<br>");           
+				document.write("1. " + clasificacion[0] + "<br>");   
+				document.write("2. " + clasificacion[1] + "<br>");
+				document.write("3. " + clasificacion[2] + "<br>");
+				document.write("4. " + clasificacion[3] + "<br>");
+				document.write("5. " + clasificacion[4] + "<br>");
+				document.write("6. " + clasificacion[5] + "<br> <br>");
+			 
+			//Cambios de clasificación.
+				
+			//Cambio de posición de Eugenia y Cristina de 5 formas diferentes:				
+				
+				//Opción 1. Uso del método splice() con un dato a insertar y otro a eliminar.
+					
+					clasificacion.splice(2,0,"Eugenia");
+					clasificacion.splice(4,1);
+				
+				//Opción 2. Sobreescribir posicione del array.
+				
+					//clasificacion[2] = "Eugenia";
+					//clasificacion[3] = "Cristina";
+					
+				//Opción 3. Uso del método splice() con un sólo dato a modificar.
+				
+					//clasificacion.splice(2, 1, "Eugenia");
+					//clasificacion.splice(3, 1, "Cristina");
+					
+				//Opción 4. Uso del método splice() con varios datos a modificar.
+				
+					//clasificacion.splice(2, 2, "Eugenia","Cristina");
+					
+				//Opción 5. Intercambio de datos usando una variable auxiliar.
+			
+					//clasificacion[3] = clasificacion[2];
+					//clasificacion[2] = aux;
+				
+			//Eliminar el último elemento, participante José.
+				
+					clasificacion.pop();
+					//clasificacion.splice(5, 1);
+				
+			//Nuevos participantes entran en el concurso a partir de la segunda posición, Inma y Ángel.
+				
+					clasificacion.splice(2, 0, "Inma", "Ángel");
+				
+			//Nuevo elemento que ocupa la primera posición, Lola.
+				
+					//clasificacion.unshift("Lola");
+					clasificacion.splice(0, 0, "Lola");
+								 
+			//Nueva clasificación.
+						 
+				document.write("Clasificación actualizada" + "<br>");
+				document.write("1. " + clasificacion[0] + "<br>"); 
+				document.write("2. " + clasificacion[1] + "<br>");
+				document.write("3. " + clasificacion[2] + "<br>");
+				document.write("4. " + clasificacion[3] + "<br>");
+				document.write("5. " + clasificacion[4] + "<br>");
+				document.write("6. " + clasificacion[5] + "<br>");
+				document.write("7. " + clasificacion[6] + "<br>");
+				document.write("8. " + clasificacion[7] + "<br>");
+				
+				//document.write("Nueva clasificación: " + clasificacion.join("<br>") + "<br>"); // Otra forma de mostrar lso resultados.
+		
+		// Ejercicio 2 con bucles for.
+		/*
+		
+				//Creación del array y asignacion de valores.
+		
+				let clasificacion = ["Rosa", "Luis Miguel", "Cristina", "Eugenia", "Carmen","José"];
+				 				
+				// Clasificación Actual usando un bucle for.
+				
+				document.write("Clasificación actual <br>");           
+				
+				for (let i=0; i<clasificacion.length; i++)
+				{
+					document.write(i+1 + ". " + clasificacion[i] + "<br>");
+				}
+				 
+			//Cambios de clasificación.
+			
+			//Cambio de posición de Eugenia y Cristina de 5 formas diferentes:				
+				
+				//Opción 1. Uso del método splice() con un dato a insertar y otro a eliminar.
+					
+					//clasificacion.splice(2,0,"Eugenia");
+					//clasificacion.splice(4,1);
+								
+				//Opción 2. Sobreescribir posicione del array.
+				
+					//clasificacion[2] = "Eugenia";
+					//clasificacion[3] = "Cristina";
+					
+				//Opción 3. Uso del método splice() con un sólo dato a modificar.
+				
+					//clasificacion.splice(2, 1, "Eugenia");
+					//clasificacion.splice(3, 1, "Cristina");
+					
+				//Opción 4. Uso del método splice() con varios datos a modificar.
+				
+					//clasificacion.splice(2, 2, "Eugenia","Cristina");
+					
+				//Opción 5. Intercambio de datos usando una variable auxiliar.
+				
+					clasificacion[3] = clasificacion[2];
+					clasificacion[2] = aux;
+				
+			//Eliminar el último elemento, participante José.
+				
+					clasificacion.pop();
+					//clasificacion.splice(5, 1);
+				
+			//Nuevos participantes entran en el concurso a partir de la segunda posición, Inma y Ángel.
+				
+					clasificacion.splice(2, 0, "Inma", "Ángel");
+				
+			//Nuevo elemento que ocupa la primera posición, Lola.
+				
+					clasificacion.unshift("Lola");		
+					//clasificacion.splice(0, 0, "Lola");
+								 
+			//Nueva clasificación.
+												 
+				document.write("<br> Clasificación actualizada <br>");
+				
+				for (let i=0; i<clasificacion.length; i++)
+				{
+					document.write(i+1 + ". " + clasificacion[i] + "<br>");
+				}	
+		*/
+		</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>

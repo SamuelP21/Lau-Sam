@@ -1,0 +1,8 @@
+h1 {    color: green;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        font-size: 11pt;}
+body {  background-color: rgb(177, 252, 187);}
+table { border:1;
+        text-align: center;
+        margin: auto;}

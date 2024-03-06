@@ -1,0 +1,95 @@
+<!-- Prueba de código HTML-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>Alcance Variables</title>
+
+	</head>
+	<body>
+
+		<script type="text/javascript" >
+				
+		// Creación de una variable con var.
+	/*	var numero = 2; //Variable numero global.
+
+		function miFuncion (){ 
+			var numero = 19; //Variable numero local.
+			document.write("Variable Local: " + numero); //imprime 19 
+		} 
+		miFuncion();
+		document.write("<br>");
+		document.write("Variable Global: " + numero);//imprime 2 
+		document.write("<br>");
+		document.write("Variable Global: " + numero*3);//imprime 6
+		alert("Variable Global: " + numero);//imprime 2 
+	*/	
+	/*	//Creación de una variable con let.
+		var numero = 2; 
+		function miFuncion (){ 
+			let numero = 19; 
+			document.write("Variable Local: " + numero); //imprime 19 
+		} 
+		miFuncion();
+		document.write("<br>");
+		document.write("Variable Global: " + numero); //imprime 2 
+		document.write("<br>");
+		document.write("Variable Global: " + numero*3);//imprime 6
+		alert("Variable Global: " + numero);//imprime 2
+		*/
+		
+		//Errores con var.
+		
+		// Con var, al usarla en una función sin haberla declarado antes, se le asigna el valor "undefined" automáticamente.
+	/*	
+		console.log(numero);
+		document.write(numero);
+		var numero = 19;
+		document.write("<br>"+numero);
+		
+		// Con let se produce un error porque la variable no esta inicializada.
+		
+		//console.log(numero);
+		//document.write(numero);
+		let numero = 19;
+		console.log(numero);
+		document.write(numero);
+	*/	
+		
+		// var permite declarar 2 veces la misma variable.
+	/*
+		
+		var numero = 4;
+		var numero = "hola";
+		document.write(numero);
+		console.log(numero);
+	*/	
+		// let no permite redeclarar 2 veces la misma variable.
+	/*	
+		let numero = 4;
+		let numero = "hola";
+		document.write(numero);
+		console.log(numero);
+	*/
+	/*
+		let numero = 2;
+		function imprimirNumero() {
+			let numero = 19;
+			console.log(numero);
+		}
+		console.log(numero);
+		imprimirNumero();
+	*/
+		/* Enlace a videos explicativos sobre diferencias entre var, let y const:
+		https://www.youtube.com/watch?v=bvkY9ey83yY&ab_channel=LaCocinadelC%C3%B3digo
+		
+		https://www.youtube.com/watch?v=ojrvxYcKeYg&ab_channel=LaCocinadelC%C3%B3digo
+		*/
+		</script>
+		
+	</body>
+	
+</html>

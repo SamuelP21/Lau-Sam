@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos 3</title>
+		<meta charset="UTF-8">
+
+		<script>
+		
+	// Primer Constructor. new Array();
+		/*	
+				let menu0 = new Array();
+				
+				// Carga de datos en el array.
+				
+					menu0[0]= "Paella";
+					menu0[1]= "Macarrones con tomate";
+					menu0[2]= "Pollo con patatas";
+					menu0[3]= "Lubina al horno";
+					menu0[5]= "Flan";
+								
+				// Acceso a los datos del array.
+				
+					document.write("El valor de la posicion 0 del array es " + menu0[0]+"<br>");
+					document.write("El valores del array menu0 son " + menu0[0] + " " + menu0[1] + " " +menu0[2] + " " + menu0[3] + " " + menu0[5] +" <br>" );
+					document.write("El valor de la posicion 4 del array es " + menu0[4]+"<br>"); // No hay dato cargado.
+						
+				
+				// Cambio de un valor en el array.
+				
+					menu0[3]= "Arroz con leche";
+				
+				// Acceso a los datos del array. Se muestra el nuevo valor en la posición 3.
+				
+					document.write("El valores del array menu0 son " + menu0[0] + " " + menu0[1] + " " +menu0[2] + " " + menu0[3] + " " + menu0[5] +" <br>" );
+			 
+		*/
+	// Segundo Constructor. new Array(número);
+	/*
+		
+					let clientes = new Array(20);
+					
+					clientes[0]= "Luis";
+					clientes[1]= "Ana";
+					clientes[7]= "Juan";
+					clientes[11]= "Pepe";
+					clientes[15]= "Eva";
+					
+					document.write("El valores del array menu0 son " + clientes[0] + " " + clientes[1] + " " +clientes[2] + " " + clientes[11] + " " +  clientes[40] +" <br>" );
+		
+	*/	
+	// Tercer Constructor. new Array(valor1, valor2 ,...., valor n);
+/*
+					let cosas = new Array("hola", 20, 45.78, "Adiós", -3, false, "Tengo hambre",null);
+					
+					// Mostrar los datos del array usando un bucle for.
+					document.write("¿Cúantos elementos hay en el array cosas?: "+ cosas.length + "<br>");
+					for (let contador = 0; contador < cosas.length; contador++)
+					//for (let contador = 0; contador <=7; contador++)
+					{
+						document.write("En la posicion " + contador + " de array de productos está el valor " + cosas[contador] + "<br>");
+					}
+					//document.write("Total de posiciones del array cosas: " + cosas.length + "<br>");
+	*/	
+	// Cuarto Constructor. Operador Corchetes [];
+	
+			
+				//Vacío.
+				
+					let menu1 =[];
+				
+					menu1[0]= "Fabada";
+					menu1[1]= "Solomillo a la pimienta";
+					menu1[2]= "Fruta";
+					
+					document.write("Menú del día: " + menu1[0] + ", " + menu1[1] + ", " + menu1[2] + " <br>" );
+				
+				
+				//Con datos.
+				
+					let menu2 =["Lasaña", "Huevos Fritos", "Helado"];
+					document.write("Los valores del array menu2 son " + menu2[0] + ", " + menu2[1] + ", " +menu2[2] + " " +  " <br>" );
+					menu2[2]= "Arroz con leche";
+					document.write("Los valores del array menu2 son " + menu2[0] + ", " + menu2[1] + ", " +menu2[2] + " " +  " <br>" );
+			
+		
+			
+				// Eliminar un elemento.
+								
+					document.write("El valor de la posicion 0 del array es " + menu2[2]+"<br>");
+					menu2[2] = "";
+					menu2[2] = null;
+					menu2[2] = "undefined";
+					menu2[2] = "";
+					document.write("Los valores del array menu0 son " + menu2[0] + " " + menu2[1] + " " +menu2[2] + " <br>" );
+				
+		
+				//Propiedad length.	
+			
+					document.write("En el array menu2 hay un total de " + menu2.length + " elementos");
+				
+	
+			
+	// Mostrar el contenido de un array usando un bucle for.
+		
+	/*		
+			
+				let productos = ["DVD", "Impresora", 2456, 55.40, "Pendrive"];
+			
+			
+				for (let contador = 0; contador < productos.length; contador++)
+				{
+					document.write("En la posicion " + contador + " de array de productos está el valor " + productos[contador] + "<br>");
+				}
+				
+	*/	
+	// Carga de un array por teclado usando un bucle for.
+	/*	
+				let cosas1 = new Array(4);
+				document.write("En el array cosas1 hay un total de " + cosas1.length + " elementos<br>");
+				let valores, i;
+				for (i = 0; i < cosas1.length; i ++)
+				{
+					//valores = prompt("Escriba un dato ","");
+					//cosas1[i] = valores;
+					cosas1[i] = prompt("Escriba un dato ",""); // Con esta opción no es necesario crear la variable valores.
+					
+					document.write("El valor introducido es: " + cosas1[i]+"<br>");
+				}
+				document.write("Los valores del array cosas1 son " + cosas1[0] + " " + cosas1[1] + " " +cosas1[2] + " " + cosas1[3] + " <br>" );
+				document.write("El valor de la posicion 0 del array es: " + cosas1[0]+"<br>");
+				
+	*/	
+				
+		
+			</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>

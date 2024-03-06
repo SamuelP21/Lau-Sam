@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Variables 2</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+		// Ejercicio 1.
+		/*
+			 var nombre, sueldo;
+			 nombre = "Pepe";
+			 sueldo = 1000.00;
+			 document.write("Te llamas " + nombre + "<br>");
+			 document.write("y tu sueldo es de " + sueldo + " euros");
+		*/						
+		// Ejercicio 2.
+		 
+			/*var numeroEntero;
+			 numeroEntero = 20;
+			 //var numeroEntero = 20;
+			 document.write("El valor de numeroEntero es " + numeroEntero +"<br>" );
+			 numeroEntero = 25;
+			 document.write("Ahora el nuevo valor de numeroEntero es " + numeroEntero );
+			 alert("Ahora el nuevo valor de numeroEntero es " + numeroEntero*2 );*/
+		
+		// Ejercicio 3 Opción A.
+		 
+			/* var lado;
+			  lado = 20;
+			  var perimetro;
+			  perimetro = lado * 4;
+			  document.write("El valor del perímetro de un cuadrado cuyos lados miden " + lado +
+			  " unidades, es : " + perimetro + " unidades" + "<br>");*/
+			  
+		// Ejercicio 3 Opción B.	
+		
+			 /*var lado;
+			  lado = 56;
+			  document.write("El valor del perímetro de un cuadrado cuyos lados miden " + lado +
+			  " unidades, es : " + (lado * 4) + " unidades" + "<br>");*/
+			
+						
+		// Ejercicio 4.	
+		
+			  var radio, area;
+			  //const PI = 3.1416;
+			  radio = 50;
+			  //area = PI * radio * radio;
+			  //area = PI * radio ** 2;
+			  //document.write("El área de un círculo de radio " + radio + " es " + area.toFixed(2));
+			  //La función toFixed(número) permite indicar el número de decimales a mostrar en un cálculo.
+			 
+			  
+			//Con propiedades y métodos del objeto Math para calcular potencias, usar el número Pi y redondear.
+				
+				area = Math.PI * Math.pow(radio,2);
+				//area = Math.round(PI * radio ** 2);
+				//area = Math.round(area);
+				//area = Math.round(Math.PI * Math.pow(radio,2));				
+				document.write("El área de un círculo de radio " + radio + " es " + area.toFixed(3));	
+				 
+		</script>
+		
+	</head>
+	<body>
+
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays 1</title>
+		<meta charset="UTF-8">
+
+		<script>
+		
+		// Ejercicio 1.
+		/*
+				let superheroes = new Array();
+				
+				superheroes[0] = "Batman";
+				superheroes[1] = "Superman";
+				superheroes[2] = "Spiderman";
+				superheroes[3] = "Ironman";
+				superheroes[4] = "Superlópez";
+				
+				document.write("En la posicion 1 de array de superheroes está el valor " + superheroes[1] + "<br>");
+				document.write("En la posicion 4 de array de superheroes está el valor " + superheroes[4] + "<br> <br>");
+		*/	  
+		// Ejercicio 2.
+		/*
+				let numeros = new Array(3);
+				
+				numeros[0] = 34;
+				numeros[1] = 24;
+				numeros[2] = 81;
+								
+				document.write("En la posicion 0 de array de números está el valor " + numeros[0] + "<br>");
+				document.write("En la posicion 1 de array de números está el valor " + numeros[1] + "<br>");
+				document.write("En la posicion 2 de array de números está el valor " + numeros[2] + "<br> <br>");
+				document.write("Todos los datos del array: " + numeros + "<br> <br>");
+		*/
+		// Ejercicio 3.
+		/*
+				let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+				
+				let elementos = colores.length;
+				document.write("En la posicion 0 de array de colores está el valor " + colores[0] + "<br>");
+				document.write("En la posicion 6 de array de colores está el valor " + colores[6] + "<br>");
+				document.write("En la posicion 6 de array de colores usando la propiedad length está el valor " + colores[colores.length-1] + "<br> <br>");
+				document.write("Número de elementos " + elementos + "<br> <br>");
+				document.write("Número de elementos " + colores.length + "<br> <br>");
+		*/		
+			  
+		// Ejercicio 4.
+		
+			/*	let productos = ["DVD", "Impresora", 2456, 55.40, "Pendrive"];
+				
+				document.write("En la posicion 0 de array de productos está el valor " + productos[0] + "<br>");
+				document.write("En la posicion 1 de array de productos está el valor " + productos[1] + "<br>");
+				document.write("En la posicion 2 de array de productos está el valor " + productos[2] + "<br>");
+				document.write("En la posicion 3 de array de productos está el valor " + productos[3] + "<br>");
+				document.write("En la posicion 4 de array de productos está el valor " + productos[4] + "<br>");
+		*/
+		// Ejercicio 4 con bucles for.
+		
+				//let productos = [];
+				let productos = ["DVD", "Impresora", 2456, 55.40, "Pendrive"];
+				//for (let contador = 0; contador <= 4; contador++)
+				for (let contador = 0; contador < productos.length; contador++)
+				{
+					//productos[contador] = prompt("Introduce un dato a cargar en el array");
+					document.write("En la posicion " + contador + " del array de productos está el valor " + productos[contador] + "<br>");
+				}
+				
+			</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>

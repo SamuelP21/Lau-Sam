@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo Arrays</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		var datos1 = new Array();
+		var datos2 = new Array(4);
+		var datos3 = new Array(3,"Hola",20.9, "A", "Z", 78,true);
+		var datos4 = new Array (3);
+		var datos5 = [1,2,3,4,5,6,7,8,9,0];
+		
+		// Intro datos.
+		
+		datos1[0] = 23;
+		datos2[1] = "DVD";
+		datos3[8] = "Nuevo";
+		
+		//Acceso a los datos del array.
+		
+		/*document.write("El valor del array en la posición especificada es " + datos1[0] +"<br>");
+		document.write("El valor del array en la posición especificada es " + datos2[1] +"<br>");
+		document.write("El valor del array en la posición especificada es " + datos3[5] +"<br>");*/
+				
+		
+		// Acceso a datos usando un bucle for.
+		
+		/*var i
+		for (i in datos5)
+		{
+			document.write("En la posicion "+ i + " el valor del array es " + datos5[i] +"<br>");
+		}
+		*/
+		
+		// Acceso a datos usando un bucle for...in.
+	/*	
+		var datos5 = [1,2,3,4,5,6,7,8,9,0];
+		var i;
+		
+		for (i in datos5)
+		{
+			document.write("En la posicion "+ i + " el valor del array es " + datos5[i] +"<br>");
+		}
+	*/	
+		
+		
+		// Intro datos usando bucle for.*/
+		/*
+		var i;
+		for (i=0; i<datos4.length; i++)
+		{
+			datos4[i] = prompt("Introduce valor para el array","");
+			document.write("En la posicion "+ i + " el valor del array es " + datos4[i] +"<br>");
+		}
+		*/
+		// Intro datos usando bucle for con variable que recibe el dato de entrada.
+		/*
+		var i, valor;
+		for (i=0; i<datos4.length; i++)
+		{
+			valor = prompt("Introduce valor para el array","");
+			datos4[i] = valor;
+			document.write("En la posicion "+ i + " el valor del array es " + datos4[i] +"<br>");
+		}
+		*/
+		//Sumar contenido de un array.
+		/*
+			var datos6 = new Array(45,80,23);
+			var suma;
+			suma = datos6[0] + datos6[1] + datos6[2];
+			document.write("La suma de todos los valores del Array es "+ suma);
+		*/
+		// Acceso y operaciones con datos de Array usando un bucle for y una variable acumuladora.
+		/*	var datos5 = [1,2,3,4,5,6,7,8,9,0];
+			var i;
+			var suma = 0;
+			for (i=0; i<datos5.length; i++)
+			{
+				suma = suma + datos5[i];
+				document.write("En la posicion "+ i + " el valor del array es " + datos5[i] +"<br>");
+				
+			}
+			document.write("La suma de todos los valores del Array es "+ suma);
+		*/
+		
+		// Acceso y operaciones con datos de Array usando un bucle for...in y una variable acumuladora.
+			var datos5 = [1,2,3,4,5,6,7,8,9,0];
+			var i
+			var suma = 0;
+			for (i in datos5)
+			{
+				var suma = suma + datos5[i];
+				document.write("En la posicion "+ i + " el valor del array es " + datos5[i] +"<br>");
+			}
+			document.write("La suma de todos los valores del Array es "+ suma);
+		
+		
+		// Eliminar datos.
+		
+		/*datos3[5] = "";
+		
+		document.write("Dato anulado en la posición especificada es " + datos3[5] +"<br>");
+		
+		datos3[5] = null;
+		
+		document.write("Dato anulado en la posición especificada es " + datos3[5] +"<br>");
+		*/
+		// Consulta tamaño del array.
+		/*
+		document.write("La longitud del array datos1 es: " + datos1.length +"<br>");
+		document.write("La longitud del array datos2 es: " + datos2.length +"<br>");
+		document.write("La longitud del array datos3 es: " + datos3.length +"<br>");
+		document.write("La longitud del array datos5 es: " + datos5.length +"<br>");
+		document.write("<br>");
+		
+		// Salida de datos usando bucle for.
+		
+		var a;
+		for (a = 0; a < datos3.length; a++)
+		{
+			document.write("En la posicion "+ a + " el valor del array es " + datos3[a] +"<br>");
+		}
+		
+		document.write("<br>");
+		
+		var i;
+		for (i in datos3)
+		{
+			document.write("En la posicion "+ i + " el valor del array es " + datos3[i] +"<br>");
+		}
+		
+		// Métodos del objeto Array.
+		
+		/*document.write ("Listado de datos del array según su posición original con separador por defecto<BR>");
+		document.write (datos3.join() + "<BR>");
+		document.write ("Listado de datos del array según su posición original con barra inclinada como separador<BR>");
+		document.write (datos3.join(" / ") + "<BR>");
+		document.write ("Listado de datos del array en orden inverso a su posición original <BR>");
+		document.write (datos3.reverse() + "<BR> ");
+		document.write("El valor del array en la posición especificada es " + datos3[5] +"<br>");
+		document.write ("Listado de datos del array ordenados por su contenido <BR>");
+		document.write (datos3.sort()+ "<BR> ");
+		document.write("El valor del array en la posición especificada es " + datos3[5] +"<br>");*/
+		
+		
+		</script>
+		
+		
+	</head>
+	<body>
+
+	</body>
+</html> 

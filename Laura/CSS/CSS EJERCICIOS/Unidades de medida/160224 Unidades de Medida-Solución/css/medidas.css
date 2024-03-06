@@ -1,0 +1,16 @@
+			
+			/* Unidades de medida con archivo externo.*/
+			
+			
+			#div1 p { border:1px solid red;}
+			
+			#primeroEM{font-size:16px; margin-left:1em; padding-left:1em;}
+			#segundoEM{font-size:32px; margin-left:0.5em; padding-left:0.5em;}
+			#terceroEM{Font-size:8px; margin-left: 2em; padding-left:2em;}
+			
+			#div2 p{ border:1px solid black;}
+			#primeroPT{font-size:16px; margin-left:12pt;padding-left:12pt;}
+			#segundoPT{font-size:32px; margin-left:12pt;padding-left:12pt;}
+			#terceroPT{Font-size:8px; margin-left:12pt;padding-left:12pt;}
+			
+			h3{margin-left:1em}

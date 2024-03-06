@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condicionales 5</title>
+		<meta charset="UTF-8">
+	</head>
+<body>
+
+		<script>
+		
+		// Alternativas anidadas.
+
+/* 		let nota1= parseInt(prompt("Introduce la nota 1",""));
+		let nota2= parseInt(prompt("Introduce la nota 2",""));
+		let nota3= parseInt(prompt("Introduce la nota 3",""));
+
+		let notaMedia= Math.round((nota1 + nota2 + nota3) /3);
+
+			  
+			if (notaMedia <= 10 && notaMedia >= 9)
+			 {
+				document.write(notaMedia + " Sobresaliente <br>");
+			 }
+			 else if (notaMedia >= 7 && notaMedia < 9)
+			 {
+				document.write(notaMedia + " Notable <br>");
+			 }
+			 else if (notaMedia >= 6 && notaMedia < 7)
+			 {
+				document.write(notaMedia + " Bien <br>");
+			 }
+			 else if (notaMedia >= 5 && notaMedia < 6)
+			 {
+				document.write(notaMedia + " Suficiente <br>");
+			 }
+			 else if (notaMedia >= 0 && notaMedia < 5)
+			 {
+				document.write(notaMedia + " Suspenso <br>");
+			 }
+			else
+			 {
+			    document.write("El alumno no ha realizado los exámenes o ha habido un error.<br>");
+			 } */
+
+		/* 	Alternativas múltiples */
+
+	/* 	let n1= parseInt(prompt("Introduce la nota 1"));
+		let n2= parseInt(prompt("Introduce la nota 2"));
+		let n3= parseInt(prompt("Introduce la nota 3"));
+
+		let notamedia= Math.round((n1 + n2 + n3) /3);
+
+
+		switch (notamedia)
+	{
+			
+		case 10:
+		case 9:
+		
+			document.write(notamedia + " Sobresaliente <br>");
+			break;
+			
+		case 8:
+		case 7:
+		
+			document.write(notamedia + " Notable <br>");
+			break;
+
+		case 6:
+			document.write(notamedia + " Bien <br>");
+			break;
+
+		case 5:
+			document.write(notamedia + " Suficiente <br>");
+			break;
+
+		case 4:
+		case 3:
+		case 2:
+		case 1:
+		case 0:
+		
+			document.write(notamedia + " Suspenso <br>");
+			break;
+			
+		default:
+			document.write("El alumno no ha realizado los exámenes o ha habido un error<br>");
+			break;
+			
+	} */
+
+		/* Variables como valores booleanos */
+
+		  
+
+	 	let N1= parseInt(prompt("Introduce la nota 1"));
+		let N2= parseInt(prompt("Introduce la nota 2"));
+		let N3= parseInt(prompt("Introduce la nota 3"));
+
+		let Notamedia= Math.round((N1 + N2 + N3) /3);
+
+ 		switch(true)
+			{case (Notamedia <= 10 && Notamedia >= 9):
+			   
+					document.write( Notamedia + "Sobresaliente <br>");
+					break;
+			  
+			case (Notamedia <= 8 && Notamedia >= 7):	
+				
+					document.write(Notamedia + "Notable <br>");
+					break;
+					
+			case (Notamedia >= 6 && Notamedia <= 7):
+				
+					document.write(Notamedia + "Suficiente <br>");
+					break;
+
+			case Notamedia <= 5 && Notamedia >= 0:
+		
+			
+			default:
+				document.write(Notamedia + "El alumno no ha realizado los exámenes o ha habido un error.<br>");
+				break;
+			} */
+		</script>
+
+	</body>
+</html>

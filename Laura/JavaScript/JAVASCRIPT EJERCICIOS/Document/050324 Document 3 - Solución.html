@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	
+		<meta charset="utf-8" />
+		<title>Document 3 Acceso a DOM</title>
+		
+		<style type="text/css">
+		
+			#d2{border: 1px solid black}
+			h1,p{color:blue}
+			#color{color:grey}
+			.parr{font-weight:bold;}
+			ul~p{font-style:italic;}
+			#d1 #p1:first-line{color:maroon; font-size: 40px;}
+			ul{font-family:cambria; font-size:24px;}
+			ul :first-child{color:orange;}
+			[id^="ele"]{font-style:italic;}
+		
+		
+		</style>
+	
+	</head>
+	
+	<body>
+	
+	
+		<h1>Biblioteca Digital</h1>
+		<div id="d1" >
+			<p id="p1" class ="colores">
+				1. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			<p id = "p2" class = "parr">
+				2. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+			<p id = "p3" class = "parr">
+				3. Localice el <span style = "font-style: italic">libro de su interés</span>; cree, modifique y almacene
+				sus propios exámenes.           Podrá exportar los <span id = "color">exámenes </span>en formato <em>PDF</em>,
+				imprimirlos y llevarlos al <span style = "color: green">aula</span>.
+			</p>
+		
+		</div>
+		<div id="d2">
+		
+			<ul>
+			
+				<li id ="ele-uno">uno</li> 
+				<li id ="ele-dos">dos</li>
+				<li id ="elemento-3">tres</li>
+				<li id ="4-elemento">cuatro</li> 
+				<li id ="quinto">cinco</li>
+				<li id ="sexto">seis</li>
+			
+			</ul>
+			<p class = "parr">
+				4. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+			<p class = "p1">
+				5. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+		</div>	
+		
+		<script>
+		
+	// Tres variables y método getElementById().
+	
+		let a = document.getElementById("p3").innerHTML;
+		let b = document.getElementById("p3").innerText;
+		let c = document.getElementById("p3").textContent;
+		
+		/*document.write("Contenido de la primera letiable usando innerHTML: " + a + "<br>");
+		document.write("Contenido de la segunda letiable usando innerText: " + b + "<br>");
+		document.write("Contenido de la tercera letiable usando textContent: " + c + "<br>");
+		
+		alert("Contenido de la primera letiable usando innerHTML: " + a + "<br>");
+		alert("Contenido de la segunda letiable usando innerText: " + b + "<br>");
+		alert("Contenido de la tercera letiable usando textContent: " + c + "<br>");
+		*/
+
+	//Contenido competo de la segunda división.
+	/*
+		//let div2 = document.querySelector("#d2").innerHTML; // Otra forma de cargar la segunda división.
+		//let division2 = document.getElementById("d2").innerHTML;
+		let div2 = document.getElementById("d2");
+		let division2 = div2.innerHTML;
+		document.write("Contenido de la segunda división:" + division2 + "<br>");
+	*/
+	
+	// Todos los párrafos en un array.
+	/*
+		//let parrafos1 = document.querySelectorAll("p");
+		let parrafos1 = document.getElementsByTagName("p");
+		for(let i = 0; i < parrafos1.length; i++)
+		{
+			let par = parrafos1[i].innerHTML;
+			//document.write("Contenido del párrafo " + i + ": " + parrafos1[i].innerHTML + "<br>");
+			document.write("Contenido del párrafo " + i + ": " + par + "<br>");
+			document.write("Hay un total de "+ par.length + " caracteres en cada párrafo del array  <br>")
+		}
+		document.write("Hay un total de "+ parrafos1.length + " párrafos en el array  <br>");
+		//document.write("Hay un total de "+ par.length + " caracteres en cada párrafo del array  <br>");
+	*/
+	
+	// Todos los párrafos de clase "parr" en un array.
+	/*
+		//let parrafos2 = document.querySelectorAll(".parr");
+		let parrafos2 = document.getElementsByClassName("parr");
+		for(let i = 0; i < parrafos2.length; i++)
+		{
+			let parr = parrafos2[i].innerHTML;
+			document.write("Contenido de párrafos2 en la posición" + i + ": " + parr + "<br>");
+			//document.write("Contenido de párrafos2 en la posición" + i + ": " + parrafos2[i].innerHTML + "<br>");
+		}
+		document.write("Hay un total de "+ parrafos2.length + " párrafos en el array  <br>");
+
+	*/
+	// Elementos cuyo identificador empieza por "ele".
+	/*
+		let ele = document.querySelectorAll("[id ^= 'ele']");
+		document.write("Número de elementos en el array ele: " + ele.length + "<br>");
+		for(let i = 0; i < ele.length; i++)
+		{
+			let empiezaEle = ele[i].innerHTML;
+			document.write("Contenido del array \"ele\" en la posición " + i + ": " + empiezaEle + "<br>");
+		}
+	*/	
+	// Párrafos hermanos de una lista no ordenada.
+	/*
+		let hermanos = document.querySelectorAll("ul~p");
+		document.write("Número de elementos en el array hermanos: " + hermanos.length + "<br>");
+		for(let i = 0; i < hermanos.length; i++)
+		{
+			let bro = hermanos[i].innerHTML;
+			document.write("Contenido del array \"hermanos\" en la posición " + i + ": " + bro + "<br>");
+		}
+	*/
+	//	Primer elemento de tipo párrafo en la primera división.
+	/*
+		let divpar = document.querySelector("#d1 p").innerHTML;
+		document.write("Primer párrafo de la primera división: " + divpar + "<br>");
+	*/
+		</script>
+		
+	</body>
+</html>

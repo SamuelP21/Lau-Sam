@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condicionales 2</title>
+		<meta charset="UTF-8">
+	</head>
+<body>
+
+		<script>
+		
+		// Ejercicio 1.
+
+			  let n1 = parseInt(prompt("Ejercicio1: Introduce un número"));
+			  let n2 = parseInt(prompt("Ejercicio1: Introduce otro número"));
+			  if (n1 > n2)
+			  {
+				document.write("El primer número es mayor que el segundo. <br>");
+			  } 
+				else if (n1 == n2)
+			  {
+				document.write("El primer número es igual que el segundo. <br>");
+			  }
+			  else if (n1 < n2)
+			  {
+				document.write("El primer número es menor que el segundo. <br>");
+			  }
+			  else
+			  {
+				document.write("Error. Mo has escrito un número. <br>");
+			  } 
+ 
+		// Ejercicio 2.
+
+			  let num = parseInt(prompt("Ejercico 2: Introduce un número"));
+			  if (num > 0)
+			  {
+				document.write("El número es positivo. <br>");
+			  } 
+			  else if (num == 0)
+			  {
+				document.write("El número es 0. <br>");
+			  } 
+			   else if (num < 0)
+			  {
+				document.write("El número es negativo. <br>");
+			  } 
+			  else
+			  {
+				document.write("Error. Mo has escrito un número. <br>");
+			  } 
+	
+		
+		// Ejercicio 3.		
+	
+			  let nota1= parseFloat(prompt("Ejercicio 3: Introduce la nota 1"));
+			  let nota2= parseFloat(prompt("Ejercicio 3: Introduce la nota 2"));
+			  let nota3= parseFloat(prompt("Ejercicio 3: Introduce la nota 3"));
+
+			  let notaMedia= ((nota1 + nota2 + nota3) /3);
+			  
+			  if (notaMedia >= 5.0)
+			  {
+				document.write("Aprobado <br>");
+			  }
+			  else
+			  {
+			    document.write("Suspenso. <br>");
+			  }
+
+		
+		// Ejercicio 4.		
+		
+			let N1= parseInt(prompt("Ejercicio 4: Introduce un número"));
+			let N2= parseInt(prompt("Ejercicio 4: Introduce un segundo número"));
+			let N3= parseInt(prompt("Ejercicio 4: Introduce un tercer número"));
+				  
+			  if ((N1 == N2) && (N1 == N3) && (N2 == N3))
+			  {
+				let resultado = (N1+N2)*N3;
+				document.write("Suma del n1 + n2 y luego multiplicado por el n3= " + resultado);
+			  }
+			  else
+			  {
+			    document.write("Los números no son iguales. <br>");
+			  }
+		
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bucle Do...While</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+			  var dni, edad, sexo;
+			  var totpersonas = 0;
+			  var nuhombres = 0;
+			  var numujeres = 0;
+			  var laboralh = 0;
+			  var laboralm = 0;
+			  do {
+				dni = parseInt(prompt("Introduzca DNI",""));
+				
+				if (dni > 0)
+				{
+					
+				  edad = parseInt(prompt("Introduzca edad",""));
+				  sexo = prompt("Introduzca el sexo (m masculino/f femenino):","");
+				  
+				  if (sexo == "m")
+				  { 
+					nuhombres++;// nuhombres = nuhombres+1;
+					if (edad >= 18 && edad <= 65)
+					{
+					  laboralh++; // laboralh = laboralh+1;
+					}
+				  } 
+				  if (sexo == "f")
+				  { 
+					numujeres++;// numujeres = numujeres+1;
+					if (edad >= 18 && edad <= 65)
+					{
+					  laboralm++;// laboralm = laboralm+1;
+					}
+				  } 
+				  totpersonas++;
+				}
+			  }while(dni != 0);
+			  
+			  document.write("Total de personas censadas: " + totpersonas + "<br>");
+			  document.write("Número total de hombres: " + nuhombres +"<br>"); 
+			  document.write("Número total de mujeres: " + numujeres +"<br>");   
+			  document.write("Total de hombres en edad laboral: " + laboralh + "<br>");  
+			  document.write("Total de mujeres en edad laboral: " + laboralm + "<br>");
+			  
+		</script>
+	</head>
+	<body>
+
+
+
+	</body>
+</html>

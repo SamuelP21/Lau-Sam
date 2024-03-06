@@ -1,0 +1,22 @@
+	
+	/* Selectores Jerárquicos. Tabla Colores. */
+	
+			table {width:50%; margin:auto}
+			h1 {text-align:center;font-family:Comic Sans MS,cursive; color: maroon}
+			#fila1 {color: teal;}
+			#fila2 {color: red;}
+			#fila3 {color: blue;}
+			#fila4 {color: orange;}
+			#fila5 {color: purple;}
+			#fila6 {color: olive;}
+			#fila7 {color: fuchsia;}
+			#fila8 {color: green;}
+
+			/* Segunda columna */
+			td + td {background-color: red;}
+
+			/* Tercera columna */
+			td + td + td {background-color: green;}
+
+			/* Cuarta columna */
+			td + td + td + td {background-color: blue;}

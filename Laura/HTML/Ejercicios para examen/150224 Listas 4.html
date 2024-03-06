@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas 4</title>
+
+   <style>
+     @import url(listas4.css);
+   </style> 
+</head>
+<body>
+
+<!--     lista anidada ordenada-no ordenada -->
+    <div id="div1">
+		<h1>Menú infantil.</h1>
+        <ol class="menu">
+            <li>Plato combinado</li>
+                <ul id="plato">
+                    <li>Macarrones a la Boloñesa.</li>
+                    <li>Arroz con huevo y tomate.</li>
+                    <li>Tiras de pollo empanadas.</li>
+                    <li>Hamburguesa con patatas.</li>
+                </ul>
+            <li>Postres</li>
+                <ul id="postre">
+                    <li>Helado.</li>
+                    <li>Flan.</li>
+                    <li>Yogur.</li> 
+                </ul>
+            <li>Bebidas</li>
+                <ul id="bebida">
+                     <li>Agua mineral.</li>
+                     <li>Refrescos</li>
+                </ul>
+        </ol>
+
+    </div>
+
+    <br>
+
+<!-- lista de definicion -->
+    
+    <div id="div2">
+        <dl>
+            <p>Lista de glosario</p>
+            <dt id="def1">Hipertexto</dt>
+                <dd>Se llama documento de hipertexto</dd>
+            <dt id="def1">Ancho de banda de una red</dt>
+                <dd>Es, en pocas palabras</dd>
+            <dt id="def1">HTML</dt>
+                <dd>Hypertext Markup Language</dd>
+            
+        </dl>
+    </div>
+
+    <br>
+
+<!-- lista anidada -->
+
+    <div id="div3">
+        <header><h1>Lista anidada</h1></header>
+        <ol id="lista3">
+            <li>HTTP es simple</li>
+                <dt>Paso 1</dt>
+                    <dd>El cliente manda una petición.</dd>
+                <dt>Paso 2</dt>
+                    <dd>El servidor devuelve una respuesta.</dd>
+            <li>Solicitudes entre cliente y sercidor</li>
+            <li>¿Qué es HTML?</li>
+                <ul>
+                    <li>Es un lenguaje de marcas</li>
+                    <li>Se usa para la elaboración de páginas web</li>
+                    <li>Es un estándar reconocido mundialmente.
+                        <ul>
+                            <li>Sus normas vienen dadas por el World Wide Web Consortium o W3C</li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+        </ol>
+        <footer><p>Mostrar un menú</p></footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays 1</title>
+		<meta charset="UTF-8">
+				
+		<script>
+
+			/* Ejercicio 1 */
+			let club = new Array();
+			club[0]= prompt("Indroduce nombre: ")
+			club[1]= prompt("Indroduce nombre: ")
+			club[2]= prompt("Indroduce nombre: ")
+			club[3]= prompt("Indroduce nombre: ")
+			club[4]= prompt("Indroduce nombre: ")
+			club[5]= prompt("Indroduce nombre: ")
+
+			document.write("Los días de la semana son " + dias + "<br>")
+
+			let meses = [];
+				meses[0]= "Enero"
+				meses[1]= "Febrero"
+				meses[2]= "Marzo"
+				meses[3]= "Abril"
+				meses[4]= "Mayo"
+				meses[5]= "Junio"
+				meses[6]= "Julio"
+				meses[7]= "Agosto"
+				meses[8]= "Septiembre"
+				meses[9]= "Octubre"
+				meses[10]= "Noviembre"
+				meses[11]= "Diciembre"
+			
+			for (let index = 0; index < meses.length; index++) {
+				document.write("Los meses del año son: " + meses[index] + "<br>");
+				
+			}
+
+			document.write("Los meses del año son  " + meses + "<br>")
+
+			
+			/* Ejercicio 2 */
+
+			let numero = new Array(5);
+				numero[0]= parseInt(prompt("Inserta número: "))
+				numero[1]= parseInt(prompt("Inserta número: "))
+				numero[2]= parseInt(prompt("Inserta número: "))
+				numero[3]= parseInt(prompt("Inserta número: "))
+				numero[4]= parseInt(prompt("Inserta número: "))
+	
+			for (let contador = 0; contador < numero.length; contador++) 
+			{
+				document.write("En la posición " + contador + " está el valor " + numero[contador] + "<br>")
+			}
+			let suma= (numero[0]+numero[1]+numero[2]+numero[3]+numero[4])
+			document.write ("La suma de los números es " + suma)
+			
+		
+		</script>
+		
+		
+
+		
+	</head>
+	<body>
+	
+	
+		
+
+
+	</body>
+	
+</html>

@@ -1,0 +1,7 @@
+#lista {
+    width: 40%;
+    margin:auto;
+    font-family: calibri, verdana, sans-serif;}
+
+#lista>li {font-weight: bold;
+        color: #ab2a3e}

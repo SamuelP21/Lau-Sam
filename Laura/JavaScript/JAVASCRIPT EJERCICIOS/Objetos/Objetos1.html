@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos 1</title>
+		<meta charset="UTF-8">
+				
+		<script>
+
+			/* Ejercicio 1 */
+
+			let cliente =
+			{
+				nombre:"Carla",
+				apellidos:"Martín Sánchez",
+				direccion:"c/ Reina",
+				telefono:"1234",
+				mostrarDatos: function ()	
+				{
+							
+				document.write("<br>Nombre: " + cliente.nombre + "<br>Apellidos: " + cliente.apellidos + "<br>Dirección: " + cliente.direccion + "<br>Teléfono: : " + cliente.telefono + "Número de Cuenta: " + cliente.numeroCuenta + "Forma de pago: " + cliente.formaPago + "<br><br><br>") 
+				cliente["mostrarDatos"]();
+				}
+			}
+
+			/* Ejercicio 2 */
+
+			let casa = {};
+			
+			casa.tipo = "apartamento";
+			casa.numeroHabitaciones = 3;
+			casa.metrosCuadrados = "90";
+
+			casa.mostrarDatos = function()
+			{
+				document.write("Tipo de casa: " + casa.tipo + "<br>Número de habitaciones: " + casa.numeroHabitaciones + "<br>Metros cuadrados: " + casa.metrosCuadrados +"m2<br>");
+			}
+			
+			casa.mostrarDatos(); 
+			
+
+				/* Ejercicio 3 */
+			let movil =
+			{}
+			
+			movil1.mostrarDatos();
+			document.write("<br>")
+			for (b in movil)
+			{
+				valor=movil1[b];
+				document.write ("El valor de " + b + " es igual a " + valor)
+			}
+
+
+				/* Ejercicio 4 */
+			let empleados=
+			{
+				nombre: "Eva",
+				
+			}
+			calcularAntiguedad: function()
+			{
+				let años = 2024 - empleados.añoAlta;
+				document.write("Los años de antigüedad en la empresa son " + añoAlta)
+			}
+
+				
+		
+			
+		
+		</script>
+		
+		
+
+		
+	</head>
+	<body>
+	
+	
+		
+
+
+	</body>
+	
+</html>

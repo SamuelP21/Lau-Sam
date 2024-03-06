@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo Selectores Jerárquicos</title>
+		
+		<style > 
+		
+			/*selectores de tipo o elemento.*/
+			
+				-p{font-size:30px}
+			
+			/*selectores de identificación.*/
+			
+				-#p4{font-family:georgia;font-size:30px}
+			
+			/*selectores de clase.*/
+			
+				-.texto{font-weight:bold;color:red}
+			
+			/*Selectores Combinados.*/
+			
+				-span.uno{color:red;}
+				-.uno {font-size: 30px}
+				-#dos{color:blue}
+			
+			/*Selectores Independientes.*/
+			
+				-div, -h1, -p ,-ul ,-#l1, -.texto{font-weight:bold}
+				-h1, -p{background-color:yellow}
+			
+			/*Selectores jerárquicos*/
+			
+			/*Descendientes.*/
+			
+				-#div1 -h1 {color:orange}
+				-div -h1{color:red}
+				-ul -li{font-family:comic sans ms}
+				-#lista1 -li{font-family:comic sans ms}
+			
+			/*Descendientes directos.*/
+			
+				-#div1 > -h1 {color:orange}
+				-#div2 > -h1 {color:red}
+				-div -h1{color:blue}
+				-#lista1 > -li{font-family:comic sans ms}
+			
+			/*Hermanos adyacentes.*/
+			
+				-img + -p{font-family:helvetica; font-size:22px}
+				-p + -img {font-family:helvetica; font-size:22px}
+				-h1 + -p{color:green}
+			
+			/*Hermanos.*/
+			
+				-h1 ~ -p{color:red}
+				-#div1>h1 ~ -p{color:red}
+				h1 ~ p:not(.texto1){color:red}
+			
+			
+		</style>
+    </head>
+	
+   <body>
+	
+	
+	
+	<div id = "div1">
+	
+		<h1 class ="texto">Titulo 1</h1>
+		
+		<p id = "p1" class ="texto">Párrafo <span class = "uno">1</span></p> 
+		<img src ="logo.jpg" alt ="No hay foto">
+		<p id = "p2" class ="texto">Párrafo <span id = "dos">2</span></p>
+		
+		<div id = "div2">
+				<h2 class ="texto">Titulo 2</h2>
+				<p id = "p3" class ="texto">Párrafo 3</p>
+				<ul id ="lista1" class = "texto">
+					<li>UNO</li>
+						<ul id ="lista2">
+							<li id ="l1"><a href="#" class = "uno">Enlace 1</a></li> 
+							<li><a href="#" class = "uno">Enlace 2</a></li> 
+						</ul>
+					<li>DOS</li>
+					<li>TRES</li>
+			
+				</ul>	
+			</div>
+			
+		<p id = "p4" class ="texto1">Párrafo 4</p>
+		
+	</div>
+	
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funciones 5</title>
+		<meta charset="UTF-8">
+
+		<script>
+		
+			//Ejercico 1. Función flecha sin parámetros.
+			
+/*             let PP = () => 
+            {
+                let producto= prompt("Introduzca el nombre del producto: ");
+                let precio= parseFloat(prompt("Introduzca el precio del producto: "));
+
+				document.write(producto + " : " + precio + "€");
+			}
+			PP(); */
+			
+		
+            //Ejercicio 2. Función Anónima con parámetros.
+			
+		
+			let numero= parseInt(prompt("Introduzca un número: "));
+			let cambiar = function(numero) 
+                {
+                    if (numero > 200) 
+                    {
+                        let aumentar = numero * 1.10
+                        document.write("El valor de " + numero + " aumentándolo un 10% es: "+ aumentar) 
+                    } 
+                    else 
+                    {
+                        let reducir = numero * 0.90
+                        document.write("El valor de " + numero + " reduciéndolo un 10% es: "+ reducir) 
+                    }
+                    
+                }
+				cambiar (numero);
+					
+
+		</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>	

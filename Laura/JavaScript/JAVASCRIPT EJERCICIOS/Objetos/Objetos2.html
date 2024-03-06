@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos 2</title>
+		<meta charset="UTF-8">
+				
+		<script>
+
+			/* Ejercicio 1 */
+
+			/* Creacion de la funcion */
+
+			function Amigos(nombre, apellidos, direccion, telefono)
+			{
+				this.nombre=nombre;
+				this.apellidos=apellidos;
+				this.direccion=direccion;
+				this.telefono=telefono;
+
+				this.datos= function () 
+				{
+					document.write("<br>Nombre: " + this.nombre + "<br>Apellidos: " + this.apellidos + "<br>Dirección: " + this.direccion + "<br>Teléfono: : " + this.telefono + "<br><br><br>") 
+				}
+			}
+
+			/* Creación de las instancias */
+
+				/* Sin parámetros */			
+				let Lucia = new Amigos();
+				/* Con parámetros */
+				let Carolina = new Amigos("Carolina","Pérez Sanz","c/ Palacio","1111");
+				let Maria = new Amigos("Maria", "López Ramos", "c/ Sol", "2222");
+
+				Lucia.nombre = "Lucía";
+				Lucia.apellidos = "Martín García";
+				Lucia.direccion = "c/ Río";
+				Lucia.telefono = "9999";
+			
+
+				document.write("Datos de: " + Lucia.nombre + "<br>")
+				Lucia.datos();
+
+				document.write("Datos de: " + Carolina.nombre + "<br>")
+				Carolina.datos();
+
+				document.write("Datos de: " + Maria.nombre + "<br>")
+				Maria.datos();
+
+
+			/* Ejercicio 2 */
+
+			function Viajes(origen, destino, precio, transporte)
+			{
+				this.origen=origen;
+				this.destino=destino;
+				this.precio=precio;
+				this.transporte=transporte;
+
+				this.datosViaje= function () 
+				{
+					document.write("<br>Origen: " + this.origen + "<br>Destino: " + this.destino + "<br>Precio: " + this.precio + "<br>Transporte: : " + this.transporte + "<br><br><br>") 
+				}
+			}
+				let Canada = new Viajes();
+				let Segovia = new Viajes("Madrid","Segovia","4,06 €","Autobús");
+
+				Canada.origen = "Madrid";
+				Canada.destino = "Toronto";
+				Canada.precio = "566 €";
+				Canada.transporte = "Avión";
+			
+
+				document.write("Datos del viaje a " + Canada.destino + "<br>")
+				Canada.datosViaje();
+
+				document.write("Datos del viaje a " + Segovia.destino + "<br>")
+				Segovia.datosViaje();
+			
+
+				/* Ejercicio 3 */
+
+				function Coches(marca, modelo, cilindrada, color, precio)
+			{
+				this.marca=marca;
+				this.modelo=modelo;
+				this.cilindrada=cilindrada;
+				this.color=color;
+				this.precio=precio;
+
+				this.arrancar= function () 
+				{
+					document.write("<br>Contacto y arranque<br>") 
+				}
+
+				this.acelerar= function () 
+				{
+					document.write("Aumentando velocidad hasta " + velocidad + "<br>") 
+				}
+				this.cambiaraMarcha= function () 
+				{
+					document.write("Se ha introducido la " + marcha + " marcha. <br>")
+				}
+				this.datosCoche= function ()
+				{
+					document.write("Datos del Coche: <br>" + this.marca + "<br>" + this.modelo + "<br>" + this.precio + "<br>")
+				}
+
+			}
+				let Seat = new Coches();
+				let Hyunday = new Coches();
+				let Ford = new Coches();
+				let velocidad = "120km/h";
+				let marcha = "5";
+
+				Seat.marca = "Seat";
+				Seat.modelo = "Ibiza";
+				Seat.precio = "12.000 €";
+
+				Hyunday.marca= "Hyunday";
+				Hyunday.modelo= "i30";
+				Hyunday.precio= "18.000 €";				
+				
+				Ford.marca= "Ford";
+				Ford.modelo= "Focus";
+				Ford.precio= "15.000 €";
+
+				/* Métodos acelerar, arrancar y cambiar marcha */
+				
+				Seat.arrancar();
+				Seat.acelerar();
+				Seat.cambiaraMarcha();
+			
+
+				document.write("<br>")
+				Seat.datosCoche();
+
+				document.write("<br>")
+				Hyunday.datosCoche();
+
+				document.write("<br>")
+				Ford.datosCoche();
+		
+			
+		
+		</script>
+		
+		
+		
+		<!--<script type="text/javascript" src = "ruta acceso/archivo.js">
+		
+				
+		
+		</script>
+		
+	</head>
+	<body>
+	
+		<script>
+		
+			 Incluir aquí el código JavaScript a probar-->
+		
+	<!-- 	</script> -->
+		
+		<!--<script type="text/javascript" src = "ruta acceso/archivo.js">
+		
+			
+		
+		</script>-->
+		
+
+
+	</body>
+	
+</html>

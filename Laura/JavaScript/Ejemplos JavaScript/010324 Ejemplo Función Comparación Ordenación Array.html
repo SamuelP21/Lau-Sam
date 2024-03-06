@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Función de comparación para ordenación numérica de un array</title>
+		<meta charset="UTF-8">
+		<script>
+		
+			let numeros = [1, 18, 2, 116, 32, 91, 740, 34];
+
+			// Función de comparación para ordenación númerica.
+			
+			let orden = function (a, b)
+			{
+			  return a - b;
+			}
+			document.write("Ordenación alfanumérica: " + numeros.sort()+"<br><br>"); //Ordenación alfanumérica.
+			numeros.sort(orden); //Ordenación númerica al ejecutar una función que compara los números de 2 en 2 y los devuelve ordenados.
+			document.write("Ordenación numérica: " + numeros);
+		</script>
+		
+	</head>
+	<body>
+
+	</body>
+</html>

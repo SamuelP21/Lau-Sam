@@ -1,0 +1,83 @@
+<!-- Prueba de código HTML-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plantilla HTML-JavasScript</title>
+		<meta charset="UTF-8">
+		
+		<noscript>¡¡JavaScript desactivado!!</noscript>
+		
+		<script>
+		let planetas = new Array ("Tierra", "Mercurio", "Neptuno", "Júpiter", "Venus", "Urano", "Saturno", "Marte")		
+		let numero = new Array (1, 4, 232, 5432, 1223, 5, 23.2, 5.5)	
+		document.write("Planetas: " + planetas + "<br>");
+		document.write("Planetas: " + planetas.join(", ") + "<br>");
+		document.write("Planetas: " + planetas.join("/")  + "<br>");
+
+		//Ordena alfabéticamente
+		document.write("Planetas: " + planetas.sort()  + "<br>");
+		/* planetas.sort(); */
+		document.write("Planetas: " + planetas.join(", ") + "<br>");
+		document.write("Planetas: " + planetas.sort().join(", ") + "<br>");
+		
+		//Ordena alfabeticamente al revés
+		planetas.reverse();
+		document.write("Planetas: " + planetas.join(", ") + "<br>");
+
+		document.write("Números ordenados: " + numero.sort().join(", ") + "<br>");
+
+		//Añade al final del array
+		planetas.push("Plutón")
+		document.write("Planetas: " + planetas.sort().join(", ") + "<br>");
+		
+		//Añade al principio del array
+		planetas.unshift("Planetas")
+		document.write("Planetas: " + planetas.join(", ") + "<br>");
+		
+		//Elimina al final del array
+		planetas.pop();
+		document.write("Planetas: " + planetas.join(", ") + "<br>");
+		
+		//Elimina al principio del array
+		planetas.shift();
+		document.write("Planetas: " + planetas.join(", ") + "<br>");
+
+		//Indica la posición de un elemento en el array
+		document.write("Planetas: " + planetas.indexOf("Marte") + "<br>");
+
+		//Elimina varios array seguido en una posición determinada
+		planetas.splice(3,3)
+		document.write("Planetas: " + planetas.join(", ") + "<br>");
+
+		//Añade elementos en un aposición determinada
+		planetas.splice(1,0, "segundo", "tercer ");
+		document.write("Planetas: " + planetas.join(", ") + "<br>");
+
+
+		document.write("<h1 style= 'color: blue; font-family: Comic sans Ms'>JavaScript</h1>")
+
+		</script>
+		
+	</head>
+	<body>
+		<div id="div1">
+			<h1 id="t1">Título 1</h1>
+			<p id="p1">Párrafo 1</p>
+			<p id="p2">Párrafo 2</p>
+		</div>
+		
+		<script>
+			let par1 = document.getElementById("p1").innerHTML;
+			//alert("El contenido del primer párrafo es: " + par1);
+			//document.getElementById("p1").innerHTML = "<p>Nuevo párrafo 1</p>";
+			//par1.innerHTML = "<p>Nuevo párrafo 1</p>"; (hay que borrar el inner HTML de arriba para que funcione)
+			//par1.innerHTML += "<p>Ampliado</p>"; (hay que borrar el inner HTML de arriba para que funcione)
+			//par1.innerHTML += "<p>Párrafo 1.5</p>"; (hay que borrar el inner HTML de arriba para que funcione)
+			let d1=document.getElementById("div1");
+			d1.innerHTML += d1.innerHTML;
+		</script>
+	</body>
+	
+</html>

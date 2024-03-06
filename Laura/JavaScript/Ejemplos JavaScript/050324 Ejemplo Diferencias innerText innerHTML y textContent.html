@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Diferencias innerHTML, innerText y textContent</title>
+	</head>
+
+	<body>
+		<p id ="parrafo">
+			Diferencias                   entre\n las propiedades <strong>innerText</strong>,   
+			<em>innerHTML</em> y <span style = "font-size:20px">textContent.</span>
+		</p>
+		<script>	
+		
+			var iText = document.getElementById("parrafo").innerText; //Propiedad del objeto HTMLElement.
+			var iHTML = document.getElementById("parrafo").innerHTML; //Propiedad del objeto Element.
+			var tContent = document.getElementById("parrafo").textContent; //Propiedad del objeto Node.
+	
+		/*
+			var a = document.getElementById("parrafo"); //Propiedad del objeto HTMLElement.
+			var b = document.getElementById("parrafo"); //Propiedad del objeto Element.
+			var c = document.getElementById("parrafo"); //Propiedad del objeto Node.
+			
+			var iText = a.innerText;
+			var iHTML = b.innerHTML;
+			var tContent = c.textContent;
+		*/			
+		// Nodos.	
+		/*
+			document.write("Párrafo cargado con innerText: " + a + "<br>");
+			document.write("Párrafo cargado con innerHTML: " + b + "<br>");
+			document.write("Párrafo cargado con textContent: " + c + "<br>");
+		*/	
+		//	Contenido textual de los nodos.
+		/*
+			document.write("Párrafo cargado con innerText: " + iText + "<br>");
+			document.write("Párrafo cargado con innerHTML: " + iHTML + "<br>");
+			document.write("Párrafo cargado con textContent: " + tContent + "<br>");
+		*/			
+		/*	alert("Párrafo cargado con innerText: " + iText  );
+			alert("Párrafo cargado con innerHTML: " + iHTML  );
+			alert("Párrafo cargado con textContent: " + tContent );
+		*/	
+			console.log("Párrafo cargado con innerText: " + iText  );
+			console.log("Párrafo cargado con innerHTML: " + iHTML  );
+			console.log("Párrafo cargado con textContent: " + tContent );
+			
+			//La propiedad innerText devuelve sólo el texto, sin formato, sin espacios y sin etiquetas HTML.
+			//La propiedad innerHTML devuelve el texto con formato, incluyendo espacios y etiquetas HTML.
+			//La propiedad textContent devuelve sólo el texto, sin formato, con espacios y sin etiquetas HTML.
+
+
+
+		</script>	
+	
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos 1</title>
+		<meta charset="UTF-8">
+
+		<script>
+		
+		//Ejercicio 1.
+		/*	var estructura;
+			var cliente =
+			{
+				nombre: "Cristina",
+				apellidos: "Pérez Pérez",
+				direccion: "C/ León 2",
+				telefono: "675432897",
+				numeroCuenta: 3456,
+				formaPago: "Metálico"
+			}
+			
+			// Mostrar los datos del objeto recorriéndolo con un bucle for..in.
+			
+			for(estructura in cliente)
+			{
+				//var datos;
+				//datos = cliente[estructura];
+				//var datos = cliente[estructura];
+				document.write("El valor de "+ estructura +  " es " + cliente[estructura] +"<br>");
+			}
+			
+			// Mostrar los datos del objeto usando el método write().
+			
+			document.write("Te llamas "+ cliente.nombre + " " + cliente.apellidos + ", vives en " + cliente.direccion + 
+			" y tu número de teléfono es el " + cliente.telefono + "<br>");
+			document.write("Tu número de cuenta es " + cliente.numeroCuenta + " y tu sistema de pago elegido es en " + cliente.formaPago);
+		*/		
+		
+		//Ejercicio 2.
+		/*
+				var casa = {};
+				casa.tipo = "piso";
+				casa.numeroHabitaciones = 3;
+				casa.metrosCuadrados = 90;
+				
+				document.write("El tipo de vivienda es un " + casa.tipo + ".<br>");
+				document.write("Tiene " + casa.numeroHabitaciones + " habitaciones." + "<br>");
+				document.write("La  vivienda tiene "+ casa.metrosCuadrados + " metros cuadrados.");
+		*/				
+		//Ejercicio 3.
+		/*	
+			var b,valor;
+			var movil1 =
+			{
+				marca: "LG",
+				modelo: "G3 855",
+				precio: 300.50,
+				mostrarDatos: function()
+				{
+					document.write("Teléfono modelo " + movil1.modelo + " de la marca " + movil1.marca + " con un precio de " + movil1.precio + " euros.");
+				}
+			};
+		
+			movil1.mostrarDatos();
+			document.write("<br>");
+			for(b in movil1)
+			{
+				valor = movil1[b];
+				document.write("El valor de "+ b +  " es " + valor +"<br>");
+				//document.write("El valor de "+ b +  " es " + movil1[b] +"<br>");
+			}
+		*/
+		
+		//Ejercicio 4. Sin retorno de datos.
+		
+			var empleados =
+			{
+				nombre: "Eva",
+				apellidos: "Ruiz Gómez",
+				categoría: "Auxiliar Administrativo",
+				añoAlta: 2002,
+				sueldo: 1200.00,
+				calcularAntiguedad: function()
+				{
+					var años = 2024 - empleados.añoAlta;
+					document.write("Los años de antigüedad en la empresa son " + años + " años" + "<br>");
+					//document.write("Los años de antigüedad en la empresa son " + (20231 - empleados.añoAlta) + " años" + "<br>");
+				}
+				
+			};
+			empleados.calcularAntiguedad();
+			document.write("Nombre y apellidos del empleado: "+ empleados.nombre + " " + empleados.apellidos +
+			" <br> Sueldo: " + empleados.sueldo);
+		
+		//Ejercicio 4. Con retorno de datos.
+		
+			
+			var empleados =
+			{
+				nombre: "Eva",
+				apellidos: "Ruiz Gómez",
+				categoría: "Auxiliar Administrativo",
+				añoAlta: 2002,
+				sueldo: 1200.00,
+				calcularAntiguedad: function()
+				{
+					var años = 2024 - empleados.añoAlta;
+					return "Los años de antigüedad en la empresa son " + años + " años";
+					//return "Los años de antigüedad en la empresa son "+ (2021 - empleados.añoAlta) + " años";
+				}
+			};
+			var mensaje = empleados.calcularAntiguedad();
+			document.write(mensaje+"<br>");
+			document.write("Nombre y apellidos del empleado: "+ empleados.nombre + " " + empleados.apellidos +
+			" <br> Sueldo: " + empleados.sueldo + "<br>");
+			
+			
+		</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>

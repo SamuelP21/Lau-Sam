@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funciones con parámetros con valores por defecto</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+		//Valores opcionales en el bloque de código con instrucción if y operador typeof.
+		
+		/*
+			function sumar1(a,b,c,d,e)
+			{
+				if(typeof d == "undefined" || typeof e == "undefined")
+				{
+					d=5;
+					e=10;
+				}
+				
+					var suma = a+b+c+d+e;
+					document.write(suma + "<br>");
+			}
+			sumar1(6,3,2); //Equivale a sumar(6,3,2,5,10);
+			sumar1(3,2,3,7,6);
+			document.write("<br><br>");
+			
+		//Valores opcionales en el bloque de código con instrucción if y valor "undefined".
+		
+		
+			function sumar2(a,b,c,d,e)
+			{
+				if(typeof d == "undefined" || typeof e == "undefined")
+					{
+						d=5;
+						e=10;
+					}
+			
+				var suma = a+b+c+d+e;
+				document.write(suma + "<br>");
+			}
+			
+			sumar2(6,3,2); //Equivale a sumar(6,3,2,5,10);
+			sumar2(3,2,3,7,6);
+			document.write("<br><br>");
+		*/	
+		//Valores opcionales en el bloque de código con instrucción if, "undefined" y datos introducidos por teclado (válido también para otros ejemplos).
+		
+		/*
+			function sumar3(a,b,c,d,e)
+			{
+				if(typeof d == "undefined" || typeof e == "undefined")
+					{
+						d=5;
+						e=10;
+					}
+			
+				var suma = a+b+c+d+e;
+				document.write(suma + "<br>");
+			}
+			
+			var n1 = parseInt(prompt("Intro un número",""));
+			var n2 = parseInt(prompt("Intro otro número",""));
+			var n3 = parseInt(prompt("Intro otro más número",""));
+			var n4 = parseInt(prompt("Intro otro más número",""));
+			var n5 = parseInt(prompt("Intro otro más número",""));
+			
+			sumar3(n1,n2,n3,n4,n5); //Si los dos últimos valores no se introducen por teclado, se usan en su lugar los valores por defecto 5 y 10.
+			document.write("<br><br>");	
+		*/	
+		// Valores opcionales o por defecto al definir los parámetros.
+		/*
+			function sumar4(a,b=5)
+			{
+				var suma = a+b;
+				document.write(suma + "<br>");
+			}
+			
+			sumar4(3); // Al faltar el segundo valor, éste se sustituye por el valor por defecto 5.
+			sumar4(3,2);	
+		*/
+		//Todos los valores opcionales en la definición de los parámetros.
+		/*
+			function calcular(n1=23, n2=4,n3=4,n4=8)
+			{
+				return n1 + n2 + n3 + n4;
+			}
+			
+			var a = calcular(20,50,70,30);
+			document.write("Con parámetros con 4 valores la variable a vale: " + a +"<br>");
+			var b = calcular(30,50); //Equivale a calcular (30,50,4,8);
+			document.write("Con 2 parámetros, se usan los otros 2 opcionales y la variable b vale: " + b +"<br>");
+			var c = calcular(); //Equivale a calcular (23,4,4,8);
+			document.write("Sin valores en ningún parámetro, se usan los 4 valores opcionales y la variable c vale: " + c +"<br>");
+		*/	
+		//Valores opcionales en la definición de los parámetros y error al quedar valores sin valor.	
+		
+			function calculos(n1, n2=4,n3,n4=8)
+			{
+				return n1 + n2 + n3 + n4;
+			}
+			
+			var a = calculos(40,38,70,67);
+			document.write("Con parámetros con 4 valores la variable a vale: " + a +"<br>");
+			var b = calculos(45,150); //Error el tercer parámetro se queda si valor. Equivale a calcular (45,150,undefined,8);
+			document.write("Con 2 parámetros, se usan los otros 2 opcionales y la variable b vale: " + b +"<br>");
+			var c = calculos(45,150,90); //Ahora no hay error, el tercer parámetro no se queda si valor. Equivale a calcular (45,150,90,8);
+			document.write("Con 2 parámetros, se usan los otros 2 opcionales y la variable b vale: " + c +"<br>");
+		
+		</script>
+		
+		
+		
+	</head>
+	<body>
+
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Instrucciones Condicionales</title>
+	</head>
+	<body>
+		<script>
+
+			//Condicionales Simples.
+		
+			var a = 17;
+			var b = 15;
+			if (a>b)
+			{
+				document.write ("a es mayor que b" + "<br> <br> <br>");//Se cumple la condición, se ejecutan las instrucciones.
+			}
+			
+			var a = 7;
+			var b = 5;
+			if (a<b)
+			{
+				document.write ("a es mayor que b"+ "<br>");//No se cumple la condición, no se ejecutan las instrucciones.
+			}
+			
+			document.write("Esto es el final" + "<br> <br> <br>");
+		
+			//Condicional Completa Ejemplo 1.
+		
+			
+			var a = 7;
+			var b = 5;
+			if (a>b)
+			{ 
+				document.write ("a es mayor que b<br>");
+			}
+			else
+			{
+				document.write ("a no es mayor que b<br>");
+			}
+			document.write("Esto es el final<br> <br> <br>");
+			
+			
+			//Condicional Completa Ejemplo 2.
+			
+			var dni = "123456789M";
+			
+			if (dni == "123456789K")
+			{ 
+				document.write ("DNI correcto <BR>");
+			}
+			else
+			{
+				document.write ("DNI incorrecto <BR> <br> <br>");
+			}
+		
+		// Condicional anidada con else final y sin condición.
+		
+			var a = 8.9;
+			var b = 18.9;
+			if(a>b)
+			{
+				document.write ("a es mayor que b");
+			}
+			else if(a==b)
+			{
+				document.write ("a es igual que b");
+			}
+			else if(a<b)
+			{
+				document.write ("a es menor que b");
+			}
+			document.write ("<br> El valor de PI es : " + a +"<br>");
+			
+		// Condicional anidada sin else final y con condición.
+		
+			var a = 1.34;
+			var b = 8.9;
+			if(a>b)
+			{
+				document.write ("a es mayor que b");
+			}
+			else if(a==b)
+			{
+				document.write ("a es igual que b");
+			}
+			else if(a<b)
+			{
+				document.write ("a es menor que b");
+			}
+			else
+			{
+				document.write ("Error");
+				
+			}
+		
+		</script>
+	</body>
+</html>

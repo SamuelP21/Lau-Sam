@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+		<head>
+		<meta charset="utf-8">
+		<title>Flexbox</title>
+		<style>
+			div,p{padding:5px; margin:5px}
+			p{border: 1px solid red;}
+			#div1
+			{
+				display:flex;   /* Propiedad que permite crear contenedores flexibles */
+				border: 1px solid maroon;
+				-height:300px;
+				flex-direction:row;    /* Orientacion de los items en horizontal en su orden de creación y alineación izquierda. Valor por defecto.*/
+				-flex-direction:column;    /*Orientacion de los items en vertical en su orden de creación y alineación superior.*/
+				-flex-direction:row-reverse;   /* Orientacion de los items en horizontal en orden inverso y alineación izquierda.*/
+				-flex-direction:column-reverse;   /* Orientacion de los items en vertical en orden inverso y alineación inferior.*/
+				justify-content:flex-start;   /* Elementos al principio del contenendor. Valor por defecto.*/
+				-justify-content:flex-end;    /* Elementos al final del contenendor.*/
+				-justify-content:center;    /* Elementos al centro del contenendor.*/
+				-justify-content:space-between; /* Elementos repartidos a lo largo del contenedor sin espacio al principio y al final de éste.*/
+				-justify-content:space-around; /* Elementos repartidos a lo largo del contenedor con espacio al principio y al final de éste.*/
+			}
+			-#div2
+			{
+				display:flex; 
+				border: 1px solid blue;				
+				flex-direction:row; 
+			}
+				
+			-#div2a
+			{
+				display:flex; 
+				border: 1px solid green;				
+				flex-direction:column; 
+			
+			
+			}
+			-#div2b
+			{
+				display:flex; 
+				border: 1px solid green;				
+				flex-direction:column-reverse; 
+			}
+			
+			/* Alineación según el eje secundario. */
+			
+			-#div2c
+			{
+				display:flex; 
+				border: 1px solid green;				
+				flex-direction:row; 
+				width:600px;
+				height:300px;
+				-align-items:flex-start;
+				-align-items:flex-end;
+				-align-items:center;
+				justify-content:center;
+				-align-items:strech;
+				-align-items:baseline;
+			}
+			-#p10
+			{
+				font-size:25px;
+			}
+			-#p11
+			{
+				font-size:10px;
+			}
+			
+			/* Prueba de la propiedad flex-wrap. */
+			
+		
+			#div3
+			{
+				display: flex;
+				border: 1px solid blue;
+				flex-direction: row;
+				-flex-wrap: nowrap; /* Los elementos se colocan en la línea del eje principal. Si es necesario, se redimensionan para distribuirse a lo largo de ésta.*/
+				-flex-wrap: wrap;	/* Los elementos no se redimensionan, por lo que puede ser necesario distribuirlos en varias líneas.*/
+				-flex-wrap: wrap-reverse; /* Igual que el valor anterior, pero los elementos se colocan en orden inverso.*/
+			}
+
+			/* Anular para que funcione la propiedad flex-grow.*/
+			/* No anular para que funcione la propiedad flex-shrink.*/
+			
+			-#div3 p{width: 400px;}
+						
+			/* Orden de presentación de los elementos. */
+			
+			#p13{order:2;}
+			#p16{order:-1;}
+			#p17{order:1;}
+			
+			/* Factor de crecimiento.*/
+			
+			-#p13{flex-grow:1;}
+			-#p16{flex-grow:0;}
+			-#p17{flex-grow:2;}
+			
+			/* Factor de decrecimiento.*/
+			
+			-#p13{flex-shrink:1;}
+			-#p16{flex-shrink;}k:3;}
+			-#p17{flex-shrink:2
+			
+			/* Cambio tamaño de los ítems.*/
+			
+			-#div3>p{flex-basis:auto;}
+			-#div3>p{flex-basis:100px;}
+			-#div3 p:nth-of-type(odd){flex-basis:130px;}
+			-#p13{flex-basis:200px;}
+			-#p17{flex-basis:500px;}
+			
+			/* Espacio entre ítems.*/
+			
+			-#div2a {row-gap:100px;} /* Espaciado horizontal para elementos dispuestos en vertical. */
+			-#div3 {column-gap:100px;} /* Espaciado vertical para elementos dispuestos en horizontal. */
+			
+			
+			/* Alineación de elementos individuales siempre que sea posible. */
+			
+			-#p17{align-self:center;}
+			-#div3{height:200px;}
+			
+		</style>
+		</head>
+		<body>
+
+		
+			<div id = "div1"> <!-- Contenedor principal 1-->
+				<p>
+					Párrafo 1. <!-- Item 1-->
+				</p>
+				<p>
+					Párrafo 2. <!-- Item 2-->
+				</p>
+				<p>
+					Párrafo 3. <!-- Item 3-->
+				</p>
+			
+			</div>
+			
+			<div id = "div2"> <!-- Contenedor principal 2-->
+				<div id = "div2a"> <!-- Contenedor principal 2a-->
+					<p>
+						Párrafo 4. <!-- Item 4-->
+					</p>
+					<p>
+						Párrafo 5. <!-- Item 5-->
+					</p>
+					<p>
+						Párrafo 6. <!-- Item 6-->
+					</p>
+				</div>
+				<div id = "div2b"> <!-- Contenedor principal 2b-->
+					<p>
+						Párrafo 7. <!-- Item 7-->
+					</p>
+					<p>
+						Párrafo 8. <!-- Item 8-->
+					</p>
+					<p>
+						Párrafo 9. <!-- Item 9-->
+					</p>
+				</div>
+				
+				<div id = "div2c"> <!-- Contenedor principal 2b-->
+					<p id="p10">
+						Párrafo 10. <!-- Item 10-->
+					</p>
+					<p id="p11">
+						Párrafo 11. <!-- Item 11-->
+					</p>
+					<p id="p12">
+						Párrafo 12. <!-- Item 12-->
+					</p>
+				</div>
+			</div>
+					
+			<div id = "div3"><!-- Contenedor principal 3-->
+				
+					<p id ="p13">
+						Párrafo 13. <!-- Item 13-->
+					</p>
+					<p>
+						Párrafo 14. <!-- Item 14-->
+					</p>
+					<p>
+						Párrafo 15. <!-- Item 15-->
+					</p>
+			
+					<p id ="p16">
+						Párrafo 16. <!-- Item 16-->
+					</p>
+					<p id ="p17">
+						Párrafo 17. <!-- Item 17-->
+					</p>
+					<p>
+						Párrafo 18. <!-- Item 18-->
+					</p>
+			</div>
+				<br><br>	<br><br>	<br><br><br><br>
+		</body>
+</html>

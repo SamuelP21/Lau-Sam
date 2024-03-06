@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Métodos del objeto prototípico Array</title>
+		<meta charset="UTF-8">
+
+		<script>
+		
+				
+		//Métodos para Arrays.
+				
+			// join().				
+				
+				//Sintaxis: nombre del array.join("separador");
+				
+				//Ejemplos:
+				/*
+				
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write(colores+ "<br>");
+					document.write(colores.join(", ")+ "<br>");
+					document.write(colores.join(",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")+ "<br>");
+					document.write(colores.join(" / ")+ "<br>");
+					document.write(colores.join("****")+ "<br>");
+					document.write(colores.join("wwwww")+ "<br>");
+					document.write(colores.join("<br>")+ "<br>");
+				*/		
+			// reverse().				
+				
+				//Sintaxis: nombre del array.reverse();
+				
+				//Ejemplos:
+				/*
+				
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write(colores + "<br>");
+					document.write(colores.reverse()+ "<br>");
+					document.write(colores.join()+ "<br>");
+					document.write(colores.reverse()+ "<br>");
+				*/	
+								
+			// sort().
+			
+				//Sintaxis: nombre del array.sort();
+				
+				//Ejemplos:
+				/*							
+				
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write("Datos del array " + colores +"<br>");
+					document.write(colores.sort()+ "<br>");
+					document.write("Datos del array " + colores +"<br>");
+				
+			*/
+				
+			// push().
+			
+				//Sintaxis: nombre del array.push(valor 1, valor 2,...,valor n);
+				
+				//Ejemplos:
+			/*	
+			
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write(colores.join()+ "<br>");
+					document.write(colores.length+"<br>");
+					//colores.push("Lima");//Carga dato.
+					//colores.push("Blanco","Negro","Rosa");
+					document.write("Total actual de elementos: " + colores.push("Lima")+ "<br>"); //Carga dato y muestra nueva longitud del array.
+					document.write("Nuevo total de elementos: " + colores.push("Blanco","Negro","Rosa")+ "<br>");
+					document.write(colores.join()+ "<br>");
+					document.write(colores.length+"<br>");
+				
+			*/
+				
+			// unshift().
+			
+				//Sintaxis: nombre del array.unshift(valor 1, valor 2,...,valor n);
+				
+				//Ejemplos:
+				
+			/*	
+				
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write(colores.join()+ "<br>");
+					document.write(colores.length+"<br>");
+					//colores.unshift("Lima");
+					document.write("Total actual de elementos: "+ colores.unshift("Lima")+ "<br>");
+					document.write(colores.join()+ "<br>");
+					document.write("Nuevo total de elementos: "+ colores.unshift("Blanco","Negro","Rosa")+ "<br>");
+					document.write(colores.join()+ "<br>");
+					document.write(colores.length +"<br>");
+				
+			*/
+				
+			// pop().	
+			
+				
+				//Sintaxis: nombre del array.pop();
+				
+				//Ejemplos:
+				/*
+							
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write(colores.join()+ "<br>");
+					document.write(colores.length+"<br>");
+					//colores.pop(); //Elimina último dato.
+					document.write(colores.pop() + "<br>");	//Elimina último dato y muestra cuál se ha eliminado.
+					document.write(colores.pop() + colores.pop()+ "<br>");	//Elimina los 2 últimos datos y muestra cuáles se han eliminado.			
+					document.write(colores.join()+ "<br>");
+					document.write(colores.length+"<br>");
+				
+				*/
+				
+			// shift().	
+			
+				//Sintaxis: nombre del array.shift();
+				
+				//Ejemplos:
+				
+				/*
+				
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write(colores.join()+ "<br>");
+					document.write(colores.length+"<br>");
+					//colores.shift(); //Elimina el primer dato.
+					document.write(colores.shift()+ "<br>"); //Elimina el primer dato y muestra cuál se ha eliminado.			
+					document.write(colores.join()+ "<br>");
+					document.write(colores.length+"<br>");
+				
+				*/
+			
+			// splice().	
+			
+				//Sintaxis: nombre del array.splice(posición de inserción, número de elementos a eliminar, elemento a insertar, elemento a insertar,....);
+				//Sintaxis: nombre del array.splice(posición primer elemento a eliminar, número de elementos a eliminar)
+				//Sintaxis: nombre del array.splice(posición del elemento a modificar, 1, elemento nuevo a insertar)
+				
+				//Ejemplos:
+				
+				/*			
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write(colores.join()+ "<br>");
+					document.write(colores.splice(1,2,"Rosa","Blanco","Negro")+ "<br>");//Modificación o inserción/eliminación.
+					document.write(colores + "<br>");
+					document.write(colores.splice(1,3,"Rosa")+ "<br>"); //Modificación o inserción/eliminación.
+					document.write(colores + "<br>");
+					document.write(colores.splice(2,1)+ "<br>");//Eliminar contenido.
+					document.write(colores.join()+ "<br>");
+					document.write(colores.splice(4,2)+ "<br>");//Eliminar contenido.
+					document.write(colores.join()+ "<br>");
+					document.write(colores.splice(1,0,"Rosa","Blanco","Negro")+ "<br>");//Inserción sin eliminación.
+					document.write(colores.splice(2,0,"Rosa","Blanco","Negro")+ "<br>");//Inserción sin eliminación.
+					document.write(colores.join()+ "<br>");
+			*/
+				
+			// indexOf().
+			
+				//Sintaxis: nombre del array.indexOf("valor");
+				
+				//Ejemplos:
+				
+			/*
+									let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					let numeros = new Array(34,67,45);
+					document.write("La posicion del valor 34 es: " + numeros.indexOf(34)+ "<br>");
+					document.write("La posicion del valor 34 es: " + numeros.indexOf("34")+ "<br>");
+					document.write("La posicion del color azul dentro del array colores es la número: " + colores.indexOf("Azul")+ "<br>");
+					document.write("La posicion del color morado dentro del array colores es la número: " + colores.indexOf("Morado")+ "<br>");
+					document.write("La posicion del color lima dentro del array colores es la número: " + colores.indexOf("Lima")+ "<br>");
+			*/	
+		
+			// slice().
+			
+				//Sintaxis: nombre del array.slice(posición inicial,posición final-1);
+				//Sintaxis: nombre del array.slice(posición inicial);
+				//Sintaxis: nombre del array.slice();
+				
+				//Ejemplos:
+			/*	
+		
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write("Los elementos del array entre las posiciones 1 y 4 : " + colores.slice(1,4)+ "<br>");
+					document.write("Los elementos del array a partir de la posición 3 son: " + colores.slice(3)+ "<br>");
+					document.write("Los elementos del array son: " + colores.slice()+ "<br>");
+					
+				// Creación de un nuevo array copiándole otro con el método slice().
+								
+					let nuevo = colores.slice();
+							
+				// Mostrar algunos elementos del nuevo array.
+				
+					document.write("Los elementos del array original son: " + colores + "<br>");
+					document.write(nuevo[0] + "<br>");
+					document.write(nuevo[2] + "<br>");
+					document.write(nuevo[5] + "<br>");
+					document.write("Los elementos del array nuevo son: " + nuevo + "<br>");
+									
+				// Mostrar elementos del nuevo array con bucle for.
+									
+					for (let contador = 0; contador < nuevo.length; contador++)
+					{
+						document.write("En la posicion " + contador + " de array nuevo está el valor " + nuevo[contador] + "<br>");
+					}
+			*/
+			//includes().
+			
+				//Sintaxis: nombre del array.includes(dato);
+				
+				//Ejemplo:
+				
+					let colores = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					document.write("¿Está el color Granate en el array? " + colores.includes("Granate")+ "<br>");
+					document.write("¿Está el color Azul en el array? " + colores.includes("Azul")+ "<br>");
+			
+			
+			//concat().
+			
+				//Sintaxis: nombre del array.concat(array 1, array 2, ..., array N);
+				
+				//Ejemplo:
+				/*
+					let colores1 = new Array("Rojo", "Verde", "Azul", "Violeta", "Naranja", "Amarillo", "Marrón");
+					let colores2 = new Array("Ganate", "Rosa", "Azul Turquesa", "Blanco", "Negro");
+					document.write("Colores del array colores1: " + colores1.join(", ") + "<br>");
+					document.write("Colores del array colores1: " + colores2.join(", ") + "<br>");
+					document.write("Colores de los arrays colores1 y colores2 unidos: " + colores1.concat(colores2) + "<br>");
+					document.write("Colores de los arrays colores2 y colores1 unidos: " + colores2.concat(colores1) + "<br>");
+					document.write("Colores del array colores1 con más colorines y 3 números: " + colores1.concat("Gris","Azul Marino", "Dorado", 23, 67, 12) + "<br>");
+					document.write("Colores del array colores1: " + colores1.join(", ") + "<br>");
+				*/
+			</script>
+		</head>
+		
+	<body>
+
+	</body>
+</html>				

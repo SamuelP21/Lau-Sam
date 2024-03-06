@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bucles5</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+		//Ejercicio 1.
+			
+			let numero=0, edad, sexo;
+            let hombre=0, hombreT=0, mujer=0, mujerT=0, vuelta=0;
+
+            do {
+                
+                numero= parseInt(prompt("Introduzca su DNI: "));
+                
+                if (numero==0) {
+                    break;
+                }
+                edad= parseInt(prompt("Introduzca su edad: "))
+
+                sexo= prompt("Introduzca su sexo: ");
+                if (sexo=="m") {
+                    hombre++;
+                    if ((edad>=18 && edad <65))
+                        hombreT ++;
+                }
+                if (sexo="f") {
+                    mujer++;
+                    if ((edad>=18 && edad <65)) {
+                        mujerT ++;
+                    }
+                }
+                vuelta ++;
+
+
+            } while (numero!=0);
+
+
+                    document.write("Total de personas censadas: " + vuelta + "<br>")
+                    document.write("Total de hombres: " + hombre + "<br>")
+                    document.write("Total de mujeres: " + mujer + "<br>")
+                    document.write("Total de hombres en edad laboral: " + hombreT + "<br>")
+                    document.write("Total de mujeres en edad laboral: " + mujerT + "<br>")
+            
+
+
+
+
+
+
+			  
+			 
+			
+			document.write("<br>")
+
+			
+
+				
+		//Ejercicio 2.		
+
+
+
+	  
+		</script>
+
+	</head>
+	<body>
+				
+	</body>
+	
+</html>

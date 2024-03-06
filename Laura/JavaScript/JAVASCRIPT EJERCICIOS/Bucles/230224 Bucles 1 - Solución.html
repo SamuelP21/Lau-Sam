@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Bucles While</title>
+	<meta charset="UTF-8">
+	
+	<script type="text/javascript">
+	
+		//Ejercicio 1A: Múltiplos de 12 hasta el valor 500.
+	/*
+			let multiplo12;
+			multiplo12 = 12;
+			while (multiplo12 <= 500)
+			{
+				document.write(multiplo12 + "<br>");
+				multiplo12 = multiplo12 + 12;
+				//multiplo12 += 12;
+				
+			}
+			document.write("Fin del bucle " + multiplo12 + "<br>");
+		*/
+		
+		//Ejercicio 1B: Múltiplos de 12 hasta el valor 500. Variante.
+		
+		/*
+			let multiplo12 = 12;
+			let vuelta = 1;
+		
+				while(multiplo12 <= 500)
+				{
+					document.write("El múltiplo es: " + "  " + multiplo12 + "<br>"); 
+					
+					vuelta++;
+					
+					multiplo12 = 12 * vuelta;	
+	
+				}
+				document.write("Fin del bucle " + multiplo12 + "<br>");
+		*/
+		
+		//Ejercicio 1C: Múltiplos de 12 hasta el valor 500. Variante. No pedido en el ejercicio.
+	/*
+			let multiplo,multiplo12,vueltas_totales,vueltas;
+			multiplo = 12;
+			multiplo12 = 12;
+			vueltas_totales = 0;
+			vuelta = 1;
+			while (multiplo <= 500)
+			{
+				multiplo = multiplo + 12;
+				vueltas_totales++;
+			}
+			document.write("Total de iteraciones en el bucle: " + vueltas_totales + "<br><br>");
+			while (vuelta <= vueltas_totales)
+			{
+				document.write("En la vuelta " + vuelta + ", la variable multiplo12 vale " + multiplo12 * vuelta + "<br>");
+				vuelta++;
+			}
+			document.write("<br>Fin del bucle. <br>");
+	
+		*/
+		
+		
+		
+		//Ejercicio 2: Cuenta atrás.
+	/*
+			let numero = 10; // inicializar la variable con un valor dentro del código.
+			//let numero = prompt("Escribe un número :",""); // Inicializar variable contadora con valor introducido por teclado.
+		
+			while( numero >= 0 )
+			{
+				
+				document.write("Contando....... " + numero + "<br>" );
+				numero--;
+				//numero = numero - 1;
+			}
+			document.write("Fin del bucle " + numero + "<br>");
+			
+	*/	
+		//Ejercicio 3: Mostrar los números pares del 0 al 20.	
+/*
+			let par = 2;
+			document.write("Números pares entre el 0 y el 20:" + "<br>");
+			while (par <= 20)
+			{
+				document.write(par + "<br>");
+				par += 2;
+				//par = par + 2;
+			} 
+  			document.write("Fin del bucle " + par + "<br>");	
+	*/
+		//Ejercicio 4: Suma de los 30 primeros números.
+			
+			//1+2+3+4+5+6+7+...+30.
+			//Vuelta 1 --> 1
+			//Vuelta 2 --> 1+2 = 3
+			//Vuelta 3 --> 3+3= 6
+	
+			let numero, suma;
+			numero = 1; 
+			suma = 0;
+			while (numero <=30)
+			{
+				suma = suma + numero;
+				document.write("El acumulador \"suma\" en la vuelta " + numero +" y el total acumulado es : " + suma+ "<br>");
+				//suma = 0 + 1; //Vuelta 1 suma vale 1.
+				//suma = 1 + 2; //Vuelta 2 Suma vale 3.
+				//suma = 3 + 3; //Vuelta 3 Suma vale 6.
+				numero++;
+											
+			}
+			document.write("<br> La suma total de los 30 primeros números es " + suma);
+	
+    </script>
+	
+	</head>
+	
+	<body>
+
+	</body>
+</html>

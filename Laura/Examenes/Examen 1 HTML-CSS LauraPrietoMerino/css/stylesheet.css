@@ -1,0 +1,25 @@
+.contenedor {margin:auto;
+    width:40%; 
+    border: 5px double #ab2a3e ;}
+
+h1 {font-family: calibri, verdana, sans-serif;
+    color:navy;
+    font-style: italic;
+    text-align: center;}
+
+p {text-align: center;}
+
+.verde {color: white;
+        background-color: green;}
+.rojo {color: white;
+        background-color: red;}
+.naranja {color: white;
+        background-color: orange;}
+.marron {color: white;
+    background-color: brown;}
+.azul {color: white;
+    background-color: blue;}
+   
+a:hover{color:black;}
+
+

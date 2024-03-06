@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Condicionales 4</title>
+		<meta charset="UTF-8">
+	</head>
+<body>
+
+		<script>
+		
+		// Ejercicio 1.
+
+/* 		Eliminar diacríticos */
+
+/* 		function eliminarDiacriticos (texto) {
+			return texto.normalizar('NFD').replace(/[\u0300-\u036f]/g,"");
+		}
+		 */
+		let color;
+			color = prompt("¿Cual es el color de la luz del semáforo?","").toLowerCase();
+/* 			color= eliminarDiacriticos(color); */
+			switch (color)
+			{
+				
+				case "rojo":
+					document.write("Alto <br>");
+					break;
+				
+				
+				case "ambar":
+				case "ámbar":
+					document.write("Precaución <br>");
+					break;
+
+				case "verde":
+					document.write("Adelante <br>");
+					break;
+				
+				default:
+					document.write("Color incorrecto <br>");
+					break;
+				
+			}
+				  
+		// Ejercicio 2.
+	 
+		let palabra = prompt("¿Qué palabra quieres traducir al inglés?","").toLowerCase();
+
+		switch (palabra)
+			{
+				
+				case "casa":
+				document.write("house <br>");
+				break;
+				
+				case "coche":
+				document.write("car <br>");
+				break;
+
+				case "sol":
+				document.write("sun <br>");
+				break;
+
+				case "luna":
+				document.write("moon <br>");
+				break;
+
+				case "amigo":
+				document.write("friend <br>");
+				break;
+				
+				default:
+				document.write("No hay traducción disponible para la palabra" + palabra + "<br>");
+				break;
+				
+			}
+
+		// Ejercicio 3.
+	 
+		let mes = prompt("Introduce el mes","").toLowerCase();
+
+			switch (mes)
+				{
+						
+					case "enero":
+					case "marzo":
+					case "mayo":
+					case "julio":
+					case "agosto":
+					case "octubre":
+					case "diciembre":
+
+					document.write(mes + " tiene 31 días <br>");
+					break;
+						
+					case "abril":
+					case "junio":
+					case "septiembre":
+					case "noviembre":
+
+					document.write(mes + "tiene 30 días <br>");
+					break;
+
+					case "febrero":
+					document.write(mes + "tiene 28 o 29 días <br>");
+					break;
+						
+					default:
+					document.write("No se ha intruducido un mes del año <br>");
+					break;
+						
+				}
+		  
+		</script>
+
+	</body>
+</html>

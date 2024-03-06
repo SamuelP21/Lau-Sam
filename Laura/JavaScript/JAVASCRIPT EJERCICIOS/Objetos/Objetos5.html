@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos 5</title>
+		<meta charset="UTF-8">
+				
+		<script>
+
+			function trabajadores(nombre, apellidos, nhijos, sueldoBruto)
+			{
+				this.nombre=nombre;
+				this.apellidos=apellidos;
+				this.nhijos=nhijos;
+				this.sueldoBruto=sueldoBruto;
+
+				this.sueldoNeto= function () 
+				{	
+					if (this.nhijos >=3) 
+					{
+					 	this.sueldoNeto=(sueldoBruto-(sueldoBruto*0.11))
+					}
+					if (this.nhijos == 1 || nhijos ==2 ) 
+					{
+						this.sueldoNeto=(sueldoBruto-(sueldoBruto*0.17))
+					}
+					if (this.nhijos ==0) 
+					{
+						this.sueldoNeto=(sueldoBruto-(sueldoBruto*0.23))	
+					}
+
+					document.write("<br>Nombre: " + this.nombre + "<br>Apellidos: " + this.apellidos + "<br>Sueldo Neto: " + this.sueldoNeto + "<br><br><br>") 
+				}
+			}
+				let trabajador1 = new trabajadores("Lucía","Martín García",3,1000);
+				let trabajador2 = new trabajadores("Carolina","Pérez Sanz",2,1000);
+				let trabajador3 = new trabajadores("Maria", "López Ramos",0, 1000);
+
+
+				document.write("Datos de: " + trabajador1.nombre + "<br>")
+				trabajador1.sueldoNeto();
+
+				document.write("Datos de: " + trabajador2.nombre + "<br>")
+				trabajador2.sueldoNeto();
+
+				document.write("Datos de: " + trabajador3.nombre + "<br>")
+				trabajador3.sueldoNeto();
+
+		
+		</script>
+		
+		
+		
+		<!--<script type="text/javascript" src = "ruta acceso/archivo.js">
+		
+				
+		
+		</script>
+		
+	</head>
+	<body>
+	
+		<script>
+		
+			 Incluir aquí el código JavaScript a probar-->
+		
+	<!-- 	</script> -->
+		
+		<!--<script type="text/javascript" src = "ruta acceso/archivo.js">
+		
+			
+		
+		</script>-->
+		
+
+
+	</body>
+	
+</html>

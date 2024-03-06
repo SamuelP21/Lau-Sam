@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Operadores</title>
+	</head>
+	<body>
+		<script>
+			
+			// Ejercicio 1.
+			
+			document.write("Ejercicio 1."+ "<br>"+ "<br>");
+			
+			var n1 = 30;
+			var n2 = 55;
+			modulo1 = n1%2;
+			modulo2 = n2%2;
+			document.write("El modulo de 30 dividido por 2 es " + modulo1+ " y el de 55 es "+ modulo2 + "<br>"+ "<br>");
+			
+			//Ejercicio 2.
+			
+			document.write("Ejercicio 2."+ "<br>"+ "<br>");
+			
+			var A=5;
+			var B=3;
+			var C=-12;
+			
+			var condicion1 = A > 3;//true.
+			var condicion2 = A > C;//true.
+			var condicion3 = A < C;//false.
+			var condicion4 = B < C; //false.
+			var condicion5 = B != C;//true.
+			var condicion6 = A == 3;//false.
+			var condicion7 = A * B == 15;//true,
+			var condicion8 = A * B == -30;//false.
+			var condicion9 = C / B < A;//true.
+			var condicion10 = C / B == -10;//false.
+			var condicion11 = C / B == -4;//true.
+			var condicion12 = A + B + C == 5;//false.
+			var condicion13 = (A+B == 8) && (A-B == 2);//true.
+			var condicion14 = (A+B == 8) || (A-B == 6);//true.
+			var condicion15 = A > 3 && B > 3 && C < 3;//false.
+			var condicion16 = A > 3 && B >= 3 && C < -3;//true.
+			
+			document.write("El resultado de condición 1 es " + condicion1 + "<br>");
+			document.write("El resultado de condición 2 es " + condicion2 + "<br>");
+			document.write("El resultado de condición 3 es " + condicion3 + "<br>");
+			document.write("El resultado de condición 4 es " + condicion4 + "<br>");
+			document.write("El resultado de condición 5 es " + condicion5 + "<br>");
+			document.write("El resultado de condición 6 es " + condicion6 + "<br>");
+			document.write("El resultado de condición 7 es " + condicion7 + "<br>");
+			document.write("El resultado de condición 8 es " + condicion8 + "<br>");
+			document.write("El resultado de condición 9 es " + condicion9 + "<br>");
+			document.write("El resultado de condición 10 es " + condicion10 + "<br>");
+			document.write("El resultado de condición 11 es " + condicion11 + "<br>");
+			document.write("El resultado de condición 12 es " + condicion12 + "<br>");
+			document.write("El resultado de condición 13 es " + condicion13 + "<br>");
+			document.write("El resultado de condición 14 es " + condicion14 + "<br>");
+			document.write("El resultado de condición 15 es " + condicion15 + "<br>");
+			document.write("El resultado de condición 16 es " + condicion16 + "<br>"+ "<br>");
+			document.write("El resultado de condición 16A es " + (A > 3 && B >= 3 && C < -3) + "<br>"+ "<br>");		
+			//Ejercicio 3.
+			
+			document.write("Ejercicio 3."+ "<br>"+ "<br>");
+			
+			var a = 20;
+			var b = "Texto";
+			var c;
+			document.write("La variable a es de tipo "+ typeof(a)+ ", la variable b de tipo "+ typeof b+
+			" y la variable c de tipo "+ typeof c + "<br>"+ "<br>");
+									
+			//Ejercicio 4.
+			
+			document.write("Ejercicio 4."+ "<br>"+ "<br>");
+			
+			var DNI = "123456789M";
+			var resultado1 = (DNI == "123456789M")? "DNI Correcto" : "DNI Incorrecto" ;
+			var resultado2 = (DNI == "987654321M")? "DNI Correcto": "DNI Incorrecto";
+			document.write("Resultado 1 "+ resultado1 + "<br>");
+			document.write("Resultado 2 "+ resultado2);
+			
+		</script>
+	</body>
+</html>
