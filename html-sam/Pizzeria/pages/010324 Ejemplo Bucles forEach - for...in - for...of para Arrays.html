@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bucles for...in y for...of para Arrays</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+			//Entrada de datos.
+		/*
+				let nombres = new Array(5);
+				let nom, contador;
+					
+				for(contador of nombres)
+				{
+					nom = prompt("Introduce un nombre");
+					nombres[contador] = nom;
+					//nombres[contador] = prompt("Introduce un nombre");
+					
+					document.write("Nombre: " + nombres[contador] + "<br>"); //Muestra contenido del array temporalmente.
+					 							
+				}
+		       document.write("Nombre: " + nombres + "<br>"); // No muestra contenido del array.
+			*/	
+			//Salida de datos.
+			
+				//let rios = new Array("Ebro","Duero","Guadalquivir");
+				let rios = new Array(2);
+				rios[0]="Ebro";
+				rios[2]="Guadalquivir";
+				/*let i;	
+				
+				for(i in rios) // No muestra los datos de posiciones vacías, es decir, no muestra undefined.
+				{
+					  document.write("Rios: " + rios[i] + " en posición: " + i + "<br>"); // Muestra datos en cada posición.
+					  //document.write("Rio en índice " + i + ": " + rios[i] + "<br><br>"); // Muestra cada posición y dato en cada una de ellas.
+					 	
+				}
+				 document.write("Número de elementos en el array "+ rios.length + "<br>");
+				
+				for(i=0;i<rios.length;i++) // Muestra los datos de todas las posiciones, incluso los undefined.
+				{
+					  document.write("Rios: " + rios[i] + " en posición: " + i + "<br>"); // Muestra datos en cada posición.
+					  //document.write("Rio en índice " + i + ": " + rios[i] + "<br><br>"); // Muestra cada posición y dato en cada una de ellas.
+					 	
+				}
+				document.write("Número de elementos en el array "+ rios.length + "<br>");
+			
+						
+				for(i of rios)
+				{
+					  
+					  document.write("Rios: " + i + "<br>"); // Muestra datos en cada posición.
+					  document.write("Rio en índice " + rios.indexOf(i) + ": " + i + "<br><br>"); // Muestra cada posición y dato en cada una de ellas.
+									
+							
+				}
+			*/
+				// Método forEach() del objeto Array.
+				
+				rios.forEach(funcionArray);
+				
+				function funcionArray(a,b)
+				{
+					document.write("En el índice " + b + " está el valor " + a + "<br>");
+				}
+
+			  
+		</script>  
+		
+	</head>	
+	
+	<body>
+	
+	</body>
+</html> 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/registro.css"> -->
+    <title>Formulario</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .centro{
+            display: flex;            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #264b83;
+        }
+        form{
+            display: flex;            
+            justify-content: center;
+            align-items: center;
+            background: rgb(52, 124, 172);
+            padding: 15px;
+            border-radius: 1em;
+            width: 15%;
+        }
+        label{
+            color: rgb(233, 223, 223);
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1><strong>Cómo hacer pollo teriyaki.</strong></h1>
+    <p>
+        La cocina japonesa tiene un sinfín de platos más allá del sushi y entre ellos
+        está esta <a href="https://www.abc.es/recetasderechupete/todas/recetas/carnes-aves/recetas-con-pollo/">receta de pollo</a> teriyaki. Se trata de 
+        <span class="borde">uno de los platos japoneses más conocidos</span>
+        en occidente, junto con el sushi y el sashimi, y se ha convertido en
+        una receta recurrente para los amantes de la <span class="decoracionTexto">cocina japonesa</span>.
+    </p>
+    <p>
+        Sin meternos en las profundidades del sushi, que puede resultar bastante laborioso a la
+        hora en su preparación, el <strong>pollo teriyaki</strong> es una <span class="bgAmarillo">receta muy sencilla</span> que fácilmente
+        podemos hacer nosotros mismos. 
+    </p>
+    <p class="letraAzul">
+        En realidad, el <strong>teriyaki</strong> es una <span class="underline">técnica culinaria </span> que consiste en cocinar los
+        alimentos en una salsa dulce, ya sea al horno o a la parrilla. La palabra
+        teriyaki deriva de <strong>teri</strong>, refiriéndose al brillo o lacado que le aporta la salsa
+        en la que se baña, y <strong>yaki</strong>, indicando el método de cocina sumergiendo el
+        producto dentro de la salsa.
+    </p>
+    <p class="bgRosa">
+        Podemos hacer teriyaki con otro tipo de carnes o pescados (<span>cerdo, vaca, atún,
+            salmón</span>…) y formas, es muy conocido el <strong class="underline">yakitori teriyaki</strong>, unas brochetas de pollo y
+        verduras cocinadas al estilo teriyaki. 
+    </p>
+    <input class="red-input" value="Voy a ser de color rojo cuando enfoque." /><br />
+    <input class="blue-input" value="Voy a ser de color azul cuando enfoque." /> -->
+    <div class="centro">
+        <form>
+            <div>
+                <label for="">Nombre: </label> <br>
+                <input type="text" name="nombre" id="nombre">
+                <br> <br>
+                <label for="">Correo: </label> <br>
+                    <input type="email" name="nombre" id="nombre">
+                <br> <br>
+                <label for="">Contraseña: </label> <br>
+                    <input type="password" name="nombre" id="nombre">
+                <br> <br>
+                <label for="">Repite Contraseña: </label> <br>
+                    <input type="password" name="nombre" id="nombre">
+                <br>
+                <br>
+                <button type="submit">Crear</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

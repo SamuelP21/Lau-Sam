@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	
+		<meta charset="utf-8" />
+		<title>Document 3 Acceso a DOM</title>
+		
+		<style type="text/css">
+		
+		
+			h1,p{color:blue}
+			.parr{font-weight:bold;}
+			ul~p{font-style:italic;}
+			#d1 #p1:first-line{color:maroon; font-size: 40px;}
+			ul{font-family:cambria; font-size:24px;}
+			ul :first-child{color:orange;}
+			[id^="ele"]{font-style:italic;}
+		
+		
+		</style>
+	
+	</head>
+	
+	<body>
+	
+	
+		<h1>Biblioteca Digital</h1>
+		<div id="d1">
+			<p id="p1" class ="colores">
+				1. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			<p id = "p2" class = "parr">
+				2. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+			<p id = "p3" class = "parr">
+				3. Localice el <span style = "font-style: italic">libro de su interés</span>; cree, modifique y almacene
+				sus propios exámenes.           Podrá exportar los exámenes en formato <em>PDF</em>,
+				imprimirlos y llevarlos al <span style = "color: green">aula</span>.
+			</p>
+		
+		</div>
+		<div id="d2">
+		
+			<ul>
+			
+				<li id ="ele-uno">uno</li> 
+				<li id ="ele-dos">dos</li>
+				<li id ="elemento-3">tres</li>
+				<li id ="4-elemento">cuatro</li> 
+				<li id ="quinto">cinco</li>
+				<li id ="sexto">seis</li>
+			
+			</ul>
+			<p class = "parr">
+				4. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+			<p class = "p1">
+				5. Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+		</div>	
+		
+		<script>
+			let parrafo = document.getElementById('p3');
+			let contenido1 = parrafo.textContent;
+			let contenido2 = parrafo.innerHTML;
+			let contenido3 = parrafo.innerText;
+
+			// Mostrar en la página web
+			document.write(`<p>Contenido: ${contenido1}</p>`);
+			document.write(`<p>Contenido HTML: ${contenido2}</p>`);
+			document.write(`<p>Contenido de Texto: ${contenido3}</p>`);
+
+			// Mostrar en una ventana emergente
+			//window.alert(`Contenido: ${contenido1}\nContenido HTML: ${contenido2}\nContenido de Texto: ${contenido3}`);
+
+			let div2 = document.getElementById('d2').innerHTML;
+
+			document.write('contenido de la segunda div' + div2);
+			/* */
+
+			let parrafos1a = Array.from(document.getElementsByTagName('p'));
+
+			parrafos1a.forEach((parrafo, index) => {
+				console.log(`Contenido del párrafo ${index + 1}: ${parrafo.textContent}`);
+			});
+			/**/
+			let parrafos = document.getElementsByTagName('p');
+			let parrafos1 = [];
+
+			// Cargar el array con los párrafos usando un bucle for
+			for (let i = 0; i < parrafos.length; i++) {
+				parrafos1.push(parrafos[i].textContent);
+				//parrafos1.push(document.getElementsByTagName('p')[i].textContent);
+			}
+			// Mostrar la cantidad de párrafos almacenados en el array
+			console.log(`Se han almacenado ${parrafos1.length} párrafos en el array.`);
+			// ¿Cuántos caracteres tiene cada párrafo?
+			for (let i = 0; i < parrafos1.length; i++) {
+				
+				console.log(`El párrafo ${i + 1} tiene ${parrafos1[i].length} caracteres.`);
+			}
+
+			
+		</script>
+		
+	</body>
+</html>

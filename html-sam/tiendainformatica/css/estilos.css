@@ -1,0 +1,50 @@
+body{
+    border: 5px double red;
+    width: 500px;
+    margin-left: 50px;
+    background-color: gray;
+}
+
+h1, h2, p{
+    margin: 20px;
+}
+
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 18px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+p span{
+    text-decoration: line-through;
+}
+
+a:link{
+    background: blue;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+a:visited{
+    background: blue;
+    color: red;
+}
+a:hover{
+    background: green;
+    color: white;
+ 
+}
+a:active{
+    font-size: 10px;
+}

@@ -1,0 +1,28 @@
+main{
+    display: flex;
+}
+section{
+    width: 20%;
+    height: 80vh;
+    background: red;
+}
+
+aside{
+    width: 80%;
+    height: 80vh;
+    background: black;
+}
+
+footer{
+    background: rgb(173, 170, 170);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(61, 58, 58);
+    font-size: 25px;
+    margin-right: 2%;
+}

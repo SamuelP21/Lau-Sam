@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        /* function suma() {
+            document.writeln("suma: " + (5+6+7+8+9));
+            document.writeln("<br>");
+        }
+        suma();
+        function suma2(a, b, c, d = 0, e = 0) {
+            document.writeln("suma: " + (a+b+c+d+e));
+            document.writeln("<br>");
+        }
+        suma2(2, 2, 2, 2, 2);
+        suma2(2, 2, 2);
+
+        function cubo(a) {
+            document.writeln("suma: " + Math.pow(a, 2));
+            document.writeln("<br>");
+            
+        }
+
+        cubo(4); */
+
+        /* function sumaR(a, b) {
+            return a + b;
+        }
+        document.writeln("suma: " + sumaR(8, 4));
+        document.writeln("<br>");
+
+        function sumarBucle() {
+            let numero = 0;
+            for (let index = 0; index < 2; index++) {
+
+                numero += parseInt(prompt('introduce numero: '));
+                
+            }
+            document.writeln("suma: " + numero);
+            document.writeln("<br>");
+
+        }
+        sumarBucle(); */
+
+        /* var potencia = () =>{
+            let numeroP = parseInt(prompt('numero potencia'));
+            return Math.pow(numeroP, 2);
+
+        } 
+        
+        document.writeln("Potencia: " + potencia());
+        document.writeln("<br>"); */
+
+        const operacionNumero = () => {
+        let numero = prompt("Introduce un número:");
+        numero = parseFloat(numero);
+        
+            if (numero > 200) {
+                numero *= 1.1; // Aumenta un 10%
+                console.log(`El número introducido es ${numero / 1.1}, y aumentado un 10% es ${numero}`);
+            } else {
+                numero *= 0.9; // Reduce un 10%
+                console.log(`El número introducido es ${numero / 0.9}, y reducido un 10% es ${numero}`);
+            }
+        };
+
+        operacionNumero();
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

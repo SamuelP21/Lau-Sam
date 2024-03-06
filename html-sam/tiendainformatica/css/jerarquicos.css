@@ -1,0 +1,26 @@
+#d1 ul li{
+    color: red;
+}
+
+#d1 .azul{
+    color: blue!important;
+}
+
+ul h1{
+    color: green;
+}
+
+#d1 ul h1{
+    color: orange;
+}
+
+div h1{
+    color: yellow;
+}
+h1{
+    color: magenta;
+}
+
+h1+p {
+    color: green;
+}

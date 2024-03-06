@@ -1,0 +1,68 @@
+body{
+    background: gray;
+}
+header{
+    background-color: rgb(160, 160, 36); 
+    display: flex;   
+}
+
+header img{
+    margin-left: 5px;
+}
+header h1{
+    text-align: center;
+    margin: 15px auto;
+    font-size: 50px;
+}
+
+nav{ 
+    background: rgb(97, 97, 173);
+    margin-top: 5px;
+    text-align: center;
+}
+nav a{
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+nav a:hover{
+    color: red;
+    background: #000;
+}
+
+nav a:active{
+    font-size: 50px;
+}
+
+main{
+    background: #000;
+    width: 75vw;
+    height: 70vh;
+    margin-top: 5px;
+}
+.contenido{
+    display: flex;
+}
+
+.section1{
+    background: #4969c2;
+    margin-left: 5px;
+    width: 25vw;
+    height: 19.4vh;
+    margin-top: 5px;
+}
+.section2{
+    background: #4969c2;
+    margin-left: 5px;
+    width: 25vw;
+    height: 50vh;
+    margin-top: 5px;
+}
+footer{
+    background: #2e85b8;
+    width: 98vw;
+    height: 10vh;
+    margin-top: 5px;
+}

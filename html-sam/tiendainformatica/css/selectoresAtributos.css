@@ -1,0 +1,14 @@
+[class]{
+    font-weight: bold;
+}
+
+a[title]{
+    text-decoration: none;
+}
+
+[class="ptexto"]{
+    color: red;
+}
+[class^="t"]{
+    text-decoration: line-through;
+}

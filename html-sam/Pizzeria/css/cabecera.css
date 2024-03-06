@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+header{
+    background: #383636;
+    font-family: serif;
+}
+header h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 4vw;
+}
+nav{
+    background: rgb(173, 170, 170);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(61, 58, 58);
+    font-size: 30px;
+    margin-right: 5%;
+}
+
+
+
+/* .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+.bastarda{
+    font-family: bastarda;
+}
+
+@font-face {
+    font-family: bastarda;
+    src: url(../fonts/JacquardaBastarda9-Regular.ttf);
+}
+
+.valentine{
+    font-family: valentine;
+}
+
+@font-face {
+    font-family: valentine;
+    src: url(../fonts/Valentine.ttf);
+} */

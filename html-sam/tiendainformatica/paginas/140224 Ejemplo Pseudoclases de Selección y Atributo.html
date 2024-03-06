@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo Pseudoclases de Selección y Atributo</title>
+		
+		<style > 
+		
+		/*Pseudoclases de selección */
+			
+			-ul :first-child{color:red}
+			-#lista1>:first-child{color:red}
+			-#lista1 :first-child{color:red}
+			-ul :last-child{color:blue}
+			-ol :first-child{color:blue}
+			-ol li:first-of-type{color:blue}
+			-p:first-of-type{color:blue}
+			-div :first-child{text-decoration:underline}
+			-div p:first-of-type{text-decoration:underline}
+			-div :last-child{font-size: 30px}
+			-div p:last-of-type{font-size: 30px}
+			-ul :last-of-type{text-decoration:underline}
+			-ol :nth-child(2){font-style:italic}
+			-ol :nth-child(odd){font-style:italic}
+			-ol :nth-child(even){color:magenta}
+			-li:nth-of-type(3) {background-color: red;}
+			-ol li:nth-of-type(5) {background-color: blue;}
+			-div :nth-child(odd) {font-family:comic sans ms;}
+			-div :nth-child(3) {color: red;}
+			-div :nth-child(even) {color: yellow;}
+			-div p:nth-of-type(odd) {background-color: blue;}
+			-div a:nth-of-type(3) {background-color: blue;}
+			-ol :nth-last-child(even){color:magenta}
+			-div :nth-last-child(odd){font-size:30px}
+			-div p:nth-last-of-type(odd){font-size:30px}
+			-#d0 p:nth-last-of-type(odd){font-size:30px}
+			-#d0 :nth-last-child(odd){font-size:30px}
+						
+		/*Pseudoclases de atributos*/	
+		
+			-a[title] {font-family:impact; color:green}
+			-li[id]{font-family:helvetica; color:red}
+			-*[title] {font-family:impact; color:green}
+			-a[title ="titulo1"] {font-family:comic sans ms; font-size:30px}
+			-a[title ^= "titu"] {font-family:helvetica; color:red}
+			-a[title $= "2"] {font-family:helvetica; color:red}
+			-*[title $= "2"] {font-family:helvetica; color:red}
+			-a[title *= "it"] {font-family:helvetica; color:red}
+			-*[title *= "it"] {font-family:helvetica; color:red}
+			-li[id |="ele"]{font-family:helvetica; color:red}
+			-*[id |="ele"]{font-family:helvetica; color:red}
+			-p[title~="una"] {background-color:orange}
+			
+		</style>
+    </head>
+	
+   <body>
+	
+	<h1>Titulo 1</h1>
+	<p id="ele">Parrafo 0</p> 
+	<div id="d0">
+		<h1>Titulo 2</h1>
+		<p>Parrafo 1</p> 
+		<p>Parrafo 2</p>
+		<p>Parrafo 3</p>
+		<a href="#" title ="titulo1">Enlace 1</a>
+		<a href="#" title ="tatlite2">Enlace 2</a>
+		<a href="#" title ="titu3">Enlace 3</a>
+		<a href="#" title ="cuarto2">Enlace 4</a>
+		<a href="https://www.elcorteingles.es/" title ="ECI">El Corte Inglés</a>
+	</div>	
+	
+	<ul  id = "lista1">
+		<li id ="ele-uno">uno </li>
+			<ul id = "lista2">
+				<li >unoA</li>
+				<li >unoB</li>
+				<li >unoC</li>
+			</ul>
+		<li id ="ele-dos">dos</li>
+		<li id ="elemento-3">tres</li>
+		<li>cuatro</li> 
+		<li>cinco</li>
+		<li>seis</li>
+		
+	</ul>
+	<ul>
+			<li >unoA</li>
+			<li >unoB</li>
+			<li >unoC</li>
+	</ul>
+	<p title ="una">Una</p>
+	<p title ="Texto sobre de una playa2">playa</p>
+	<p title ="Texto de una montaña italiana">montaña</p>
+	<p title ="Texto de un lunatico">castillo</p>
+	
+	<ol>
+		<p >Primero</p>
+		<li id ="a">uno</li> 
+		<li>dos</li>
+		<li id ="ele-tres">tres</li>
+		<li>cuatro</li> 
+		<li>cinco</li>
+		<li>seis</li>
+		
+	</ol>
+		<h1>Universidad Complutense</h1>
+		<div id="d1 divi">
+			<p id="p1" class ="colores">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			<p class = "parr">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+			<p class = "parr">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+		
+		</div>
+		<div id="d2">
+		<p class = "parr">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+			
+		<p class = "p1">
+				Localice el libro de su interés; cree, modifique y almacene
+				sus propios exámenes. Podrá exportar los exámenes en formato PDF,
+				imprimirlos y llevarlos al aula.
+			</p>
+		</div>	
+	</body>
+</html>

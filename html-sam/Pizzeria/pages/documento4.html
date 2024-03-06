@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de socios</title>
+</head>
+<body>
+    <div id="d">
+        <h2>Lista de socios.</h2>
+        <p id="p1">Solo se muestran los socios que han pagado la cuota del año actual.</p>
+        <ul id="lista-uno">
+            <li id="l1" class="hombre">Juan</li>
+            <li id="l2" class="hombre">José</li>
+            <li id="l3" class="mujer">Eva</li>
+            <li id="l4" class="hombre">Pepe</li>
+            <li id="l5" class="mujer">Cristina</li>
+            <li id="l6" class="mujer">Rosa</li>
+            <li id="l7" class="hombre">Luis</li>
+            <li id="l8" class="hombre">Antonio</li>
+            <li id="l9" class="mujer">Eugenia</li>
+        </ul>
+    </div>
+
+    <script>
+        
+        let listaSocios = document.getElementById('lista-uno').getElementsByTagName('li');
+        let nombresSocios = [];
+
+        
+        for (let i = 0; i < listaSocios.length; i++) {
+             nombresSocios.push(listaSocios[i].textContent);
+        }
+
+        console.log(`El número de socios es: ${nombresSocios.length}`);
+
+        console.log('Los nombres de los socios tal y como se han introducido:');
+        console.log(nombresSocios);
+
+        console.log('Los nombres de los socios en orden inverso:');
+        console.log(nombresSocios.reverse());
+
+        console.log('Los nombres de los socios ordenados alfabéticamente:');
+        console.log(nombresSocios.sort());
+
+        let hombres = Array.from(document.getElementsByClassName('hombre'));
+        let mujer = document.getElementsByClassName('mujer');
+        
+
+        console.log(`El número de socios masculinos es: ${hombres.length}`);
+        console.log(`El número de socios femeninos es: ${mujer.length}`);
+
+        hombres.sort((a, b) => a.textContent.localeCompare(b.textContent));
+        console.log('Los nombres de los socios ordenados alfabéticamente:');
+        hombres.forEach(hombre => {
+            console.log(hombre.textContent);
+        });
+
+        /*mostrar mujer en forma ordenada*/
+        let mujerArray = [];
+        for (let i = 0; i < mujer.length; i++) {
+            mujerArray.push(mujer[i].textContent);            
+        }
+        console.log('Los nombres de las socias ordenados alfabéticamente:');
+        console.log(mujerArray.sort());
+        document.write(mujerArray.sort());
+        /*ejercicio 3*/
+        
+        let elementosTerminadosEn1 = Array.from(document.querySelectorAll('[id$="1"]'));
+
+        console.log('La cantidad de elementos cuyo identificador termina en "1" es: ' + elementosTerminadosEn1.length);
+
+        console.log('Los elementos cuyo identificador termina en "1" son:');
+        document.write('Los elementos cuyo identificador termina en "1" son: <br>');
+        elementosTerminadosEn1.forEach(elemento => {
+            console.log(elemento);          
+            document.write(elemento.outerHTML + '<br>');
+        });
+        
+
+    </script>
+</body>
+</html>

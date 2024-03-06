@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Cuadros de diálogo de confirmación y alerta o aviso</title>	
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script>
+				
+		</script>
+		
+	</head>
+	<body>
+		
+		<p id = "cambio">Aquí se mostrará que botón has pulsado</p>
+		<a href ="#" onclick = "acceder1()">Filmaffinity</a><br>
+		<a href ="https://www.divinacocina.es/" onclick = "return acceder2()">Recetas Divinas</a><!--Return hace que sólo sea válido Aceptar para cargar la página ????.-->
+		
+		<script>
+	
+			
+	
+			//Cuadro de diálogo confirm();
+		/*
+			function confirmar()
+			{
+				var mensaje;
+				var opcion = confirm("¿Quieres continuar?");
+				if (opcion == true)
+				{
+					mensaje = "Has pulsado Aceptar";
+				} 
+				else
+				{
+					mensaje = "Has pulsado Cancelar";
+				}
+				document.getElementById("cambio").innerHTML += " "+ mensaje; // Cambia el contenido del párrafo identificado como "cambio", por el texto contenido en la variable mensaje.
+				
+			}
+			
+			confirmar();
+		*/	
+			//Cuadro de diálogo confirm();
+			/*
+			function acceder1()
+			{
+						
+				var opcion = confirm("¿Eres mayor de edad?");
+				
+				if (opcion == true)
+				{
+					window.open("https://www.filmaffinity.com/es/main.html");
+				} 
+				else
+				{
+					document.write("No puedes acceder a la página");
+				}
+			}
+			
+			//Cuadro de diálogo confirm();
+		
+			function acceder2()
+			{
+			
+				return confirm("¿Quieres acceder a nuestro sitio web?");
+				
+			}
+			*/
+			//Cuadro de diálogo alert();
+			
+			function alerta()
+			{
+				var mensaje = "Has pulsado Aceptar";
+				alert("¿Quieres continuar?");
+				document.getElementById("cambio").innerHTML = mensaje; // Cambia el contenido del párrafo identificado como "cambio", por el texto contenido en la variable mensaje.
+				
+				//document.getElementById("cambio").innerHTML += mensaje;
+				//document.getElementById("cambio").innerHTML = document.getElementById("cambio").innerHTML + " " + mensaje;
+				//document.getElementById("cambio").innerHTML = mensaje + " " + document.getElementById("cambio").innerHTML ;
+			}
+			alerta();
+		
+			// Sweetalert.
+			
+		//	swal("¡Error!", "¡Algo ha salido mal!", "error",{button:"Aceptar"} );	//Sintaxis -->	swal("titulo", "subtitulo", "tipo de mensaje", {button:"Texto botón"}) Todos los argumentos son opcionales // Tipos de mensajes: warning, error, success e info
+		
+		</script>
+					
+	</body>
+ </html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let num = 12;
+        while (num < 500) {
+            //document.writeln("<br>");
+			document.write(num);
+            document.writeln("<br>");
+            num+=12;
+            break;
+        }
+
+        let num2 = 10;
+        while (num2 >= 0 ) {
+            //document.writeln("<br>");
+			document.write('Contando.....' + num2);
+            document.writeln("<br>");
+            num2--;
+            break;
+        }
+
+        let num3 = 0;
+        while (num3 <= 20 ) {
+            //document.writeln("<br>");
+			document.write(num3);
+            document.writeln("<br>");
+            num3+=2;
+            break;
+        }
+
+        let a = 1;
+        let suma = 0;
+        while (a <= 30) {
+            suma += a;
+            a++;
+            break;
+        }
+        document.write('La suma total de los 30 primeros números es: ' + suma);
+        document.writeln("<br>");
+        document.writeln("---------------------------------------------------------");
+        document.writeln("<br>");
+
+        let n = 0;
+        document.write('Los 10 primeros numeros: ');
+        document.writeln("<br>");
+        do {
+            n++;
+            document.write(n);
+            document.writeln("<br>");
+            break;
+        } while (n < 10);
+
+        /*ejercicio 2*/
+
+        let n1 = 0;
+        document.write('Los 10 primeros numeros: ');
+        document.writeln("<br>");
+        do {
+            
+            document.write('En la iteración nº '+ n1);
+            n1++;
+            document.writeln(', el valor de la variable n es nº ' + n1);
+            document.writeln("<br>");
+            break;
+        } while (n1 < 20);
+       
+        document.writeln("---------------------------------------------------------");
+        document.writeln("<br>");
+
+        for (let n = 1; n <= 10; n++) {
+            
+            if (n == 4) {
+                continue;
+            }
+            if (n == 4) {
+                break;
+            }
+            document.writeln(n);
+            document.writeln("<br>");
+        }
+            /* */
+        document.writeln("<br>"); document.writeln("<br>");
+        for (let n = 5; n <= 50; n+=5) {
+            document.writeln(n);
+            document.writeln("<br>");
+        }
+            /*  */
+        document.writeln("<br>");
+        document.writeln("Tabla de multiplicar del 8");
+        document.writeln("<br>");
+
+        for (let n = 1; (n*8) <= 80 ; n++) {
+            document.writeln("8 por " + n + " es: " + (n*8));
+            document.writeln("<br>");
+        }
+        /* Ejercicios Instrucciones repetitivas 4. */
+        document.writeln("---------------------------------------------------------");
+        document.writeln("<br>");
+        /* ejercicio 1 */
+        
+        /* let contra = prompt('escribe contra: ');
+        while (contra != '1234') {
+            contra = prompt('escribe contra: ');
+        }
+
+         let contra1;
+       do {
+            contra1 = prompt('escribe contra 1 do while: ');
+        } while (contra1 != '12347'); */
+
+        /* -------------------------------- */
+        /* let contra2 = prompt('escribe contra2: ');
+        let bus = 0;
+        while (bus < 2) {
+
+            if (contra2 == '12345') {
+                document.writeln("Clave Correcta 2. Acceso Permitido");
+                document.writeln("<br>");
+                break;
+            }
+            bus++;
+            if (bus == 2) {
+                document.writeln("Clave Incorrecta 2. Acceso Denegado");
+                document.writeln("<br>");
+            }
+            contra2 = prompt('escribe contra 2: ');
+           
+        } */
+
+        /* Ejercicios Instrucciones repetitivas 6 */
+
+    
+
+       /*  for (let index = 0; index < 3; index++) {
+            let contra2 = prompt('escribe contra 2: ');
+            if (contra2 == '12345') {
+                document.writeln("Clave Correcta 2. Acceso Permitido");
+                document.writeln("<br>");
+                break;
+            }
+            if (index == 2) {
+                document.writeln("Clave Incorrecta 2. Acceso Denegado");
+                document.writeln("<br>");
+            }
+            
+             
+        } */
+       /*  let hombre = 0, mujer = 0, mujerl = 0, hombreL = 0;
+        let bus;
+        for (bus = 0; ; bus++) {
+            
+            let dni = parseInt(prompt('DNI:'));
+            if(dni == 0){
+                break;
+            }
+            let edad = parseInt(prompt('Edad:'));
+            let Sexo = prompt('Sexo:');
+            if (Sexo == 'f') {
+                mujer++;
+                if (edad < 65) {
+                    mujerl++;
+                }
+            }
+            if (Sexo == 'm') {
+                hombre++;
+                if (edad < 65) {
+                    hombreL++;
+                }
+            }
+
+            
+        }
+
+        document.writeln("Total de personas censadas: " + bus);
+        document.writeln("<br>");
+        document.writeln("Total mujeres: " + mujer);
+        document.writeln("<br>");
+        document.writeln("Total Hombres: " + hombre);
+        document.writeln("<br>");
+        document.writeln("Total de mujeres en edad laboral: " + mujerl);
+        document.writeln("<br>");
+        document.writeln("Total de hombres en edad laboral: " + hombreL);
+        document.writeln("<br>"); */
+
+        let vecinos; /* = [
+            {
+                'dni' : 62,
+                'edad' : 2,
+                'sexo' :'f'
+            },
+            {
+                'dni' : 62,
+                'edad' : 65,
+                'sexo' :'m'
+            },
+            {
+                'dni' : 62,
+                'edad' : 2,
+                'sexo' :'f'
+            },
+        ] */
+        /* document.writeln(vecinos.filter(vecino => vecino.sexo === 'f').length);
+        document.writeln("<br>");
+        document.writeln(vecinos.filter(vecino => vecino.sexo === 'm').length); */
+
+        let hombre = 0, mujer = 0, mujerl = 0, hombreL = 0;
+        let bus;
+        for (bus = 0; ; bus++) {
+            
+            let nuevoDni = parseInt(prompt('DNI:'));
+            if(nuevoDni == 0){
+                break;
+            }
+            let nuevaEdad = parseInt(prompt('Edad:'));
+            let nuevoSexo = prompt('Sexo:');
+            let nuevoVecino = {
+                dni: nuevoDni,
+                edad: nuevaEdad,
+                sexo: nuevoSexo
+            };
+            vecinos.push(nuevoVecino);
+            
+        }
+
+        document.writeln("Total de personas censadas: " + bus);
+        document.writeln("<br>");
+        document.writeln("Total mujeres: " + vecinos.filter(vecino => vecino.sexo === 'f').length);
+        document.writeln("<br>");
+        document.writeln("Total Hombres: " + vecinos.filter(vecino => vecino.sexo === 'm').length);
+        document.writeln("<br>");
+        document.writeln("Total de mujeres en edad laboral: " + vecinos.filter(vecino => (vecino.sexo === 'f' && vecino.edad <=65)).length);
+        document.writeln("<br>");
+        document.writeln("Total de hombres en edad laboral: " + vecinos.filter(vecino => (vecino.sexo === 'm' && vecino.edad <=65)).length);
+        document.writeln("<br>"); 
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

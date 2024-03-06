@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo Objeto</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+		// Creación de una instancia de forma específica con notación literal.
+	/*	
+		let persona1 = 
+		{
+			nombre: "Ana",
+			apellidos: "Pérez Sánchez",
+			direccion: "C/ Asturias 10",
+			telefono:"76453469",
+			aficiones: ["viajar", "leer", "deportes"],
+			mostrarDatos: function()
+			{
+				document.write(persona1.nombre + " " + persona1.aficiones+ "<br>");
+				document.write(persona1["apellidos"] + " " + persona1["telefono"] + "<br>");
+			},
+			mostrarCodigo: function(n)
+			{	
+				document.write("El código de " + persona1.nombre + " es el " + n + "<br>");
+			}	
+		};
+			persona1.mostrarDatos(); 
+			//persona1["mostrarDatos"]();
+			persona1.mostrarCodigo(234);
+			persona1.telefono = "123456789";
+			document.write(persona1["apellidos"] + " " + persona1["telefono"] + "<br>");
+	*/		
+		// Creacion de una instancia vacía con notación literal.
+	/*	
+			let persona2 = {};
+			
+			persona2.nombre = "Juan";
+			persona2.apellidos = "Fernández García";
+			persona2.direccion = "C/ Toledo 12";
+			persona2.telefono = "123456789";
+			persona2.aficiones = "Bonsais";
+			persona2.mostrarDatos = function()
+			{
+				document.write(persona2.nombre + " " + persona2.aficiones+ "<br>");
+				document.write(persona2["apellidos"] + " " + persona2["telefono"]+ "<br>");
+			}
+			
+			persona2.mostrarCodigo = function(n)
+			{	
+				document.write("El código de " + persona2.nombre + " es el " + n + "<br>");
+			}
+
+			persona2.mostrarDatos(); 
+			//persona2["mostrarDatos"]();
+			persona2.mostrarCodigo(778);
+	*/	
+		// Creacion de una instancia a partir del objeto Object.	
+		
+			/* let persona3 = new Object();
+			
+			persona3.nombre = "Pepe";
+			persona3.apellidos = "Martín López";
+			persona3.direccion = "C/ Teruel 12";
+			persona3.telefono = "3423436789";
+			persona3.aficiones = "aeromodelismo, cocinar";
+			persona3.mostrarDatos = function()
+			{
+				document.write(persona3.nombre + " " + persona3.aficiones+ "<br>");
+				document.write(persona3["apellidos"] + " " + persona3["telefono"]);
+			}
+			
+			persona3.mostrarCodigo = function(n)
+			{	
+				document.write("El código de " + persona3.nombre + " es el " + n + "<br>");
+			}
+			
+			persona3.mostrarDatos(); 
+			persona3["mostrarDatos"]();
+			persona3.mostrarCodigo(561); */
+		
+		// Creacion de un objeto con función contructora.
+		
+		/* 	function Personas(nombre,apellidos,direccion,telefono,intereses)
+			{
+			
+				this.nombre = nombre;
+				this.apellidos = apellidos;
+				this.direccion = direccion;
+				this.telefono = telefono;
+				this.aficiones = intereses;
+				this.mostrarDatos = function ()
+				{
+					document.write(this.nombre + " " + this.aficiones+ "<br>");
+					document.write(this["apellidos"] + " " + this["telefono"]+"<br>");
+				},
+				
+				this.mostrarCodigo = function(n)
+				{	
+					document.write("El código de " + this.nombre + " es el " + n + "<br>");
+				}
+			}
+			let persona4 = new Personas();
+			let persona5 = new Personas("Cristina","Sánchez Gómez","C/ Cádiz 2", "456233987", "Submarinismo");
+			persona4.nombre="Rosa";
+			persona4.aficiones= "Deporte";
+			persona4.mostrarDatos(); 
+			persona5["mostrarDatos"]();
+			//persona5.mostrarDatos();
+			persona5.mostrarCodigo(561);
+			document.write(persona4.nombre + " " + " te \"gusta\" el " + persona4.aficiones+ "<br>");
+		  */
+			
+		/*
+		function Coche(marca, modelo, color, precio, cilin)
+			{
+				this.marca = marca;
+				this.modelo = modelo;
+				this.color = color;
+				this.precio = precio;
+				this.cilindrada = cilin;
+
+				this.mostrarCaracteristicas = function ()
+				{
+					document.write("Marca : " + this.marca + " Modelo :" + this.modelo + " Precio : " + this.precio +"<br>");
+					
+				}	
+					
+				this.acelerar = function()
+				{
+					document.write("Estoy acelerando <br>");
+				}
+				this.frenar = function()
+				{
+					document.write("Estoy frenando <br>");
+				}
+				this.cambiarMarcha = function(marcha)
+				{
+					document.write("Cambiando de Marcha a la " + marcha + "<br>");
+				}
+
+			}
+
+		let coche1 = new Coche("Seat","Ibiza","Plateado",12000.00,"1500 c.c.");
+		let coche2 = new Coche("Ford", "Fiesta", "Azul", 18000.00, "1800 c.c.");
+		let coche3 = new Coche();
+		/*coche3.marca ="Opel";
+		coche3.modelo ="Corsa";
+		coche3.color ="Rojo";
+		coche3.precio ="14000.00";
+		coche3.cilin ="1300 c.c.";
+		coche2.precio ="19000.00";
+		coche1.mostrarCaracteristicas();
+		coche2.mostrarCaracteristicas();
+		coche3.mostrarCaracteristicas();
+		coche1.acelerar();
+		coche2["frenar"]();
+		coche3.cambiarMarcha("2ª");
+		coche3["cambiarMarcha"]("2ª");*/
+		/*
+
+		let i;
+		for (i = 1; i<=3;i++)
+		
+				{
+					document.write("Marca : "+ [coche]+i+["marca"] ); //" Modelo :" + this.modelo + " Precio : " + this.precio +"<br>");
+					
+				}
+		 
+		
+		for (i in coche1)
+		
+		{
+			document.write("Datos : "+ coche1[i]+ "<br>");
+		}
+		 */
+
+		function Trabajadores(nombre, apellidos, nhijos, sueldoBruto) {
+			this.nombre = nombre;
+			this.apellidos = apellidos;
+			this.nhijos = nhijos;
+			this.sueldoBruto = sueldoBruto;
+
+			this.suelNeto = function () {
+				if (nhijos >= 3) {
+					sueldoBruto = ( sueldoBruto - (sueldoBruto*0.11) );
+					document.write('Nombre:' + nombre +'<br>')
+					document.write('Apellido:' + apellidos +'<br>')
+					document.write('Sueldo Bruto:' + sueldoBruto +'<br>')
+				}
+				else if (nhijos >= 1) {
+					sueldoBruto = -((sueldoBruto*0.17) - sueldoBruto);
+					document.write('Nombre:' + nombre +'<br>')
+					document.write('Apellido:' + apellidos +'<br>')
+					document.write('Sueldo Bruto:' + sueldoBruto +'<br>')
+				}
+				else{
+					sueldoBruto = -((sueldoBruto*0.23) - sueldoBruto);
+					document.write('Nombre:' + nombre +'<br>')
+					document.write('Apellido:' + apellidos +'<br>')
+					document.write('Sueldo Bruto:' + sueldoBruto +'<br>')
+				}
+			}
+		}
+
+		let empleado1 = new Trabajadores('samuel','zabala',3,3000);
+		empleado1.suelNeto();
+
+		 </script>
+		
+		
+	</head>
+	<body>
+
+	</body>
+</html> 

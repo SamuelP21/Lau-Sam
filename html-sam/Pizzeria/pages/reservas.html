@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <title>Inicio</title>
+  <!--   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <h1>Pizzería Las 4 Estaciones</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="carta.html">Carta</a>
+            <a href="#" class="bastarda">Reservas</a>
+            <a href="domicilio.html" class="roboto-thin">A domicilio</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Pizzería las 4 Estaciones - Formulario de Reserva</h1>
+        <form>
+            <p>Haz tu reserva</p>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="Correo">Correo Electronico</label>
+                <input type="email">
+            </div>
+            <div>
+                <label for="Telefono">Telefono</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="Fecha">Fecha Reserva</label>
+                <input type="datetime-local">
+            </div>
+            <div>
+                <label for="comensales">comensales (min 1 - max 10)</label>
+                <input type="number" min="1" max="10">
+            </div>
+            <div>
+                <label for="mantel">color mantel</label>
+                <input type="color">
+            </div>
+            <div>
+                <label for="Instrucciones">Instrucciones especiales</label>
+                <textarea name="Instrucciones" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <p>Confirmacion de Reserva</p>
+                <div>
+                    <button type="submit">Reservar</button>
+                    <button type="reset">Borrar Datos</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

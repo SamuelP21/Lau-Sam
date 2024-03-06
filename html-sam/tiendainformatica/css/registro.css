@@ -1,0 +1,51 @@
+body{
+    width: 600px;
+    margin: auto;
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    color: green;
+}
+
+a{
+    color: blue;
+    font-weight: bold;
+}
+.borde{
+    background-color: gray;
+}
+.decoracionTexto{
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.underline{
+    text-decoration: underline;
+}
+.bgAmarillo{
+    background: yellow;
+    color: red;
+}
+.letraAzul{
+    color: blue;
+}
+.bgRosa{
+    background: pink;
+}
+
+.bgRosa span{
+    color: red;
+}
+
+.red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+  }

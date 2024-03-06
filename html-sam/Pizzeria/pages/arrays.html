@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /* Ejercicio 1 */
+        let nombre = new Array();
+
+        nombre[0] = 'Nombre 1';
+        nombre[1] = 'Nombre 2';
+        nombre[2] = 'Nombre 3';
+
+        document.write('nombre: ' + nombre[2] + '<br>');
+        document.write('nombre: ' + nombre[0] + '<br>');
+
+        /* ejercicio 2 */
+        let numero = new Array(2);
+
+        numero[0] = 1;
+        numero[1] = 2;
+        numero[2] = 3;
+
+        document.write('nombre: ' + numero[2] + '<br>');
+        document.write('nombre: ' + numero[1] + '<br>');
+        document.write('nombre: ' + numero[0] + '<br>');
+
+        /* ejercicio 3 */
+        let color = ['color 1', 'color 2', 'color 3', 'color 4', 'color 5', ' color 6', 'color 7'];
+        document.write('nombre: ' + color[0] + '<br>');
+        document.write('nombre: ' + color[color.length-1] + '<br>');
+        document.write('----------------------------------------------------------------------<br>');
+
+        /* ejercicio 4 */
+        let valores = ['color 1', 2, 'color 3', false, 10.5, 6, true];
+        for (let index = 0; index < valores.length; index++) {
+            document.write('nombre: ' + valores[index] + '<br>');
+            
+        }
+        document.write('----------------------------------------------------------------------<br>');
+        /* Ejercicio Arrays 3 */
+        let semana = ['lunes', 'martes', 'miercoles', 'jueves', 'sabado', 'domingo'];
+        let meses = new Array('enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'obtubre', 'noviembre', 'diciembre');
+
+        for (let index = 0; index < semana.length; index++) {
+            document.write('nombre: ' + semana[index] + '<br>');            
+        }
+        for (let index = 0; index < meses.length; index++) {
+            document.write('nombre: ' + meses[index] + '<br>');            
+        }
+        document.write('posicion enero: ' + (meses.indexOf('enero')+1) + '<br>');  
+        document.write('posicion abril: ' + (meses.indexOf('abril')+1) + '<br>');  
+        document.write('posicion agosto: ' + (meses.indexOf('agosto')+1) + '<br>');  
+        document.write('posicion noviembre: ' + (meses.indexOf('noviembre')+1) + '<br>');  
+
+        /*ejercicio arrays 6*/
+        document.write('----------------------------------------------------------------------<br>');
+        let datos = [];
+
+        for (let i = 0; i < 8; i++) {
+            if (i % 2 === 0) {
+                datos.push(i); // Añade números pares al array
+            } else {
+                datos.push("Dato " + i); // Añade cadenas de texto con el prefijo "Dato "
+            }
+        }
+
+        for (let index = 0; index < datos.length; index++) {
+            
+            document.write('dato: ' + datos[index] + '<br>');    
+            
+        }
+        document.write('FOR IN---------<br>');
+        for (const key in datos) {
+            //if (Object.hasOwnProperty.call(datos, key)) {
+                document.write('dato: ' + datos[key] + '<br>');    
+                
+            //}
+        }
+        document.write('FOR OF------------------------<br>');
+        for (const i of datos) {
+            document.write('dato: ' + i + '<br>');
+        }
+        document.write('forEach------------------------<br>');
+        datos.forEach(dato => {
+            document.write('dato: ' + dato + '<br>');
+        });
+
+
+        /*Ejercicio array 8 - DNI*/
+        
+        let letrasDNI = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+        let numeroDNI = prompt("DNI (sin letra):");
+        let letraIntroducida = prompt("letra del DNI en mayúsculas:");
+
+        if (numeroDNI >= 0 && numeroDNI <= 99999999) {
+            console.log('dentro');
+        let posicionLetra = numeroDNI % 23;
+        let letraCalculada = letrasDNI[posicionLetra];
+
+        if (letraCalculada === letraIntroducida) {
+            document.write("El número de DNI y su letra son correctos.");
+        } else {
+            document.write("La letra introducida no corresponde al número de DNI introducido.");
+        }
+        } else {
+            document.write("El número de DNI no es válido.");
+        }
+    </script>
+    70261521
+</head>
+<body>
+    
+</body>
+</html>
