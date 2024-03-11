@@ -6,6 +6,114 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1 id = 't1'>Ejercicio 5. Examen UF1842 11-03-2024</h1>
+    <p id = 'p1'>Desarrollo y reutilización de componentes software y multimedia mediante lenguajes de guion</p>
     
+    <script>
+        //ejercicio 1
+        /* let culpable = prompt('Eres culpable?');
+        if (culpable === 'si') {
+            document.write('Iras a la carcel'+ '<br>');
+        } else {
+            document.write('Eres libre. Vete a casa'+ '<br>');
+        }
+        document.write('La documentación, por favor'+ '<br>'); */
+        //ejercicio 1 fin
+
+        //ejercicio 2
+        
+       /*  function calcularTotal(nombre, precio, cantidad) {
+            var subtotal = precio * cantidad;
+            var total = subtotal * (1.15);
+
+           
+            document.write("Nombre del producto: " + nombre + "<br>");
+            document.write("Precio unitario: " + precio + "<br>");
+            document.write("Cantidad comprada: " + cantidad + "<br>");
+            document.write("Subtotal: " + subtotal + "<br>");
+            document.write("Total a pagar: " + total + "<br>");
+        }
+
+        
+        var nombreProducto = prompt("Nombre del producto:");
+        var precioUnitario = parseFloat(prompt("Precio unitario del producto:"));
+        var cantidadComprada = parseInt(prompt("Introduce la cantidad comprada:"));
+
+        
+        calcularTotal(nombreProducto, precioUnitario, cantidadComprada); */
+        //fin ejercicio 2
+
+        // ejercicio 3
+        
+        /* var alumno = {
+            nombre: "",
+            apellido1: "",
+            apellido2: "",
+            mostrarDatosAlumno: function() {
+                document.write("Nombre: " + this.nombre + "<br>");
+                document.write("Apellidos: " + this.apellido1 + " " + this.apellido2 + "<br>");
+            }
+        };
+
+        alumno.nombre = "Samuel";
+        alumno.apellido1 = "Zabala";
+        alumno.apellido2 = "Delgado";
+        alumno.mostrarDatosAlumno(); */
+        //fin ejercicio 3
+
+        // ejercicio 4
+        
+        /* var numeros = [];
+        for (var i = 0; i < 10; i++) {
+            var numero = prompt("Introduce el numero " + (i + 1) + ":");
+            numeros.push(numero);
+        }
+        document.write("El array numeros contiene " + numeros.length + " elementos.<br>");
+        for (var i = 0; i < numeros.length; i++) {
+            document.write("Numero " + (i + 1) + ": " + numeros[i] + "<br>");
+        }
+        var numerosCopia = numeros.slice();
+
+        numerosCopia.splice(4, 0, '888', '1');
+
+        document.write("NumerosCopia ordenado alfabéticamente: " + numerosCopia.sort() + "<br>");
+
+        var sumaTotal = 0;
+        for (var i = 0; i < numerosCopia.length; i++) {
+            sumaTotal += parseInt(numerosCopia[i]);
+        }
+        document.write("La suma en numerosCopia es: " + sumaTotal + "<br>"); */
+        //fin ejercicio 4
+
+        //ejercicio 5
+    
+        var titulo = document.getElementById('t1');
+        var parrafo = document.getElementById('p1');
+
+        titulo.addEventListener('mouseover', () => {
+            //.log('aqui');
+            titulo.style.fontFamily = 'Calibri, sans-serif';
+            titulo.style.color = 'maroon';
+        });
+
+        parrafo.addEventListener('mouseover',  () => {
+            //console.log('aqui');
+            parrafo.style.fontFamily = 'Calibri, sans-serif';
+            parrafo.style.color = 'maroon';
+        });
+
+        titulo.addEventListener('mouseout',  () => {
+            titulo.style.fontFamily = '';
+            titulo.style.color = '';
+        });
+
+        parrafo.addEventListener('mouseout',  () => {
+            parrafo.style.fontFamily = '';
+            parrafo.style.color = '';
+        });
+    
+        //fin ejercicio 5
+    </script>
 </body>
 </html>
