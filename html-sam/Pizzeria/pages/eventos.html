@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón</title>
+
+    <style>
+        h1{
+            text-align: center; 
+            font-size: 60px; 
+            font-family: comic sans ms;}
+
+        form{display:flex;
+            justify-content:center;}
+
+        input, button {font-size: 40px; 
+            border-radius: 10px; 
+            color: maroon; 
+            padding: 10px; 
+            box-shadow: 5px 5px 2px blueviolet;
+            margin-left: 15px;
+            /* //text-decoration: line-through; */
+        }
+
+    </style>
+    
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h1 id="t1">Estilo de título</h1>
+    <form>
+        <input type="button" value="Negrita" id="boton" onclick="aplicarNegrita()">
+        <button type="button" onclick="aplicarCrusiva()">cursiva</button> 
+        <button type="button" onclick="subrayado()">subrayado</button> 
+    </form>
+
+
+      
+    
+    <script>
+        let t = document.getElementById("t1");
+        //let b = document.getElementById("boton");
+        function aplicarNegrita ()
+        {
+            //console.log('aqui');
+            if(t.style.fontWeight == 'normal'){
+                t.style.fontWeight="bold";     
+            }
+            else {
+                t.style.fontWeight="normal";
+            }
+        }
+        function aplicarCrusiva ()
+        {
+            if(t.style.fontStyle == 'italic'){
+                t.style.fontStyle="normal";     
+            }
+            else {
+                t.style.fontStyle="italic";
+            }
+        }
+        function subrayado ()
+        {
+            
+            if(t.style.textDecoration == 'underline'){
+                t.style.textDecoration ="none";     
+            }
+            else {
+                t.style.textDecoration ="underline";
+            }
+        }
+    
+    </script>
+</body>
+</html>
