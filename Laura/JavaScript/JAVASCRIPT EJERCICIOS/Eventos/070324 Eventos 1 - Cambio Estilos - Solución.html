@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	<meta charset="UTF-8">
+	<title>Cambio de estilos. Tipos de manejadores de eventos.</title>
+	</head>
+	<body>
+
+		<!-- Ejercicio 1. Párrafo para atributo onclick como manejador.-->
+		<p id = "p1" onclick = "cambioEstilo()">Este párrafo va a cambiar de formato cuando pulses sobre él</p>
+		
+		<!-- Ejercicio 1. Párrafo para manejador semántico o método addEventListener().-->		
+		<!--<p id = "p1">Este párrafo va a cambiar de formato cuando pulses sobre él</p>-->	
+		
+		<!-- Ejercicio 2. Título para atributo onclick como manejador.-->
+		<!--<h1 id = "estilos" onmouseover = "estiloDentro()" onmouseout = "estiloFuera()">Prueba de Estilos.</h1>-->
+			
+		<!-- Ejercicio 2. Título para manejador semántico o método addEventListener().-->		
+		<!--<h1 id = "estilos">Prueba de Estilos.</h1>-->
+			
+		<!-- Ejercicio 3. Título para atributo onclick como manejador.-->
+		<!--<h1 id = "sombras" onmouseover = "sombreado()" onmouseout = "sinsombreado()">Prueba de Sombreado.</h1> -->
+			
+		<!-- Ejercicio 3. Título para manejador semántico o método addEventListener().-->		
+		<h1 id = "sombras">Prueba de Sombreado.</h1>
+			
+		
+
+		<script>
+		
+		// Ejercicio 1. Con atributo onclick como manejador.
+		
+			let parrafo = document.getElementById("p1");
+			function cambioEstilo()
+			{
+				//parrafo.style.fontSize = "30px";
+				//parrafo.style.letterSpacing = "12px"; 
+				//parrafo.style.fontWeigth = "bold"; 
+				//parrafo.style.color = "#0c5f0f";
+				
+				// Aplicar todos los estilos a la vez usando la propiedad cssText.
+				parrafo.style.cssText="font-size:30px;letter-spacing:12px;font-weigth:bold;color:#0c5f0f;";
+			}
+		
+		// Ejercicio 1. Con manejador semántico.
+		/*
+			let parrafo = document.getElementById("p1");
+			
+			function cambioEstilo()
+			{
+				parrafo.style.fontSize = "30px";
+				parrafo.style.letterSpacing = "12px"; 
+				parrafo.style.fontWeigth = "bold"; 
+				parrafo.style.color = "#0c5f0f";
+			}
+			
+			parrafo.onclick = cambioEstilo;
+		*/
+		// Ejercicio 1. Con método addEventListener().
+		/*
+			let parrafo = document.getElementById("p1");
+			
+			function cambioEstilo()
+			{
+				parrafo.style.fontSize = "30px";
+				parrafo.style.letterSpacing = "12px"; 
+				parrafo.style.fontWeigth = "bold"; 
+				parrafo.style.color = "#0c5f0f";
+			}
+			
+			parrafo.addEventListener("click",cambioEstilo);
+		
+		*/
+		// Ejercicio 2.Con atributo onclick como manejador.
+		
+		/*
+			let estilo = document.getElementById("estilos");
+			
+			function estiloDentro()
+			{
+				estilo.style.color = "#a9c933";
+				estilo.style.textDecoration = "underline"; 
+				estilo.style.textTransform = "uppercase"; 
+				estilo.style.fontFamily = "verdana, sans-serif";
+			}
+			
+		
+			function estiloFuera()
+			{
+				estilo.style.color = "#000";
+				estilo.style.textDecoration = "none"; 
+				estilo.style.textTransform = "none";
+				estilo.style.fontFamily = "serif";
+			}
+		
+*/
+		// Ejercicio 2. Con manejador semántico.
+		/*
+		
+			let estilo = document.getElementById("estilos");
+			function estiloDentro()
+			{
+				estilo.style.color = "#a9c933";
+				estilo.style.textDecoration = "underline"; 
+				estilo.style.textTransform = "uppercase"; 
+				estilo.style.fontFamily = "verdana, sans-serif";
+			}
+			
+		
+			function estiloFuera()
+			{
+				estilo.style.color = "#000";
+				estilo.style.textDecoration = "none"; 
+				estilo.style.textTransform = "none";
+				estilo.style.fontFamily = "serif";
+			}
+			
+			estilo.onmouseover = estiloDentro;
+			estilo.onmouseout = estiloFuera;
+		*/
+		
+		// Ejercicio 2. Con método addEventListener().
+		/*
+			let estilo = document.getElementById("estilos");
+			function estiloDentro()
+			{
+				estilo.style.color = "#a9c933";
+				estilo.style.textDecoration = "underline"; 
+				estilo.style.textTransform = "uppercase"; 
+				estilo.style.fontFamily = "verdana, sans-serif";
+			}
+		*/	
+		/*
+			function estiloFuera()
+			{
+				estilo.style.color = "#000";
+				estilo.style.textDecoration = "none"; 
+				estilo.style.textTransform = "none";
+				estilo.style.fontFamily = "serif";
+			}
+			
+			estilo.addEventListener("mouseover",estiloDentro);
+			estilo.addEventListener("mouseout",estiloFuera);
+	*/
+
+		// Ejercicio 3. Con atributo onclick como manejador.
+		/*
+			let sombra = document.getElementById("sombras");
+			
+			function sombreado()
+			{
+				//sombra.style.textShadow = "4px 4px 2px blue";
+				//sombra.style.textShadow = "-4px -4px 2px red";
+				sombra.style.textShadow = "4px 4px orange";
+				
+			}
+			function sinsombreado()
+			{
+				sombra.style.textShadow = "none";
+			}
+			
+		*/
+		// Ejercicio 3. Con manejador semántico.
+		/*	
+	
+			let sombra = document.getElementById("sombras");
+			
+			function sombreado()
+			{
+				sombra.style.textShadow = "4px 4px 2px blue";
+				//sombra.style.textShadow = "-4px -4px 2px red";
+				//sombra.style.textShadow = "4px 4px orange";
+				
+			}
+			function sinsombreado()
+			{
+				sombra.style.textShadow = "none";
+			}
+			
+			sombra.onmouseover = sombreado;
+			sombra.onmouseout = sinsombreado;
+			
+	*/
+		
+		// Ejercicio 3. Con método addEventListener().
+			
+	/*
+			let sombra = document.getElementById("sombras");
+			
+			function sombreado()
+			{
+				//sombra.style.textShadow = "4px 4px 2px blue";
+				//sombra.style.textShadow = "-4px -4px 2px red";
+				sombra.style.textShadow = "4px 4px orange";
+				
+			}
+			function sinsombreado()
+			{
+				sombra.style.textShadow = "none";
+			}
+			
+			sombra.addEventListener("mouseover",sombreado);
+			sombra.addEventListener("mouseout",sinsombreado);
+	*/		
+		
+		</script>
+
+		
+
+	</body>
+</html> 

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicios Repaso 2.</title>
+		<script>
+		
+		// Ejercicio 01.
+		/*
+			function Autonomias(nombre, nombreProvincias, numeroProvincias,fechaConstitucion)
+			{
+				this.nombre = nombre;
+				this.nombreProvincias = nombreProvincias;
+				this.numeroProvincias = numeroProvincias;
+				this.fechaConstitucion = fechaConstitucion;
+				this.mostrarDatos = function()
+				{
+					document.write("La Autonomía se denomina: " + this.nombre + "<br>");
+					document.write("Tiene las siguientes provincias : " + this.nombreProvincias + "<br>"); 
+					document.write("En total son " + this.numeroProvincias + " provincia/s. <br>");
+					document.write("Fecha de Constitución: " + this.fechaConstitucion + "<br><br>"); 
+				};	
+			}	
+			
+			var madrid = new Autonomias("Madrid", "Madrid", 1, "2-5-1980");
+			var extremadura = new Autonomias("Extremadura", "Cáceres , Badajoz", 2, "12-9-1982");
+			var cMancha = new Autonomias("Castilla La Mancha", "Toledo, Guadalajara, Cuenca, Ciudad Real, Albacete", 5, "16-8-1982");
+			
+			madrid.mostrarDatos();
+			extremadura.mostrarDatos();
+			cMancha.mostrarDatos();
+		
+		*/	
+		// Ejercicio 02. Variante If..Else.
+		/*
+			var topping, precio, precioFinal;
+			var helado = 1.90;
+			topping = prompt("¿Qué topping quieres?").toLowerCase();
+			
+			if(topping == "oreo")
+				{
+					precio = 1.00;
+				}
+				else if(topping == "kitkat")
+					{
+						precio = 1.50;
+					}
+					else if(topping == "brownie")
+						{
+							precio = 0.75;
+						}
+						else if(topping == "lacasitos")
+							{
+								precio = 0.95;
+							}
+							else
+								{
+									document.write("¡¡No tenemos ese topping, lo sentimos!!" + "<br>");
+									precio = 0.0;
+									//document.write("El helado cuesta " + helado + " euros");
+								}
+
+			precioFinal = helado + precio;
+			document.write("El helado cuesta " + precioFinal + " euros");
+		*/
+		// Ejercicio 02. Variante Switch..Case.
+		/*
+			var topping, precio, precioFinal;
+			var helado = 1.90;
+			topping = prompt("¿Qué topping quieres?").toLowerCase();
+			
+			switch(topping)
+			{
+				case "oreo":
+					precio = 1.00;
+					break;
+				case "kitkat":
+					precio = 1.50;
+					break;
+				case "brownie":
+					precio = 0.75;
+					break;
+				case "lacasitos":
+					precio = 0.95;
+					break;
+				default:
+					document.write("¡¡No tenemos ese topping, lo sentimos!!" + "<br>");
+					precio = 0.0;
+					//document.write("El helado cuesta " + helado + " euros");
+			}
+			precioFinal = helado + precio;
+			document.write("El helado cuesta " + precioFinal + " euros");
+		*/
+		//Ejercicio 03.
+		/*
+				
+			var i, nombre, numero;
+			nombre = prompt("¿Cómo te llamas?","");
+			numero = parseInt(prompt("¿Cuántas veces quieres que repita tu nombre?",""));
+			for (i = 1; i <= numero; i++)
+			{
+				document.write("Te llamas " + nombre + " repetido " + i + " veces <br>");
+			}
+		
+		*/
+		
+		// Ejercicio 04.
+		
+		/*
+			var numnegativos = 0;
+			var numpositivos = 0;
+			var mult15 = 0;
+			var sumapares = 0;
+			var i, valor;
+			for(i = 1;i <= 10; i++)
+			{
+				valor = parseInt(prompt("Introduce un número: ",""));
+				
+				if (valor < 0)
+				{
+					numnegativos = numnegativos + 1;
+				}
+					else if (valor > 0)
+				
+						{
+							numpositivos = numpositivos + 1;
+						}
+							  
+				if (valor % 15 == 0)
+				{
+					mult15 = mult15 + 1;
+				}
+				
+				if (valor % 2 == 0)
+				{
+					sumapares = sumapares + valor;
+				}
+			}
+			  document.write("Cantidad de valores negativos: " + numnegativos + "<br>");
+			  document.write("Cantidad de valores positivos: " + numpositivos+ "<br>");
+			  document.write("Cantidad de múltiplos de 15: " + mult15 + "<br>");
+			  document.write("Suma de los valores pares ingresados: " + sumapares + "<br>");
+		
+		 
+		*/	
+		</script>
+		
+		
+		<!-- Ejercicio 05.	-->
+		
+		
+		<!--Lo único que hay que hacer es copiar y pegar los ejercicios anteriores en único archivo, o cada uno en un archivo independiente, con la extensión .js
+		para despues, desde la página Web, utilizar la etiqueta <script> para enlazarlos con ella.-->
+		
+		<!--<script type = "text/javascript" src = "ruta de acceso/repaso2.js">
+			
+			</script>-->
+				
+		
+		
+		
+	</head>
+	<body>
+	
+	</body>
+</html>

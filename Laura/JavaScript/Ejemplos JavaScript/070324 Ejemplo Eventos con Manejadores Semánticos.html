@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo Eventos Manejadores Semánticos</title>
+	</head>
+	<body>
+	
+		<p id = "p1" >Hola Mundo.</p>
+
+		<script>
+		
+		// Creando la variable texto para cargar el nodo.
+		/*
+			var texto = document.getElementById("p1");
+			
+			function cambioEstilo()
+			{
+				texto.style.color = "blue";
+				this.style.fontStyle = "italic"; //this hace referencia al objeto en el que se produce el evento.
+				this.style.fontFamily = "cursive"; //this se suele utilizar cuando el objeto tiene múltiples propiedades o elementos como un array.
+				this.style.fontSize = "20px";
+			}
+			texto.onclick = cambioEstilo;
+			*/
+			var texto = document.getElementById("p1");	
+			
+			function estiloDentro()
+			{
+				texto.style.color = "blue";
+				texto.style.fontStyle = "italic"; 
+				texto.style.fontFamily = "cursive"; 
+				texto.style.fontSize = "20px";
+			}
+			function estiloFuera()
+			{
+				texto.style.color = "black";
+				texto.style.fontStyle = "normal"; 
+				texto.style.fontFamily = "serif"; 
+				texto.style.fontSize = "16px";
+			}
+			
+			texto.onmouseover = estiloDentro;
+			texto.onmouseout = estiloFuera;
+			
+		// Sin crear una variable para cargar el nodo.	
+		/*
+			function estiloDentro()
+			{
+				document.getElementById("p1").style.color = "blue";
+				document.getElementById("p1").style.fontStyle = "italic"; 
+				document.getElementById("p1").style.fontFamily = "cursive"; 
+				document.getElementById("p1").style.fontSize = "20px";
+			}
+			function estiloFuera()
+			{
+				document.getElementById("p1").style.color = "black";
+				document.getElementById("p1").style.fontStyle = "normal"; 
+				document.getElementById("p1").style.fontFamily = "serif"; 
+				document.getElementById("p1").style.fontSize = "16px";
+			}
+			
+			
+			document.getElementById("p1").onmouseover = estiloDentro;
+			document.getElementById("p1").onmouseout = estiloFuera;
+			*/
+		
+			
+		</script>
+
+		
+
+	</body>
+</html> 

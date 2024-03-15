@@ -1,0 +1,15 @@
+
+
+		/* Ratio de contraste: 2.14:1
+		/* Hoja de estilos estiloscolor1 para la página web Accesibilidad 2.2.html */
+		
+		body{background-color:#0000FF;}
+		h1{color:#FF0000;}
+		
+		/*
+		
+			Problemas para los daltónicos con protanopia, ya que no distinguen el color rojo,
+			que es el que se ha aplicado para el título.
+
+				
+		*/

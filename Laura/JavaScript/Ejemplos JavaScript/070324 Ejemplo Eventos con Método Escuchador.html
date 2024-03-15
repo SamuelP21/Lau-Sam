@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo Eventos, Acceso a DOM y objeto style</title>
+	
+	</head>
+	<body>
+	
+		<p id = "p1">Hola Mundo.</p>
+		<script>
+		
+		// Estilos aplicados de forma estática.
+		
+			/*document.getElementById("p1").style.color = "blue";
+			document.getElementById("p1").style.fontStyle = "italic";
+			document.getElementById("p1").style.fontFamily = "cursive";
+			document.getElementById("p1").style.fontSize = "20px";*/
+			
+			
+			
+			/*var texto = document.getElementById("p1");
+			
+			texto.style.color = "blue";
+			texto.style.fontStyle = "italic"; 
+			texto.style.fontFamily = "cursive"; 
+			texto.style.fontSize = "20px";*/
+			
+		// Estilos aplicados de forma dinámica.
+		
+			var texto = document.getElementById("p1");
+			
+			/*function cambioEstilo()
+			{
+				texto.style.color = "blue";
+				this.style.fontStyle = "italic"; 
+				this.style.fontFamily = "cursive"; 
+				this.style.fontSize = "20px";
+			}*/
+			
+			function estiloDentro()
+			{
+				texto.style.color = "blue";
+				texto.style.fontStyle = "italic"; 
+				texto.style.fontFamily = "cursive"; 
+				texto.style.fontSize = "20px";
+			}
+			function estiloFuera()
+			{
+				texto.style.color = "black";
+				texto.style.fontStyle = "normal"; 
+				texto.style.fontFamily = "serif"; 
+				texto.style.fontSize = "16px";
+			}
+			
+			
+			//texto.addEventListener("dblclick",cambioEstilo);
+			texto.addEventListener("mouseover",estiloDentro);
+			texto.addEventListener("mouseout",estiloFuera);
+			
+			
+		</script>
+
+		
+
+	</body>
+</html> 

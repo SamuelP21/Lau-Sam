@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Eventos 2. Eventos con manejadores semánticos. Varias funciones.</title>
+	  <meta charset="UTF-8">
+	  <style>
+	  
+			
+		#contenedor{
+			display:flex;
+			justify-content:space-around;
+		}
+		#div1{
+			width:300px;
+			height:300px;
+			background:#000;
+			border: 1px solid #000;
+		}
+		a{
+			font-size:24px;
+			font-family:"comic sans ms", cursive;
+			margin: 10px;
+		}
+		
+	  </style>
+	</head>
+	<body>
+
+		<div id ="contenedor">
+		
+			<div id = "div1"><!--// Contiene el cuadro a pintar que flota a la izquierda o se ubica a la izquierda dentro de un contenedor flexible.-->
+			</div>
+			<div id = "div2"> <!-- Contiene los enlaces con los colores que flotan a la derecha o se ubican a la derecha dentro de un contenedor flexible..-->
+			
+				<!-- Enlaces para manejadores semánticos.-->
+						
+				<a id ="a1" href="#" name ="rojo" >Rojo</a>
+				<a id ="a2" href="#" name ="naranja">Naranja</a>
+				<a id ="a3" href="#" name ="amarillo">Amarillo</a>
+				<a id ="a4" href="#" name ="verde">Verde</a>
+				<a id ="a5" href="#" name ="azul">Azul</a>
+				<a id ="a6" href="#" name ="añil">Añil</a>
+				<a id ="a7" href="#" name ="violeta">Violeta</a>
+			
+			</div>
+			</div>
+
+		</div>
+		
+		<script>
+		
+			 
+		// Acceso y carga de los enlaces en una variable usando su identificador.
+	
+			let rojo = document.getElementById("a1");
+			let naranja = document.getElementById("a2");
+			let amarillo = document.getElementById("a3");
+			let verde = document.getElementById("a4");
+			let azul = document.getElementById("a5");
+			let añil = document.getElementById("a6");
+			let violeta = document.getElementById("a7");
+			let cuadro = document.getElementById("div1");
+				
+		// Función y manejadores semánticos para el color negro.
+			
+			function pintarNegro()
+			{
+				cuadro.style.backgroundColor = "#000";
+			}
+			
+			/*
+				rojo.onmouseout = pintarNegro;
+				naranja.onmouseout = pintarNegro;	
+				amarillo.onmouseout = pintarNegro;	
+				verde.onmouseout = pintarNegro;	
+				azul.onmouseout = pintarNegro;	
+				añil.onmouseout = pintarNegro;
+				violeta.onmouseout = pintarNegro;
+			*/
+				this.onmouseout = pintarNegro; // this representa a todos los elementos cargados con método get.
+			
+		// Función y manejador semántico para el color rojo.
+			
+			function pintarRojo()
+			{
+				cuadro.style.backgroundColor = "#f00";
+				//document.getElementById("div1").style.backgroundColor = "#f00";// Alternativa sin la variable cuadro para el nodo.
+			}
+			rojo.onmouseover = pintarRojo;
+							
+		// Función y manejador semántico para el color naranja.
+		
+			function pintarNaranja()
+			{
+				cuadro.style.backgroundColor = "orange";
+			}
+			naranja.onmouseover = pintarNaranja;
+				
+		// Función y manejador semántico para el color amarillo.
+		
+			function pintarAmarillo()
+			{
+				cuadro.style.backgroundColor = "yellow";
+			}
+			amarillo.onmouseover = pintarAmarillo;
+				
+		// Función y manejador semántico para el color verde.
+		
+			function pintarVerde()
+			{
+				cuadro.style.backgroundColor = "#0f0";
+			}
+			verde.onmouseover = pintarVerde;
+			
+		// Función y manejador semántico para el color azul.
+		
+			function pintarAzul()
+			{
+				cuadro.style.backgroundColor = "cyan";
+			}
+			azul.onmouseover = pintarAzul;
+				
+		// Función y manejador semántico para el color añil.
+		
+			function pintarAñil()
+			{
+				cuadro.style.backgroundColor = "#1C4C96";
+			}
+			añil.onmouseover = pintarAñil;
+			
+		// Función y manejador semántico para el color violeta.
+		
+			function pintarVioleta()
+			{
+				cuadro.style.backgroundColor = "#4c2882";
+			}
+			violeta.onmouseover = pintarVioleta;
+		
+					
+		</script>
+	
+
+	</body>
+</html>

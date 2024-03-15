@@ -1,0 +1,21 @@
+
+
+
+		/* Hoja de estilos 1 para la página web Accesibilidad 2.1.html */
+		
+		body{background-color:#A3A3A3;}
+		h1{color:#800000;}
+		
+		/* Ratio de contraste: 4.34:1
+		A simple vista parece aceptable el contraste fondo-primer plano.
+		
+		Según aplicación Contrast Checker:
+			Texto pequeño:
+				Fallo AA y AAA
+			Texto grande - negrita:
+				Correcto AA
+				Fallo AAA
+			Objetos gráficos, interfaz o controles formulario:
+				Correcto AA
+				
+		*/

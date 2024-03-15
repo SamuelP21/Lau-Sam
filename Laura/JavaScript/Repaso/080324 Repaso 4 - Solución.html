@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadenas de Caracteres 1</title>
+		<meta charset="UTF-8">
+		
+		<script>
+		
+	// Ejercicio 1.
+	
+		//Con bucle do...while.
+		/*	do
+			{
+				var texto = new String();
+				var texto = prompt("Escribe el nombre de una ciudad: ", "Para terminar de introducir nombres, escribe la palabra 'fin' con mayúsculas o minúsculas");
+				var palabras = texto.toUpperCase();
+				if(palabras != "FIN")
+				{
+					document.write ("Nombre de la ciudad: " + palabras + "<br>");
+				}
+				
+			}while(palabras != "FIN")
+		*/		
+		//Con bucle while.
+		/*	
+			var texto = new String();
+			texto = prompt("Escribe el nombre de una ciudad: ", "Para terminar de introducir nombres, escribe la palabra 'fin' con mayúsculas o minúsculas");
+			var palabras = texto.toUpperCase();
+			document.write ("Nombre de la ciudad: " + palabras + "<br>");
+			while(palabras != "FIN")
+			{
+				texto = prompt("Escribe un nombre: ", "Para terminar de introducir nombres, escribe la palabra 'fin' con mayúsculas o minúsculas");
+				palabras = texto.toUpperCase();
+				if(palabras != "FIN")
+				{
+					document.write ("Nombre de la ciudad: " + palabras + "<br>");
+				}
+			}
+		*/	
+	
+	// Ejercicio 2.	
+	 /*
+			for(let i = 1; i<=5; i++)
+			{
+				document.write("<p style='font-size:24px; color:red'>Éste es el párrafo " + i + ".</p><br>");
+			}
+	*/
+	
+	// Ejercicio 3.
+	
+			let marca, modelo;
+			marca = prompt("¿Cúal es la marca del coche que quiere comprar?").toLowerCase();
+			modelo = prompt("¿Y, en qué modelo está interesado?").toLowerCase()
+			if(marca == "seat" && modelo =="ibiza")
+			{
+				document.write("El precio de un " + marca + " " + modelo +" es de 12.000,00 euros.<br>");
+				document.write(" Este coche tiene un descuento aplicable sobre el precio del 2%.");
+			}
+				else if(marca == "seat" && modelo =="toledo")
+				{
+					document.write("El precio de un " + marca + " " + modelo +" es de 22.000,00 euros.<br>");
+					document.write(" Este coche tiene un descuento aplicable sobre el precio del 6%.");
+				}
+					else if(marca == "ford" && modelo =="focus")
+					{
+						document.write("El precio de un " + marca + " " + modelo +" es de 24.000,00 euros.<br>");
+						document.write(" Este coche tiene un descuento aplicable sobre el precio del 8%.");
+					}
+						else if(marca == "renault" && (modelo =="clio" || modelo =="clío"))
+						{
+							document.write("El precio de un " + marca + " " + modelo +" es de 11.000,00 euros.<br>");
+							document.write(" Este coche tiene un descuento aplicable sobre el precio del 3%.");
+						}
+			else
+			{
+				document.write("No disponemos para la venta de coches " + marca + " " + modelo +"<br>")
+			}
+		
+		</script>
+
+	</head>
+	<body>
+	
+		
+		
+	</body>
+	
+</html>

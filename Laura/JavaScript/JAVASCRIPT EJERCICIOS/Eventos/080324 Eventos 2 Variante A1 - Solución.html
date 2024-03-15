@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Eventos 2. Eventos como atributo. Varias funciones.</title>
+	  <meta charset="UTF-8">
+	  <style>
+	  
+		#contenedor{
+			display:flex;
+			justify-content:space-around;
+		}
+		#div1{
+			width:300px;
+			height:300px;
+			background:#000;
+			border: 1px solid #000;
+		}
+		a{
+			font-size:24px;
+			font-family:"comic sans ms", cursive;
+			margin: 10px;
+		}
+		
+	  </style>
+	</head>
+	<body>
+	
+	<div id ="contenedor">
+	
+		<div id = "div1"><!--// Contiene el cuadro a pintar que flota a la izquierda o se ubica a la izquierda dentro de un contenedor flexible.-->
+		</div>
+		<div id = "div2"> <!-- Contiene los enlaces con los colores que flotan a la derecha o se ubican a la derecha dentro de un contenedor flexible..-->
+						
+			<!-- Eventos como atributo para ejecutar las distintas funciones que aplican los colores.-->
+			
+				<a id ="a1" href="#" onmouseover="pintarRojo()" onmouseout="pintarNegro()">Rojo</a>
+				<a id ="a2" href="#" onmouseover="pintarNaranja()" onmouseout="pintarNegro()">Naranja</a>
+				<a id ="a3" href="#" onmouseover="pintarAmarillo()" onmouseout="pintarNegro()">Amarillo</a>
+				<a id ="a4" href="#" onmouseover="pintarVerde()" onmouseout="pintarNegro()">Verde</a>
+				<a id ="a5" href="#" onmouseover="pintarAzul()" onmouseout="pintarNegro()">Azul</a>
+				<a id ="a6" href="#" onmouseover="pintarAñil()" onmouseout="pintarNegro()">Añil</a>
+				<a id ="a7" href="#" onmouseover="pintarVioleta()" onmouseout="pintarNegro()">Violeta</a>
+			
+		</div>
+		</div>
+
+	</div>
+		
+		<script>
+		
+		
+			
+			let color = document.getElementById("div1");
+			
+			function pintarNegro()
+			{
+				cuadro.style.backgroundColor = "#000";
+				
+			//Alternativa sin crear la variable cuadro.
+			
+				//document.getElementById("div1").style.backgroundColor = "#000";
+			}
+			
+			function pintarRojo()
+			{
+				cuadro.style.backgroundColor = "#f00";
+			}		
+			
+			function pintarNaranja()
+			{
+				cuadro.style.backgroundColor = "orange";
+			}
+			function pintarAmarillo()
+			{
+				cuadro.style.backgroundColor = "yellow";
+			}
+			function pintarVerde()
+			{
+				cuadro.style.backgroundColor = "#0f0";
+			}
+			function pintarAzul()
+			{
+				cuadro.style.backgroundColor = "cyan";
+			}
+			function pintarAñil()
+			{
+				cuadro.style.backgroundColor = "#1C4C96";
+			}
+			function pintarVioleta()
+			{
+				cuadro.style.backgroundColor = "#4c2882";
+			}
+		</script>
+	
+
+	</body>
+</html>

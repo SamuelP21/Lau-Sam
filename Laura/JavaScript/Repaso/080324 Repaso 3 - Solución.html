@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicios Repaso 1.</title>
+		<script>
+		
+	// Ejercicio 1.
+		
+		//Incorrecto:
+		/*	
+			var persona : //Debemos usar el operador de asignación (=) y no los 2 puntos (:).
+				{	// Se usan los 2 puntos (:) para separar el par propiedad-valor con esta forma de crear un objeto.
+					// Hay que usar comas al final de cada declaración, y no punto y coma (;) porque no ha terminado la instrucción.
+					nombre = "Violeta"; 
+					apellidos = "González";
+					notas = (8,8,2,4); //una propiedad multivalor incluye corchetes para agrupar los distintos valores. En realidad es un array.
+					hobby = "ir en moto";
+					edad = '18';
+					intereses = "ir a la universidad"; // La última propiedad no lleva ni punto y coma (;), ni coma (,) al final.
+				};
+
+		//Correcto:
+			
+			var persona = 
+				{   
+					nombre: "Violeta",  
+					apellidos: "González", 
+					notas: [8,8,2,4], //notas: "8,8,2,4", 
+					hobby: "ir en moto",
+					edad: "18", 
+					intereses: "ir a la universidad"
+				};
+		*/
+	// Ejercicio 2.
+	/*	
+			var i;
+			for(i = 1;i <= 6; i++)
+			{
+				document.write("<h" + i + ">" + "Éste es el título " + i + "</h" + i + ">");
+			}
+	*/
+	//Ejercicio 3: Función Anónima.
+		
+			let numero;
+			numero = parseInt(prompt("Introduce un número"));
+			
+			let mayor200 = function (n)
+			{
+					
+				if (n > 200)
+				{
+					var incremento = n * 1.10;
+					document.write("El valor de " + n + " incrementado un 10% es " + incremento);
+				}
+				else
+				{
+					var decremento = n * 0.90;
+					document.write("El valor de " + n + " decrementado un 10% es " + decremento);
+				}
+			}
+			mayor200(numero);
+	
+	
+	//Ejercicio 4.
+	
+		// Ejercicio 4A. Bucle While.
+		/*
+			  let x = 1;
+			  let cant1 = 0;
+			  let cant2 = 0;
+			  let nota;
+			 
+			  while(x <= 10)
+			  {
+				nota = parseInt(prompt("Introduzca la nota del alumno",""));
+				
+				if (nota >= 7)
+				
+				{
+				  cant1 = cant1 + 1;
+				  //cant1++;				  
+				}
+				else
+				{
+				  cant2 = cant2 + 1;
+				  //cant1++;
+				}
+				x++;
+			  } 
+			  document.write("Cantidad de alumnos con notas mayores o iguales a 7: " + cant1 + "<br>");
+			  document.write("Cantidad de alumnos con notas menores a 7: " + cant2);
+		 */
+		// Ejercicio 4B. Bucle Do...While.
+		 /*
+			  let x = 1;
+			  let cant1 = 0;
+			  let cant2 = 0;
+			  let nota;
+			  do
+			  {
+				nota = parseInt(prompt("Introduzca la nota del alumno",""));
+				
+				if (nota >= 7)
+				
+				{
+				  cant1 = cant1 + 1;
+				  //cant1++;				  
+				}
+				else
+				{
+				  cant2 = cant2 + 1;
+				  //cant1++;
+				}
+				x++;
+			  }while(x <= 10)
+			 
+			  document.write("Cantidad de alumnos con notas mayores o iguales a 7: " + cant1 + "<br>");
+			  document.write("Cantidad de alumnos con notas menores a 7: " + cant2);	  
+		*/
+		// Ejercicio 4C. Bucle For.
+		/* 
+			  let cant1 = 0;
+			  let cant2 = 0;
+			  let nota;
+			  let x;
+			  
+			  for(x = 1;x <= 10;x++)
+			  {
+				nota = parseInt(prompt("Introduzca la nota del alumno",""));
+				
+				if (nota >= 7)
+				
+				{
+				  cant1 = cant1 + 1;
+				  //cant1++;				  
+				}
+				else
+				{
+				  cant2 = cant2 + 1;
+				  //cant2++;
+				}
+				
+			  }
+			  
+			  document.write("Cantidad de alumnos con notas mayores o iguales a 7: " + cant1 + "<br>");
+			  document.write("Cantidad de alumnos con notas menores a 7: " + cant2);
+		*/
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

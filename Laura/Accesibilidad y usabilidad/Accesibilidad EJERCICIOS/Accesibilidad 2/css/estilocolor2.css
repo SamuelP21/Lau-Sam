@@ -1,0 +1,16 @@
+
+/* Ratio de contraste: 6.26:1
+/* Hoja de estilos estiloscolor2 para la página web Accesibilidad 2.2.html */
+		
+		body{background-color:#F500A7;}
+		h1{color:#00FF00 ;}
+		
+		/*
+		
+			Problemas para los daltónicos con deuteranopia, ya que no distinguen el color verde,
+			que es el que se ha aplicado para el título.
+
+				
+		*/
+		
+		

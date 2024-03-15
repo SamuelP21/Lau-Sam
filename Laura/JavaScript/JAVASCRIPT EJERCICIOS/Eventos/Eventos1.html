@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos 1</title>
+</head>
+<body>
+    
+    <p id = "p1" onclick = "cambioEstilo()">Este párrafo va a cambiar de formato cuando pulses sobre él</p>
+
+    <h1 id="t1" onmouseover = "titulo()" onmouseout="fuera()">Prueba de Estilos</h1>
+
+    <h1 id="t2" onmouseover = "titulo2()" onmouseout="fuera2()">Prueba de Sombreado</h1>
+
+    <script>
+
+        //Ejercicio 1
+        function cambioEstilo() {
+            document.getElementById("p1").style.fontSize = "30px";
+            document.getElementById("p1").style.letterSpacing = '12px';
+            document.getElementById("p1").style.fontWeight = "bold";
+            document.getElementById("p1").style.color = "#00FF00";
+        }
+
+
+        function titulo() {
+            document.getElementById("t1").style.color = "blue";
+            document.getElementById("t1").style.textDecoration = 'underline';
+            document.getElementById("t1").style.textTransform = "uppercase";
+            document.getElementById("t1").style.fontFamily = "verdana, sans-serif";
+            
+        }
+
+
+        function fuera() {
+            document.getElementById("t1").style.color = "black";
+            document.getElementById("t1").style.textDecoration = 'none';
+            document.getElementById("t1").style.color = "none";
+            document.getElementById("t1").style.fontFamily = "Arial, sans-serif";
+           
+        }
+        
+        function titulo2() {
+            document.getElementById("t2").style.textShadow = "0 0 5px red";
+        }
+
+        function fuera2() {
+            document.getElementById("t2").style.textShadow = "0 0 0px black";
+
+           
+        }
+    </script>
+</body>
+</html>

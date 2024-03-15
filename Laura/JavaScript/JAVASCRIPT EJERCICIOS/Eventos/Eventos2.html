@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Eventos 2</title> 
+        
+        <style> 
+        .contenedor { 
+            display: flex; 
+            flex-wrap: wrap; }
+
+        .caja { 
+            border: 1px solid black; 
+            background-color: black; 
+            width: 300px; 
+            height: 300px; 
+            float: left; }
+        
+        .enlaces { 
+            font-family: 'Comic Sans MS'; 
+            font-size: 24px; 
+            float: right; 
+            }
+        
+        .enlaces a { color: red; text-decoration: none}
+        
+        .enlaces a:nth-child(2) { color: orange; text-decoration: none}
+        
+        .enlaces a:nth-child(3) { color: yellow; text-decoration: none}
+        
+        .enlaces a:nth-child(4) { color: green; text-decoration: none}
+        
+        .enlaces a:nth-child(5) { color: blue; text-decoration: none}
+        
+        .enlaces a:nth-child(6) { color: indigo; text-decoration: none}
+        
+        .enlaces a:nth-child(7) { color: violet; text-decoration: none} 
+        
+        </style>
+    
+    </head> 
+    
+    <body> 
+        <div class="contenedor"> 
+            <div class="caja" id="colorCaja"></div> 
+            <div class="enlaces"> 
+                <div> 
+                    <a href="#" onmouseenter="changeColor('red')">Rojo</a> 
+                </div> 
+                <div> 
+                    <a href="#" onmouseenter="changeColor('orange')">Naranja</a> 
+                </div> 
+                <div> 
+                    <a href="#" onmouseenter="changeColor('yellow')">Amarillo</a> 
+                </div> 
+                <div> 
+                    <a href="#" onmouseenter="changeColor('green')">Verde</a> 
+                </div> 
+                <div> 
+                    <a href="#" onmouseenter="changeColor('blue')">Azul</a> 
+                </div> 
+                <div> 
+                    <a href="#" onmouseenter="changeColor('indigo')">Añil</a> 
+                </div> 
+                <div> 
+                    <a href="#" onmouseenter="changeColor('violet')">Violeta</a> 
+                </div> 
+            </div> 
+        </div>
+
+        <script>
+            function changeColor(color) {
+                document.getElementById('colorCaja').style.backgroundColor = color;
+            }
+        </script>
+    </body> 
+    </html>

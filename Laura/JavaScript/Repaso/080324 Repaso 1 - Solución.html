@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicios Repaso 1.</title>
+		<script>
+		
+		// Ejercicio 01.
+		/*	
+				//Incorrecto:
+
+				var nombre = "" 
+				// el punto y coma es opcional en instrucciones de una sóla linea, si bien, es mejor incluirlo por legibilidad del código.
+				var nombre = prompt(¿Cómo te llamas?,"*");
+				// La variable nombre sólo se debe declarar una vez. Sobra una instrucción var.
+				// La cadena "¿Cómo te llamas?" debe ir entre comillas, sino, cada palabra se considera una variable, pero al existir espacios en blanco entre ellas, el navegador lo considera un error.
+				documentwrite ="nombre";         
+				// El modo correcto de escribir es document.write() y sobra el signo de igual.
+				// nombre es una variable, no un string. Debemos quitar las comillas.
+				// Falta el punto entre el objeto document y el método write().
+			
+				//Correcto:
+				
+				var nombre = "";
+				nombre = prompt("¿Cómo te llamas?","*");
+				document.write(nombre+ "<br>");
+			*/	
+		// Ejercicio 02.
+		/*
+				Edad = 50; // Correcto.
+				var b, c; // Correcto. Se pueden separar las variables con comas para crear varias simultáneamente.
+				var d, var e; /* Incorrecto. Después de una coma no podemos escribir var. JavaScript interpreta que estamos declarando una variable con el nombre de var,
+								que es una palabra reservada del lenguaje.*/
+		/*		var default; // Incorrecto, "default" es una palabra reservada de JavaScript. Se usa en la instrucción switch...case.
+				var _mes; // Correcto. El guión bajo (_) es un carácter válido para utilizar al dar nombre a una variable.
+				var $_mes; // Correcto. El carácter $ es válido para utilizar al dar nombre a una variable.
+				var 01_enero // Incorrecto. No podemos emplear un número como primer carácter al nombrar una variable.
+				var primer apellido; var segundo.apellido; /* Incorrecto. En el primer caso no puede haber un espacio en blanco entre primer y apellido, y en el segundo no puede usarse el operador punto.
+															No confundir con el operador punto al usar las propiedades o métodos de un objeto.*/
+		/*		var despierto = dormido = 0; // Correcto. Esta declaración se usa para inicializar varias variables a la vez con el mismo valor.
+				var animal = "perro"; // Correcto.
+				var coche = seat; // Incorrecto porque el dato es una cadena de caracteres que debe ir entre comillas.
+		*/			
+		// Ejercicio 03. Variante 1.
+		/*
+		
+				var valor, resultado, pts;
+				
+				function conversorPTS()
+				{
+					valor = parseFloat(prompt("Introduce una cantidad en euros"));
+					resultado = valor * 166.386;
+					return resultado;
+				}
+				
+				pts = conversorPTS();
+				document.write(valor + " euros son " + pts + " pesetas.");
+		*/					
+		//	Ejercicio 03. Variante 2.	
+		/*		
+				var valor;
+				
+				function conversorPTS()
+				{
+					valor = parseFloat(prompt("Introduce una cantidad en euros"));
+					
+					return valor * 166.386;
+				}
+				
+				document.write("Son " + conversorPTS() + " pesetas.");
+		*/
+		//	Ejercicio 03. Variante 3.
+		/*
+		
+				var valor;
+				valor = parseFloat(prompt("Introduce una cantidad en euros"));
+				function conversorPTS(valor)
+				{
+					return valor * 166.386;
+				}
+				pts = conversorPTS(valor);
+				document.write(valor +" euros son " + pts.toFixed(2) + " pesetas.");
+		
+		*/
+		// Ejercicio 04.
+		
+			// Usando el operador typeof.
+			/*
+				//var dato = "hola";
+				var dato = 7;
+				if (typeof dato != "number") 
+				{
+					document.write("No es un número, y su tipo es: " + typeof dato);
+				}
+				else
+				{
+					document.write("Si es un número, y su tipo es: " + typeof dato);
+				}
+			*/
+			// Usando la función isNaN().
+			
+			/*
+				var dato = "hola";
+				//var dato = 7;
+				if (isNaN(dato)) 
+				{
+					document.write("No es un número, y su tipo es: " + typeof dato);
+				}
+				else
+				{
+					document.write("Si es un número, y su tipo es: " + typeof dato);
+				}
+			
+		*/
+		// Ejercicio 05.
+		
+			
+				var sueldos = new Array(7);
+				var i, dato;
+				for (i = 0; i < sueldos.length; i++)
+				{
+					//dato = prompt("Introduce el sueldo del empleado","");
+					//sueldos[i] = dato;
+					sueldos[i] = prompt("Introduce el sueldo del empleado","");
+				}				
+				document.write ("<br>Sueldos ordenados alfanuméricamente: " + "<br>" + sueldos.sort().join("<br>") + "<br> ");// Salida ordenada y con saltos de línea.
+								
+			// Ordenación numérica. 
+			
+				let ordenNum = function (n1,n2)
+				{
+				  return n1-n2;
+				}
+				document.write ("<br>Sueldos ordenados numéricamente: " + "<br>" + sueldos.sort(ordenNum).join("<br>") + "<br> ");		
+			
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

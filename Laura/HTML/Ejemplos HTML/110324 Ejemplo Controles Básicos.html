@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Controles de Formulario</title>
+		<style>
+		 p{
+			color:red;
+			font-size:18px
+			
+		 }
+		 textarea{resize:vertical;}
+		 </style>
+    </head>
+    <body>
+		<fieldset> <!-- Etiqueta que permite agrupar controles de un formulario.-->	
+		<legend>Formulario de prueba</legend><!-- Etiqueta que crear un nombre para un grupo de controles.-->	
+			<form action="archivo.php" method="post" name= "A" id ="A"><!-- Etiqueta que crear un formulario.-->	
+			<fieldset>
+			<legend>Agrupamiento de campos 1 </legend>		
+			
+				<!-- Etiqueta input para crear diferentes tipos de controles o campos de formulario.-->
+				<!-- Control para crear campos de tipo texto.-->
+				<fieldset>
+				<legend>Datos del usuario </legend>
+					<p>	Varios campos de tipo texto. </p>
+					<label>Nombre:<input type ="text" name = "nombre" size = "30" maxlength ="10" min = "5" 
+					placeholder = "Escriba aquí su nombre" form ="A" ></label><br><br><!-- Etiqueta label para identificar controles con un nombre.-->
+					<label>Teléfono:<input type ="text" name = "telefono" size = "10" maxlength ="9" autofocus pattern ="[0-9]{9}" ></label><br><br>
+					<label>Apellidos:<input type ="text" name = "apellidos" size = "50" value = "Escriba aquí sus apellidos" readonly></label><br><br>
+					<label>Dirección:<input type ="text" name = "direccion" size = "50" autocomplete ="on" required><br><br>
+					<label>Idiomas:</label><input type = "text" name = "idiomas" pattern ="[A-Za-z]{5,20}"><br><br>
+					<label>DNI:  <input type="text" pattern= "[0-9]{8}[A-Za-z]{1}" form="A"></label><br><br>
+				</fieldset>	
+				<!-- Control para crear campos de contraseña.-->
+				<fieldset>
+					<p>	Campo de contraseña. </p>
+					<label>Contraseña:  <input type="password" name="pass" size="10" ></label><br><br>
+					
+				<!-- Control para crear campos ocultos.-->		
+				
+
+					<p>	Campo oculto. </p>
+					<label>Aquí hay un campo oculto: <input type="hidden" name="pass" size="10" value="Datos a procesar" ></label><br><br>
+				</fieldset>	
+				<!-- Control para crear casillas de verificación.-->
+				
+					<p>	Casillas de verificación. </p>
+					<input type = "checkbox" name = "i" value = "Idioma inglés" checked>Inglés<br><br>
+					<input type = "checkbox" name = "f" value = "Idioma francés">Francés<br><br>
+					<input type = "checkbox" name = "a" value = "Idioma alemán">Alemán<br><br>
+					
+				<!-- Control para crear botones de opción excluyentes.-->
+				
+					<p>	Botones de opción. </p>
+					<input type = "radio" name = "estado" value = "Soltero" checked> Soltero<br><br>
+					<input type = "radio" name = "estado" value = "Casado"> Casado<br><br>
+					<input type = "radio" name = "estado" value = "Separado"> Separado<br><br>
+				
+				<!-- Control para adjuntar archivos.-->
+				
+					<p>	Selección de archivos. </p>
+					<label>Adjuntar archivos:<input type = "file" name = "archivo"></label> <br><br>
+					<label>Adjuntar varios archivos:<input type = "file" name = "archivo[]" multiple></label> <br><br>
+					<label>Adjuntar archivos permitidos:<input type = "file" name = "archivo" accept ="image/jpeg"></label> <br><br>
+					<label>Adjuntar más archivos permitidos:<input type="file" name="documentosubido" accept="application/pdf, .doc, .docx, .odf"></label> <br><br>
+					<label>Adjuntar selección múltiple de archivos permitidos:<input type="file" name="documentosubido[]" multiple accept="application/pdf, .doc, .docx, .odf"></label> <br><br>
+				
+			</fieldset>	
+			
+			<fieldset>
+				<legend>Agrupamiento de campos 2</legend>
+					<p>	Listas desplegables con varias opciones. </p>
+				<!-- Control para crear una lista de opciones.-->
+				
+					<select size ="1">
+							<option>opción 1</option>
+							<option label = "opción 2"></option>
+							<option>opción N</option>
+					</select><br><br>
+				
+				<!-- Control para crear una lista de opciones con grupos.-->
+				
+					<select value ="Seleccione un elemento">
+						<optgroup label = "Seat">
+							<option>Ibiza</option>
+							<option>Toledo</option>
+						</optgroup>
+						<optgroup label = "Renault">
+							<option>Clio</option>
+							<option>R11</option>
+							<option selected>Megane</option>
+						</optgroup>
+					</select><br><br>
+					
+				<!-- Control para crear un área de texto de varias líneas.-->
+				
+					<p>	Área de Texto para escribir en varias líneas. </p>
+					<label>Comentarios:</label><br><br>
+					<textarea name = "area" cols = "50"  rows ="5" placeholder ="Area de texto de varias líneas" ></textarea><br><br>
+						
+				<!-- Control para crear botones de envio del formulario o para borrar sus datos.-->
+				
+					<p>	Varios tipos de botones. </p>					
+					<input type = "submit" value = "!Hecho¡"><br><br>
+					<input type = "submit"><br><br>
+					<input type = "reset" ><br><br>
+				
+				<!-- Control para crear botones de envio con imagen.-->
+				
+					<input type = "image" src="mas.ico" width="50px" alt ="botón con imagen" ><br><br>
+				
+				<!-- Control para crear botones de acción o, de envío y borrado de datos del formulario.-->
+				
+					<button type ="submit">Enviar Consulta	</button>	
+					<button type ="reset"><img src ="sol.png" alt="Sol">	</button>	
+			
+			</fieldset>	
+
+			</form>
+		</fieldset>	
+	
+    </body>
+</html>

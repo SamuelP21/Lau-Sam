@@ -10,7 +10,7 @@
 		<noscript>¡¡JavaScript desactivado!!</noscript>
 		
 		<script>
-		let planetas = new Array ("Tierra", "Mercurio", "Neptuno", "Júpiter", "Venus", "Urano", "Saturno", "Marte")		
+		/* let planetas = new Array ("Tierra", "Mercurio", "Neptuno", "Júpiter", "Venus", "Urano", "Saturno", "Marte")		
 		let numero = new Array (1, 4, 232, 5432, 1223, 5, 23.2, 5.5)	
 		document.write("Planetas: " + planetas + "<br>");
 		document.write("Planetas: " + planetas.join(", ") + "<br>");
@@ -56,20 +56,24 @@
 		document.write("Planetas: " + planetas.join(", ") + "<br>");
 
 
-		document.write("<h1 style= 'color: blue; font-family: Comic sans Ms'>JavaScript</h1>")
+		document.write("<h1 style= 'color: blue; font-family: Comic sans Ms'>JavaScript</h1>") */
 
 		</script>
 		
 	</head>
 	<body>
 		<div id="div1">
-			<h1 id="t1">Título 1</h1>
+			<h1 id="t1" onmouseover="dentro ()" onmouseout="fuera ()" onclick="cosas ()">Título 1</h1>
 			<p id="p1">Párrafo 1</p>
-			<p id="p2">Párrafo 2</p>
+			<p id="p2" onclick="alert('Hola')">Párrafo 2</p>
 		</div>
-		
+		<video src="../HTML/video1.mp4" controls width="400px" title = "Cohete Falcon 9" type="video/mp4"></video>
+		<video src="../HTML/video1.mp4#t=40" width="400px" title = "Cohete Falcon 9" controls poster="foto.jpg" ></video>
+		<audio src="../HTML/¿La Calle Es Tuya_ _ Estopa _ Free Download, Borrow, and Streaming _ Internet Archive_files/"></audio>
+
+
 		<script>
-			let par1 = document.getElementById("p1").innerHTML;
+/* 			let par1 = document.getElementById("p1").innerHTML;
 			//alert("El contenido del primer párrafo es: " + par1);
 			//document.getElementById("p1").innerHTML = "<p>Nuevo párrafo 1</p>";
 			//par1.innerHTML = "<p>Nuevo párrafo 1</p>"; (hay que borrar el inner HTML de arriba para que funcione)
@@ -77,6 +81,54 @@
 			//par1.innerHTML += "<p>Párrafo 1.5</p>"; (hay que borrar el inner HTML de arriba para que funcione)
 			let d1=document.getElementById("div1");
 			d1.innerHTML += d1.innerHTML;
+
+			//CSS style
+
+			document.getElementById("t1").style.color="#e234a1";
+			document.getElementById("t1").style.fontFamily="Verdana";
+			let titulo = document.getElementById("t1");
+			//titulo.style.fontSize="60px";
+			titulo.style.cssText="color:green;font-family:'Arial';font-size:100px";
+			
+			let atributo = document.getElementById("p1").getAttribute("class");
+			document.write("Valor del atributo: " + atributo + "<br>");
+
+			document.getElementById("p1").setAttribute("class", "Párrafo Primero");
+			let atributo1 = document.getElementById("p1").getAttribute("class");
+			document.write("Valor del atributo: " + atributo1 + "<br>");
+
+			document.getElementById("p1").setAttribute("name", "First Párrafo");
+			let atributo2 = document.getElementById("p1").getAttribute("name");
+			document.write("Valor name del atributo: " + atributo2 + "<br>");
+
+			document.getElementById("p1").id= "p40";
+			let atributo3 = document.getElementById("p40").getAttribute("id");
+			document.write("Valor nuevo de id: " + atributo3 + "<br>") */
+
+/* 			let titulo= document.getElementById("t1");
+			function dentro() {
+				titulo.style.color="red";
+				titulo.style.fontStyle="italic";
+				titulo.style.fontSize="60px";
+				//titulo.style.cssText="color:red;font-style:italic";
+			}
+			function fuera() {
+				titulo.style.color="black";
+				titulo.style.fontStyle="none";
+				titulo.style.fontSize="30px";
+			}
+
+			function cosas() {
+				titulo.style.fontFamily="impact";
+				titulo.style.textAlign="center";
+			}
+
+			function todas (){
+				dentro();
+				fuera();
+				cosas();
+			} */
+
 		</script>
 	</body>
 	

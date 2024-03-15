@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón</title>
+
+    <style>
+        h1{
+            text-align: center; 
+            font-size: 60px; 
+            font-family: comic sans ms;}
+
+        form{display:flex;
+            justify-content:center;
+            gap: 20px;}
+
+        input {font-size: 40px; 
+            border-radius: 10px; 
+            color: maroon; 
+            padding: 10px; 
+            box-shadow: 5px 5px 2px blueviolet;}
+
+    </style>
+    
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h1 id="t1">Estilo de título</h1>
+
+    <!--  Eventos como atributo -->
+<!--     <form>
+        <input type="button" value="Negrita" id="boton" onclick="aplicarNegrita()">
+        //<button type="button" id="boton">negrita</button>
+        <input type="button" value="Cursiva" id="boton2" onclick="aplicarCursiva()">
+        <input type="button" value="Subrayado" id="boton3" onclick="aplicarSubrayado()">
+        <input type="button" value="Rosa" id="boton4" onclick="aplicarRosa()">
+    </form> 
+ -->
+
+<!--  Eventos con manejador semántico y/o método escuchador-->
+    <form>
+        <input type="button" value="Negrita" id="boton">
+        <input type="button" value="Cursiva" id="boton2">
+        <input type="button" value="Subrayado" id="boton3">
+        <input type="button" value="Rosa" id="boton4">
+    </form>
+
+    
+    <script>
+        let t = document.getElementById("t1");
+        let b = document.getElementById("boton");
+        let c = document.getElementById("boton2");
+        let d = document.getElementById("boton3");
+        let e = document.getElementById("boton4");
+
+        /* Manejador semántico */
+/*         boton.onclick = aplicarNegrita;
+        boton2.onclick = aplicarCursiva;
+        boton3.onclick = aplicarSubrayado;
+        boton4.onclick = aplicarRosa; */
+
+        /* Método escuchador */aplicarCursiva
+        boton.addEventListener("click",aplicarNegrita);
+
+
+        function aplicarNegrita()
+        {
+            if (t.style.fontWeight == "normal"){
+                t.style.fontWeight="bold";               
+            }
+            else {t.style.fontWeight="normal"}
+                
+            }
+        function aplicarCursiva ()
+        {
+            if (t.style.fontStyle == "italic"){
+                t.style.fontStyle = "normal";               
+            }
+            else {t.style.fontStyle = "italic"}
+        }
+
+        function aplicarSubrayado ()
+        {
+            if (t.style.textDecoration == "underline"){
+                t.style.textDecoration = "none";               
+            }
+            else {t.style.textDecoration = "underline"}
+        }
+
+        function aplicarRosa ()
+        {
+            if (t.style.color == "pink"){
+                t.style.color = "black";               
+            }
+            else {t.style.color = "pink"}
+        }
+
+
+    /* Eventos como atributo  */
+
+/*      let t = document.getElementById("t1");
+        let b = document.getElementById("boton");
+        let c = document.getElementById("boton2");
+        let d = document.getElementById("boton3");
+        let e = document.getElementById("boton4");
+
+        function aplicarNegrita ()
+        {
+            if (t.style.fontWeight == "normal"){
+                t.style.fontWeight="bold";               
+            }
+            else {t.style.fontWeight="normal"}
+        }
+
+        
+        
+        function aplicarCursiva ()
+        {
+            if (t.style.fontStyle == "italic"){
+                t.style.fontStyle = "normal";               
+            }
+            else {t.style.fontStyle = "italic"}
+        }
+
+        function aplicarSubrayado ()
+        {
+            if (t.style.textDecoration == "underline"){
+                t.style.textDecoration = "none";               
+            }
+            else {t.style.textDecoration = "underline"}
+        }
+
+        function aplicarRosa ()
+        {
+            if (t.style.color == "pink"){
+                t.style.color = "black";               
+            }
+            else {t.style.color = "pink"}
+        } */
+    
+    </script>
+</body>
+</html>

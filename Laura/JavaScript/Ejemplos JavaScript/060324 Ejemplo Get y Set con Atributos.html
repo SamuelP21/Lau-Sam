@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atributos</title>
+		<meta charset="UTF-8">
+		<style>
+		
+			.contenedor{
+				color:red;
+			}
+		
+		</style>
+		</head>
+		
+	<body>
+		
+		<div id ="d1">
+			<h1 id="t1">Acceso a DOM</h1>
+			<h1 id="t2">Métodos para Atributos</h1>
+			<p id="p1">Párrafo 1</p>
+			<p>Párrafo 2</p>
+			<p id="p3">Párrafo 3</p>
+			<ul id ="lista1">
+				<li>Opción 1</li>
+				<li id ="op2">Opción 2</li>
+				<li>Opción 3</li>
+				<li id ="op4">Opción 4</li>
+				<li>Opción 5</li>
+				<li>Opción 6</li>
+			</ul>
+			<p id="p4" style="color:green" class="parrafos">Párrafo 4</p>
+		</div>
+		
+	
+		
+		<script>
+		
+		// Creación de nodos de tipo atributo para nodos de tipo elemento.
+		// Métodos createAttribute() y setAttributeNode().
+		/*
+				let division = document.getElementById("d1");
+				let atributo = document.createAttribute("class");
+				atributo.value = "contenedor";
+				division.setAttributeNode(atributo);
+				//document.getElementById("d1").setAttributeNode(atributo); // Sin variable división.
+				//console.log(division.getAttribute("class")); // Mostrará contenedor por consola.
+				//document.write("Valor del atributo class de la división d1: " + division.getAttribute("class")); // Mostrará contenedor en la página web.
+		*/
+		/*	
+				let atri = document.createAttribute("id");// Crear el tipo de atributo, en este caso, id.
+				atri.value = "p1"; /// Incluir el valor para el atributo.
+				let par1 = document.getElementsByTagName("p")[0]; //Acceso al elemento que llevará el atributo.
+				par1.setAttributeNode(atri);//Añadir el atributo al elemento para el que se ha creado.
+			
+				let t1 = document.createAttribute("class");// Crear el tipo de atributo, en este caso, class.
+				t1.value = "titulo1"; /// Incluir el valor para el atributo.
+				let ti1 = document.getElementsByTagName("h1")[0]; //Acceso al elemento que llevará el atributo, en este caso el primer título h1.
+				ti1.setAttributeNode(t1);//Añadir el atributo al elemento para el que se ha creado.
+				
+				let atri2 = document.createAttribute("style");// Crear el tipo de atributo, en este caso, style.
+				atri2.value = "color:blue"; /// Incluir el valor para el atributo.
+				let par2 = document.getElementById("p1"); //Acceso al elemento que llevará el atributo, en este caso el primer título h1.
+				par2.setAttributeNode(atri2);//Añadir el atributo al elemento para el que se ha creado.
+*/
+
+		// Consultar/añadir atributos con métodos getAttribute() y setAttribute().
+		
+
+				let parrafo4 = document.getElementById("p4").getAttribute("style");
+				document.write("Valor del atributo style para el párrafo 4 : " + parrafo4 + "<br>");
+				
+
+				let titulo1 = document.getElementById("t1"); 
+				let titulo2 = document.getElementById("t2");
+				titulo1.setAttribute("class","titulos"); // Añadir un atributo de tipo class a un elemento usando el método setAttribute().
+				titulo2.setAttribute("class","titulos");
+				
+				//document.getElementById("t1").setAttribute("class","titulos"); // Añadir un atributo de tipo class a un elemento usando el método setAttribute().
+				//document.getElementById("t2").setAttribute("class","titulos");
+			
+				let atrit1 = document.getElementById("t1").getAttribute("class"); // Cargar el valor del atributo de tipo class en una variable usando el método getAttribute().
+				let atrit2 = document.getElementById("t2").getAttribute("class"); 
+				document.write("Valor del atributo class del primer título: " + atrit1 + "<br>");
+				document.write("Valor del atributo class del segundo título: " + atrit2 + "<br>");
+				
+		// Consultar atributos con método getAttributeNames().	
+		/*
+				let atributos = document.getElementById("p4").getAttributeNames();
+				document.write("<br>Total de atributos en el párrafo 4: " + atributos.length + "<br>");
+				for(let i= 0;i<atributos.length;i++)
+				{
+					document.write("Atributo: " + atributos[i] + " en la posición "+ i + " del array.<br>");
+			    }
+		*/		
+		// Añadir atributos usando propiedades.
+		/*
+				let atr = document.getElementById("t1");
+				atr.className = "Titulo 1";
+				atr.id = "t1-nuevo";
+				let atrtit1 = atr.getAttribute("class");
+				let atrtit2 = atr.getAttribute("id");
+				
+				document.write("El atributo del tipo class del primer título es: " + atrtit1 + "<br>");
+				document.write("El atributo del tipo id del primer título es: " + atrtit2 + "<br>");
+				
+				let at = document.getElementById("t1-nuevo").getAttributeNames();
+				document.write("<br>Total de atributos en el título 1: " + at.length + "<br>");
+				for(let i= 0;i<at.length;i++)
+				{
+					document.write("Atributo: " + at[i] + " en la posición "+ i + " del array.<br>");
+			    }
+				
+				document.write("El nuevo atributo del tipo id del primer título es: " + atrtit2 + "<br>");
+		*/		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<html>
+    <head>
+	
+        <meta charset="utf-8">
+        <title>Controles de Formulario Nuevos</title>
+<style>
+	#hora:invalid{border:1px dashed red;}
+	#hora:valid{border:1px solid blue;}
+	-#valores {transform: rotate(-90deg);}
+
+</style>
+    </head>
+    <body>
+	<fieldset>
+	<legend>Formulario con controles nuevos</legend>
+	<form action ="" method ="get">
+	
+	<p><label>Colores:    <input type="color" value ="#34ad8a"></label></p>
+	<p><label>Búsqueda:    <input type="search" placeholder ="&#65038"></label></p>
+	<p><label>Fecha1:    <input type="date" ></label></p>
+	<p><label>Fecha2:    <input step ="7" type="date"  max ="2018-04-24"  min ="2018-02-20"></label></p>	
+	<p><label>Hora1:    <input type="time" ></label></p>
+	<p><label>Hora2:    <input step ="3600" type="time"  max ="22:00"  min ="18:00" id="hora"></label></p>
+	<p><label>Fecha y Hora1:    <input type="datetime-local" ></label></p>
+	<!-- Con un valor bajo en step los saltos afectan a la hora-->
+	<p><label>Fecha y Hora2:    <input type="datetime-local"  min="2015-02-20T10:00" max="2015-04-24T10:00" step="3600"></label></p>
+	<!-- Con un valor muy alto en step los saltos afectan a la fecha-->
+	<p><label>Fecha y Hora3:    <input type="datetime-local"  min="2015-02-20T10:00" max="2015-04-24T10:00" step="604800"></label></p>
+	<p><label>Meses1:    <input type="month" ></label></p>
+	<!-- No soportado por Firefox-->
+	<p><label>Meses2:    <input type="month"  max ="2019-04"  min ="2018-02" step ="3"></label></p>
+	<p><label>Semanas1:    <input type="week" ></label></p>
+	<!-- No soportado por Firefox-->
+	<p><label>Semanas2:    <input type="week"   min ="2021-w10" max ="2021-w30" step = "3"></label></p>
+	<p><label>Teléfono1:<input type="tel" ></label></p>
+	<p><label>Teléfono2:<input type="tel" pattern = "[0-9]{9}" placeholder = "&#x260e"></label></p>
+	<p><label>Correo Electrónico1:<input type="email" ></label></p>
+	<p><label>Correo Electrónico2:<input type="email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> </label></p>
+	<p><label>URL1:<input type="url" ></label></p>
+	<p><label>Número1:   <input type="number" ></label></p>
+	<p><label>Número2:   <input type="number"  max ="200"  min ="100"step ="5"></label></p>
+	
+	<p><label>Lista de sugerencias:<input type = "text" list ="coches"></label></p>
+	<datalist id ="coches">
+		<option>Ford Fiesta</option>
+		<option>Dacia Sandero</option>
+		<option>Seat Alhambra</option>
+	</datalist>
+		<p><label>Lista de opciones:
+	<select>
+		<option></option>
+		<option>Ford Fiesta</option>
+		<option>Dacia Sandero</option>
+		<option>Seat Alhambra</option>
+	</select></label></p>
+	
+	<p><label>Rango de Valores1:    <input type="range"  step ="10" max ="1000"  min ="1"></label></p>
+	<p><label>Rango de Valores2:    <input type="range"  step ="2" max ="20"  min ="0"></label></p>
+	
+	
+	<p><input type="range" list="marcas" id="valores" ></p>
+
+		<datalist id="marcas">
+		  <option value="0">
+		  <option value="10">
+		  <option value="20">
+		  <option value="30">
+		  <option value="40">
+		  <option value="50">
+		  <option value="60">
+		  <option value="70">
+		  <option value="80">
+		  <option value="90">
+		  <option value="100">
+		</datalist>
+		
+	<!-- No se muestran las etiquetas con el atributo label en ningún navegador-->
+	<p><input id="rango" type="range" list="valores"></p>
+		
+		<datalist id="valores">
+		 
+		  <option value="1" label="mínimo">
+		  <option value="2" label="medio" >
+		  <option value="3" label="máximo">
+		
+		</datalist>
+	
+	<p><label>Medida1:<meter min="100" max="5000" value="2500"></meter></label></p>
+	
+	<h2>Informe mensual del navegador</h2>
+	
+	<p><meter value="14417" min="0" max="14417"></meter><label>14.417 Total Visitas<label></p>
+	<p><meter value="7000" optimum ="5000" low= "500" high="9000" min="0" max="14417"></meter><label>7.000 Firefox <label></p>
+	<p><meter value="3800" min="0" max="14417"></meter><label>3.800 Internet Explorer<label></p>
+	<p><meter value="2062" min="0" max="14417"></meter><label>2.062 Chrome<label></p>
+	<p><meter value="1043" min="0" max="14417"></meter><label>1.043 Safari<label></p>
+	<p><meter value="312" min="0" max="14417"></meter><label>312 Opera<label></p>
+	<p><meter value="200" min="0" max="14417"></meter><label>200 Otros<label></p>
+
+	<!-- Medida con valores óptimos, bajos y altos. -->
+	
+	<p><label for="fuel">Nivel de Combustible:</label></p>
+	<meter min="0" max="100" low="33" high="66" optimum="80" value="90"></meter>
+	
+	<p><button type ="submit">Enviar</button></p>
+	
+	</form >
+		
+	</fieldset>	
+	
+		</form>
+    </body>
+</html>
